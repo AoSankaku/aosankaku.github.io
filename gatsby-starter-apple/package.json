@@ -7,7 +7,7 @@
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
-    "deploy": "gatsby build && rm -r ../docs/* && cp -f -r public/* ../docs/",
+    "deploy": "gatsby build && rm -r ../docs/* && cp -f -r public/* ../docs/ && git add ../ && git commit && git push",
     "test": "cp -f -r public/* ../docs/",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
     "start": "gatsby develop",
