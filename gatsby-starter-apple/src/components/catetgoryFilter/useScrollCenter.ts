@@ -31,8 +31,8 @@ const useScrollCenter = ({ ref, targetId }: UseScrollCenterProps) => {
     const offsetX = activeCategoryEl.offsetLeft - categoryWrapEl.offsetLeft
     categoryWrapEl.scrollTo(
       offsetX -
-        categoryWrapEl.offsetWidth / 2 +
-        activeCategoryEl.offsetWidth / 2,
+      categoryWrapEl.offsetWidth / 2 +
+      activeCategoryEl.offsetWidth / 2,
       0
     )
   }, [ref, targetId])

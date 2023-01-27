@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blue Triangle's Homepage's RSS Feed]]></title><description><![CDATA[descriptiondescriptiondescription]]></description><link>https://aosankaku.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 27 Jan 2023 18:55:34 GMT</lastBuildDate><item><title><![CDATA[Getting Started]]></title><description><![CDATA[Add Post Set Front matter NOTE : Properties other than alt must be required. Edit About Page Easy. You can modify the blog/about.md file. If…]]></description><link>https://aosankaku.github.io/blog/getting-started/</link><guid isPermaLink="false">https://aosankaku.github.io/blog/getting-started/</guid><pubDate>Sun, 01 Mar 2020 03:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;Add Post&lt;/h2&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blue Triangle's Homepage's RSS Feed]]></title><description><![CDATA[descriptiondescriptiondescription]]></description><link>https://aosankaku.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 27 Jan 2023 19:37:05 GMT</lastBuildDate><item><title><![CDATA[Getting Started]]></title><description><![CDATA[Add Post Set Front matter NOTE : Properties other than alt must be required. Edit About Page Easy. You can modify the blog/about.md file. If…]]></description><link>https://aosankaku.github.io/blog/getting-started/</link><guid isPermaLink="false">https://aosankaku.github.io/blog/getting-started/</guid><pubDate>Sun, 01 Mar 2020 03:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;Add Post&lt;/h2&gt;
 &lt;h3&gt;Set Front matter&lt;/h3&gt;
 &lt;pre class=&quot;grvsc-container github-light-theme grvsc-ps-t4tStz&quot; data-language=&quot;md&quot; data-index=&quot;0&quot;&gt;&lt;code class=&quot;grvsc-code&quot;&gt;&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;grvsc-tiszgT-1 grvsc-t4tStz-1&quot;&gt;---&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
 &lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;grvsc-tiszgT-9 grvsc-t4tStz-3&quot;&gt;title&lt;/span&gt;&lt;span class=&quot;grvsc-tiszgT-1 grvsc-t4tStz-1&quot;&gt;: &lt;/span&gt;&lt;span class=&quot;grvsc-tiszgT-8 grvsc-t4tStz-10&quot;&gt;&amp;quot;Getting Started&amp;quot;&lt;/span&gt;&lt;span class=&quot;grvsc-tiszgT-1 grvsc-t4tStz-1&quot;&gt;  &lt;/span&gt;&lt;span class=&quot;grvsc-tiszgT-8 grvsc-t4tStz-10&quot;&gt;// Post title&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
@@ -409,8 +409,9 @@ Please refer to the link for more detailed instructions. It&apos;s a great plugi
     background-color: var(--grvsc-line-highlighted-background-color, rgba(0, 0, 0, 0.05));
     box-shadow: inset var(--grvsc-line-highlighted-border-width, 4px) 0 0 0 var(--grvsc-line-highlighted-border-color, rgba(0, 0, 0, 0.2));
   }
-&lt;/style&gt;</content:encoded></item><item><title><![CDATA[Category Test]]></title><description><![CDATA[Category Test 🍎]]></description><link>https://aosankaku.github.io/blog/category-test/</link><guid isPermaLink="false">https://aosankaku.github.io/blog/category-test/</guid><pubDate>Wed, 01 Jan 2020 03:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;Category Test&lt;/h2&gt;
+&lt;/style&gt;</content:encoded></item><item><title><![CDATA[Category Test]]></title><description><![CDATA[Category Test 🍎 alt用テキスト]]></description><link>https://aosankaku.github.io/blog/category-test/</link><guid isPermaLink="false">https://aosankaku.github.io/blog/category-test/</guid><pubDate>Wed, 01 Jan 2020 03:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;Category Test&lt;/h2&gt;
 &lt;p&gt;🍎&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://images.dog.ceo/breeds/shiba/shiba_20.jpg&quot; alt=&quot;alt用テキスト&quot;&gt;&lt;/p&gt;
 &lt;style class=&quot;grvsc-styles&quot;&gt;
   .grvsc-container {
     overflow: auto;
@@ -500,7 +501,34 @@ Please refer to the link for more detailed instructions. It&apos;s a great plugi
     opacity: 0.7;
   }
   
-&lt;/style&gt;</content:encoded></item><item><title><![CDATA[Markdown Test]]></title><description><![CDATA[Overview Philosophy Markdown is intended to be as easy-to-read and easy-to-write as is feasible. Readability, however, is emphasized above…]]></description><link>https://aosankaku.github.io/blog/markdown-test/</link><guid isPermaLink="false">https://aosankaku.github.io/blog/markdown-test/</guid><pubDate>Sun, 01 Dec 2019 03:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;Overview&lt;/h2&gt;
+&lt;/style&gt;</content:encoded></item><item><title><![CDATA[Markdown Test]]></title><description><![CDATA[Overview alt用テキスト
+ Philosophy Markdown is intended to be as easy-to-read and easy-to-write as is feasible. Readability, however, is…]]></description><link>https://aosankaku.github.io/blog/markdown-test/</link><guid isPermaLink="false">https://aosankaku.github.io/blog/markdown-test/</guid><pubDate>Sun, 01 Dec 2019 03:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;Overview&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;https://images.dog.ceo/breeds/shiba/shiba_20.jpg&quot; alt=&quot;alt用テキスト&quot;&gt;
+&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 650px; &quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 17.791411042944784%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAECAIAAAABPYjBAAAACXBIWXMAAC4jAAAuIwF4pT92AAAAi0lEQVQI102Oxw6EMAxE+f9P5JTYKW4LSwrnVdYSQprTFL3ZhshUfevMuTMbwFnKVB0ijxqRAawUcapuU/VbigEY4rJEJMZG9EE0gKnamTuzMxqRxjhENARDXOMFybkxX7VO1SMljfE284EB4L472a/df/OqdRsinfn57I0jJad5ehG9z3cRDmGI/AD68txRv/ugRwAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;でっかい画像&quot;
+        title=&quot;でっかい画像&quot;
+        src=&quot;/static/1a8ead2df3f077fa964b3ece3f0d92e9/a6d36/kusodeka.png&quot;
+        srcset=&quot;/static/1a8ead2df3f077fa964b3ece3f0d92e9/222b7/kusodeka.png 163w,
+/static/1a8ead2df3f077fa964b3ece3f0d92e9/ff46a/kusodeka.png 325w,
+/static/1a8ead2df3f077fa964b3ece3f0d92e9/a6d36/kusodeka.png 650w,
+/static/1a8ead2df3f077fa964b3ece3f0d92e9/e548f/kusodeka.png 975w,
+/static/1a8ead2df3f077fa964b3ece3f0d92e9/3c492/kusodeka.png 1300w,
+/static/1a8ead2df3f077fa964b3ece3f0d92e9/dc232/kusodeka.png 6000w&quot;
+        sizes=&quot;(max-width: 650px) 100vw, 650px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+    &lt;/span&gt;&lt;/p&gt;
 &lt;h3&gt;Philosophy&lt;/h3&gt;
 &lt;p&gt;Markdown is intended to be as easy-to-read and easy-to-write as is feasible.&lt;/p&gt;
 &lt;p&gt;Readability, however, is emphasized above all else. A Markdown-formatted

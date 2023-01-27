@@ -1,6 +1,6 @@
 # Hello
 
-Welcome to my blog. My name is Ed.<br>
+Welcome to my blog. My name is Edx.<br>
 I'm very interested in the web front-end development.<br>
 Unchiburiburiburiburi
 

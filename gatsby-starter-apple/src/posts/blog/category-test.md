@@ -10,3 +10,5 @@ alt: "apple big sur gradient"
 ## Category Test
 
 🍎
+
+![alt用テキスト](https://images.dog.ceo/breeds/shiba/shiba_20.jpg)

@@ -9,6 +9,9 @@ alt: "markdown logo"
 
 ## Overview
 
+![alt用テキスト](https://images.dog.ceo/breeds/shiba/shiba_20.jpg)
+![でっかい画像](/images/markdown-test/kusodeka.png)
+
 ### Philosophy
 
 Markdown is intended to be as easy-to-read and easy-to-write as is feasible.

@@ -6,7 +6,7 @@
   "private": true,
   "scripts": {
     "build": "gatsby build",
-    "develop": "gatsby develop",
+    "develop": "gatsby develop && start http://localhost:8000",
     "deploy": "gatsby build && rm -r ../docs/* && cp -f -r public/* ../docs/ && git add ../ && git commit && git push",
     "test": "cp -f -r public/* ../docs/",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
