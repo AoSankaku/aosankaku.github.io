@@ -20,6 +20,10 @@ const siteMetadata = {
       name: "About",
     },
     {
+      link: "/links/",
+      name: "Links",
+    },
+    {
       link: meta.links.github,
       name: "Github",
     },

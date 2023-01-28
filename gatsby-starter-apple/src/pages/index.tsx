@@ -10,6 +10,8 @@ import SEO from "Components/seo"
 import PostGrid from "Components/postGrid"
 import CategoryFilter from "Components/catetgoryFilter"
 
+import HomeDescription from "Components/home"
+
 const Home = ({
   pageContext,
   data,
@@ -21,8 +23,8 @@ const Home = ({
   useLayoutEffect(() => {
     const filteredPostData = currentCategory
       ? postData.filter(
-          ({ node }) => node?.frontmatter?.category === currentCategory
-        )
+        ({ node }) => node?.frontmatter?.category === currentCategory
+      )
       : postData
 
     filteredPostData.forEach(({ node }) => {
@@ -55,6 +57,7 @@ const Home = ({
       <SEO title="Home" />
       <Main>
         <Content>
+          <HomeDescription />
           <CategoryFilter categoryList={data.allMarkdownRemark.group} />
           <PostTitle>{postTitle}</PostTitle>
           <PostGrid posts={posts} />

@@ -12,6 +12,9 @@ const MenuIcon: React.FC<Omit<UseMenuReturnType, "setToggle">> = ({
       <MenuIconBreadTop>
         <div />
       </MenuIconBreadTop>
+      <MenuIconBreadMiddle>
+        <div />
+      </MenuIconBreadMiddle>
       <MenuIconBreadBottom>
         <div />
       </MenuIconBreadBottom>
@@ -23,8 +26,12 @@ const MenuIconBreadTop = styled.div`
   top: 22px;
 `
 
+const MenuIconBreadMiddle = styled.div`
+  
+`
+
 const MenuIconBreadBottom = styled.div`
-  bottom: 22px;
+  bottom: 21px;
 `
 
 const MenuIconButton = styled.button<Pick<UseMenuReturnType, "toggle">>`
@@ -62,19 +69,28 @@ const MenuIconButton = styled.button<Pick<UseMenuReturnType, "toggle">>`
 
     ${MenuIconBreadTop} {
       transform: ${({ toggle }) =>
-        toggle === false ? "none" : "translateY(4.5px)"};
+    toggle === false ? "none" : "translateY(5.0px)"};
       div {
         transform: ${({ toggle }) =>
-          toggle === false ? "none" : "rotate(45deg)"};
+    toggle === false ? "none" : "rotate(45deg)"};
+      }
+    }
+
+    ${MenuIconBreadMiddle} {
+      transform: ${({ toggle }) =>
+    toggle === false ? "none" : "translateY(+10.0px)"};
+      div {
+        transform: ${({ toggle }) =>
+    toggle === false ? "none" : "rotate(0deg)"};
       }
     }
 
     ${MenuIconBreadBottom} {
       transform: ${({ toggle }) =>
-        toggle === false ? "none" : "translateY(-4.5px)"};
+    toggle === false ? "none" : "translateY(-5.0px)"};
       div {
         transform: ${({ toggle }) =>
-          toggle === false ? "none" : "rotate(-45deg)"};
+    toggle === false ? "none" : "rotate(-45deg)"};
       }
     }
 
