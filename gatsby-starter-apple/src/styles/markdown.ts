@@ -85,6 +85,21 @@ const Markdown = styled.article<{ rhythm: typeof typography["rhythm"] }>`
     margin-left: ${({ rhythm }) => rhythm(1.25)};
   }
 
+  ul,
+  li,
+  ol {
+    padding-left: ${({ rhythm }) => rhythm(0.25)};
+    line-height: 1.5;
+  }
+
+  ol {
+    list-style-type: decimal;
+  }
+
+  ul {
+    list-style-type: square;
+  }
+
   li > ul,
   li > ol {
     margin-top: 0;
@@ -132,6 +147,7 @@ const Markdown = styled.article<{ rhythm: typeof typography["rhythm"] }>`
 
   img {
     display: block;
+    margin: auto;
   }
 
   pre,
