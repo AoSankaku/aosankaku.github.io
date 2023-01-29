@@ -21,7 +21,7 @@ const metaConfig = {
   description: `descriptiondescriptiondescription`,
   author: "Blue Trialgle",
   siteUrl: "https://aosankaku.github.io",
-  lang: "jp",
+  lang: "ja",
   utterances: "AoSankaku/gatsby-starter-apple-comment",
   links: {
     github: "https://github.com/AoSankaku/aosankaku.github.io",
