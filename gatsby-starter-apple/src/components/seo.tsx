@@ -34,10 +34,6 @@ const SEO: React.FC<SEOProps> = ({ title, desc = null, image }) => {
   const ogImageUrl =
     (image ? site.siteUrl + image : site.siteUrl + defaultSEOImage!.file!.childImageSharp!.gatsbyImageData!.images!.fallback!.src)
 
-  console.log(defaultSEOImage?.file?.childImageSharp?.fixed?.src)
-  console.log(image)
-  console.log(ogImageUrl)
-
   return (
     <Helmet
       htmlAttributes={{ lang: site.lang ?? DEFAULT_LANG }}
@@ -63,7 +59,7 @@ const SEO: React.FC<SEOProps> = ({ title, desc = null, image }) => {
           },
           {
             name: "twitter:card",
-            content: "summary",
+            content: "summary_large_image",
           },
           {
             name: "twitter:creator",
