@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blue Triangle's Homepage's RSS Feed]]></title><description><![CDATA[Blue Triangleのホームページです。プロフィール、趣味、作品などを紹介しています。]]></description><link>https://aosankaku.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 29 Jan 2023 15:56:29 GMT</lastBuildDate><item><title><![CDATA[「#コンパス履歴書ジェネレーター」のご紹介]]></title><description><![CDATA[…]]></description><link>https://aosankaku.github.io/blog/cps_resume_introduction/</link><guid isPermaLink="false">https://aosankaku.github.io/blog/cps_resume_introduction/</guid><pubDate>Sun, 29 Jan 2023 12:00:00 GMT</pubDate><content:encoded>&lt;p&gt;ブログをリニューアルしてから初の記事になります。&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blue Triangle's Homepage's RSS Feed]]></title><description><![CDATA[Blue Triangleのホームページです。プロフィール、趣味、作品などを紹介しています。]]></description><link>https://aosankaku.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 29 Jan 2023 17:59:43 GMT</lastBuildDate><item><title><![CDATA[「#コンパス履歴書ジェネレーター」のご紹介]]></title><description><![CDATA[…]]></description><link>https://aosankaku.github.io/blog/cps_resume_introduction/</link><guid isPermaLink="false">https://aosankaku.github.io/blog/cps_resume_introduction/</guid><pubDate>Sun, 29 Jan 2023 12:00:00 GMT</pubDate><content:encoded>&lt;p&gt;ブログをリニューアルしてから初の記事になります。&lt;/p&gt;
 &lt;h1&gt;「#コンパス履歴書ジェネレーター」紹介&lt;/h1&gt;
 &lt;h2&gt;「#コンパス履歴書ジェネレーター」ってなんだよ&lt;/h2&gt;
 &lt;p&gt;#コンパスというクソゲーには &lt;a href=&quot;https://twitter.com/search?q=%23%E3%82%B3%E3%83%B3%E3%83%91%E3%82%B9%E5%B1%A5%E6%AD%B4%E6%9B%B8&amp;#x26;src=typed_query&quot;&gt;#コンパス履歴書&lt;/a&gt; なる文化があるのですが、スマホで画像加工するのが面倒くさすぎて気がついたら衝動的に作っていました。&lt;br&gt;
@@ -86,6 +86,115 @@ Safariは検証環境がないので動かなかったら&lt;a href=&quot;https:
 &lt;p&gt;正直コードがむちゃくちゃ汚いのと、パソコンでの操作性が悪すぎる（逆レスポンシブ非対応）ので、暇な時間があるうちにReact+Gatsbyで1から作り直そうかと思っています。旧作品互換性はないかもしれませんが許してください。&lt;/p&gt;
 &lt;p&gt;あと端末が変わるとデータが消滅するので、Googleとかと連携して消えないようにできないかなとか考えています。流石に住所とかメールアドレス書くアホはいないと思うので適当なセキュリティでいいかなと思っています。&lt;br&gt;
 でもDiscordのIDについては適当に保管するとやべーやつがスパムに悪用する可能性があるので悩みどころです。&lt;/p&gt;
+&lt;style class=&quot;grvsc-styles&quot;&gt;
+  .grvsc-container {
+    overflow: auto;
+    position: relative;
+    -webkit-overflow-scrolling: touch;
+    padding-top: 1rem;
+    padding-top: var(--grvsc-padding-top, var(--grvsc-padding-v, 1rem));
+    padding-bottom: 1rem;
+    padding-bottom: var(--grvsc-padding-bottom, var(--grvsc-padding-v, 1rem));
+    border-radius: 8px;
+    border-radius: var(--grvsc-border-radius, 8px);
+    font-feature-settings: normal;
+    line-height: 1.4;
+  }
+  
+  .grvsc-code {
+    display: table;
+  }
+  
+  .grvsc-line {
+    display: table-row;
+    box-sizing: border-box;
+    width: 100%;
+    position: relative;
+  }
+  
+  .grvsc-line &gt; * {
+    position: relative;
+  }
+  
+  .grvsc-gutter-pad {
+    display: table-cell;
+    padding-left: 0.75rem;
+    padding-left: calc(var(--grvsc-padding-left, var(--grvsc-padding-h, 1.5rem)) / 2);
+  }
+  
+  .grvsc-gutter {
+    display: table-cell;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+  }
+  
+  .grvsc-gutter::before {
+    content: attr(data-content);
+  }
+  
+  .grvsc-source {
+    display: table-cell;
+    padding-left: 1.5rem;
+    padding-left: var(--grvsc-padding-left, var(--grvsc-padding-h, 1.5rem));
+    padding-right: 1.5rem;
+    padding-right: var(--grvsc-padding-right, var(--grvsc-padding-h, 1.5rem));
+  }
+  
+  .grvsc-source:empty::after {
+    content: &apos; &apos;;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+  }
+  
+  .grvsc-gutter + .grvsc-source {
+    padding-left: 0.75rem;
+    padding-left: calc(var(--grvsc-padding-left, var(--grvsc-padding-h, 1.5rem)) / 2);
+  }
+  
+  /* Line transformer styles */
+  
+  .grvsc-has-line-highlighting &gt; .grvsc-code &gt; .grvsc-line::before {
+    content: &apos; &apos;;
+    position: absolute;
+    width: 100%;
+  }
+  
+  .grvsc-line-diff-add::before {
+    background-color: var(--grvsc-line-diff-add-background-color, rgba(0, 255, 60, 0.2));
+  }
+  
+  .grvsc-line-diff-del::before {
+    background-color: var(--grvsc-line-diff-del-background-color, rgba(255, 0, 20, 0.2));
+  }
+  
+  .grvsc-line-number {
+    padding: 0 2px;
+    text-align: right;
+    opacity: 0.7;
+  }
+  
+&lt;/style&gt;</content:encoded></item><item><title><![CDATA[#コンパス履歴書ジェネレーター お問い合わせの回答（１）]]></title><description><![CDATA[※この記事は旧ブログからの移植です。 どういうわけかお問い合わせが投稿された時の通知が届かず、返信が遅れてしまいました…お詫びしますm(_ _)m…]]></description><link>https://aosankaku.github.io/blog/inquiry1/</link><guid isPermaLink="false">https://aosankaku.github.io/blog/inquiry1/</guid><pubDate>Tue, 26 May 2020 03:00:00 GMT</pubDate><content:encoded>&lt;p&gt;※この記事は旧ブログからの移植です。&lt;/p&gt;
+&lt;p&gt;どういうわけかお問い合わせが投稿された時の通知が届かず、返信が遅れてしまいました…お詫びしますm(_ _)m&lt;/p&gt;
+&lt;p&gt;とりあえず回答していきます。&lt;/p&gt;
+&lt;p&gt;（このお問い合わせの内容について再度お問い合わせ、確認をしたい場合ここのコメントに書かれると気づかない可能性がありますので再度フォームからお問い合わせいただくかTwitterのDMにて対応いたします）&lt;/p&gt;
+&lt;h2&gt;回答コーナー&lt;/h2&gt;
+&lt;h3&gt;お問い合わせ1&lt;/h3&gt;
+&lt;p&gt;種別：不具合報告&lt;br&gt;
+環境：iOS Safari&lt;br&gt;
+内容：S4ランクの4の部分のフォントが重なっている&lt;/p&gt;
+&lt;p&gt;回答：「フォントが重なっている」とはどのような状態を指していますか？&lt;br&gt;
+また、フォントが正常に読み込まれていない可能性があるためお手数をおかけしますが再度生成をお試しください。&lt;br&gt;
+可能であればその履歴書を私に送信してくだされば解決につながるかもしれません。&lt;/p&gt;
+&lt;h3&gt;お問い合わせ2&lt;/h3&gt;
+&lt;p&gt;種別：不具合報告&lt;br&gt;
+環境：iOS Chrome&lt;br&gt;
+内容：履歴書が生成できない&lt;/p&gt;
+&lt;p&gt;回答：iOSのGoogle Chromeでコンパス履歴書ジェネレーターが生成できないという情報はほかに届いておりませんが、もし複数件同様の内容がお問い合わせに来るようでしたら再現を試みます。&lt;br&gt;
+それ以上の情報がないのでこのような回答しかできませんがご了承ください。&lt;/p&gt;
+&lt;p&gt;不具合報告は再現ができないと修正が困難ですので、できるだけ具体的に発生条件やどんな現象が起きているのかの記述をお願いします。&lt;/p&gt;
+&lt;p&gt;それでは今回はこの辺で。&lt;/p&gt;
 &lt;style class=&quot;grvsc-styles&quot;&gt;
   .grvsc-container {
     overflow: auto;
@@ -586,98 +695,6 @@ Please refer to the link for more detailed instructions. It&apos;s a great plugi
     background-color: var(--grvsc-line-highlighted-background-color, rgba(0, 0, 0, 0.05));
     box-shadow: inset var(--grvsc-line-highlighted-border-width, 4px) 0 0 0 var(--grvsc-line-highlighted-border-color, rgba(0, 0, 0, 0.2));
   }
-&lt;/style&gt;</content:encoded></item><item><title><![CDATA[Category Test]]></title><description><![CDATA[Category Test 🍎 alt用テキスト]]></description><link>https://aosankaku.github.io/blog/category-test/</link><guid isPermaLink="false">https://aosankaku.github.io/blog/category-test/</guid><pubDate>Wed, 01 Jan 2020 03:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;Category Test&lt;/h2&gt;
-&lt;p&gt;🍎&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://images.dog.ceo/breeds/shiba/shiba_20.jpg&quot; alt=&quot;alt用テキスト&quot;&gt;&lt;/p&gt;
-&lt;style class=&quot;grvsc-styles&quot;&gt;
-  .grvsc-container {
-    overflow: auto;
-    position: relative;
-    -webkit-overflow-scrolling: touch;
-    padding-top: 1rem;
-    padding-top: var(--grvsc-padding-top, var(--grvsc-padding-v, 1rem));
-    padding-bottom: 1rem;
-    padding-bottom: var(--grvsc-padding-bottom, var(--grvsc-padding-v, 1rem));
-    border-radius: 8px;
-    border-radius: var(--grvsc-border-radius, 8px);
-    font-feature-settings: normal;
-    line-height: 1.4;
-  }
-  
-  .grvsc-code {
-    display: table;
-  }
-  
-  .grvsc-line {
-    display: table-row;
-    box-sizing: border-box;
-    width: 100%;
-    position: relative;
-  }
-  
-  .grvsc-line &gt; * {
-    position: relative;
-  }
-  
-  .grvsc-gutter-pad {
-    display: table-cell;
-    padding-left: 0.75rem;
-    padding-left: calc(var(--grvsc-padding-left, var(--grvsc-padding-h, 1.5rem)) / 2);
-  }
-  
-  .grvsc-gutter {
-    display: table-cell;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    user-select: none;
-  }
-  
-  .grvsc-gutter::before {
-    content: attr(data-content);
-  }
-  
-  .grvsc-source {
-    display: table-cell;
-    padding-left: 1.5rem;
-    padding-left: var(--grvsc-padding-left, var(--grvsc-padding-h, 1.5rem));
-    padding-right: 1.5rem;
-    padding-right: var(--grvsc-padding-right, var(--grvsc-padding-h, 1.5rem));
-  }
-  
-  .grvsc-source:empty::after {
-    content: &apos; &apos;;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    user-select: none;
-  }
-  
-  .grvsc-gutter + .grvsc-source {
-    padding-left: 0.75rem;
-    padding-left: calc(var(--grvsc-padding-left, var(--grvsc-padding-h, 1.5rem)) / 2);
-  }
-  
-  /* Line transformer styles */
-  
-  .grvsc-has-line-highlighting &gt; .grvsc-code &gt; .grvsc-line::before {
-    content: &apos; &apos;;
-    position: absolute;
-    width: 100%;
-  }
-  
-  .grvsc-line-diff-add::before {
-    background-color: var(--grvsc-line-diff-add-background-color, rgba(0, 255, 60, 0.2));
-  }
-  
-  .grvsc-line-diff-del::before {
-    background-color: var(--grvsc-line-diff-del-background-color, rgba(255, 0, 20, 0.2));
-  }
-  
-  .grvsc-line-number {
-    padding: 0 2px;
-    text-align: right;
-    opacity: 0.7;
-  }
-  
 &lt;/style&gt;</content:encoded></item><item><title><![CDATA[Markdown Test]]></title><description><![CDATA[Overview 
 alt用テキスト
  Philosophy Markdown is intended to be as easy-to-read and easy-to-write as is feasible. Readability, however, is…]]></description><link>https://aosankaku.github.io/blog/markdown-test/</link><guid isPermaLink="false">https://aosankaku.github.io/blog/markdown-test/</guid><pubDate>Sun, 01 Dec 2019 03:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;Overview&lt;/h2&gt;

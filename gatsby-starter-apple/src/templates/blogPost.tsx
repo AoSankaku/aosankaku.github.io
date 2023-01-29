@@ -19,8 +19,6 @@ const BlogPost: React.FC<PageProps<Queries.Query>> = ({ data }) => {
     // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
     thumbnail && thumbnail?.childImageSharp?.gatsbyImageData!.images!.fallback!.src
 
-  console.log(thumbnail)
-
   return (
     <Layout>
       <SEO title={title} desc={desc} image={ogImagePath} />

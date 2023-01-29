@@ -16,6 +16,10 @@ const siteMetadata = {
       name: "Home",
     },
     {
+      link: "/profile/",
+      name: "Profile",
+    },
+    {
       link: "/about/",
       name: "About",
     },

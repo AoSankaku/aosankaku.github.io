@@ -2,6 +2,8 @@ import React, { useRef } from "react"
 import { Link } from "gatsby"
 import styled from "styled-components"
 
+import { graphql, useStaticQuery } from "gatsby"
+
 import type Post from "Types/Post"
 import Card from "./card"
 import useInfiniteScroll from "./useInfiniteScroll"
@@ -24,12 +26,21 @@ const PostGrid: React.FC<PostGridProps> = ({ posts }) => {
     <Grid role="list">
       {currentList.map(data => {
         const { id, slug, title, desc, date, category, thumbnail, alt } = data
+        const defaultSEOImageId = useStaticQuery<Queries.Query>(graphql`
+        query MyQuery {
+          file(absolutePath: {regex: "/og-default.png/"}) {
+            childImageSharp {
+              id
+            }
+          }
+        }
+        `)
         const ariaLabel = `${title} - ${category} - Posted on ${date}`
         return (
           <List key={id} role="listitem">
             <Link to={slug ?? ""} aria-label={ariaLabel}>
               <Card
-                thumbnail={thumbnail}
+                thumbnail={thumbnail ? thumbnail : defaultSEOImageId!.file!.childImageSharp!.id}
                 alt={alt}
                 category={category}
                 title={title}
