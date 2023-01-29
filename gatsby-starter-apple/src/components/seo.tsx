@@ -24,17 +24,15 @@ const SEO: React.FC<SEOProps> = ({ title, desc = null, image }) => {
   const description = desc ?? site.description
   const defaultSEOImage = useStaticQuery<Queries.Query>(graphql`
   query DefaultSEOImage {
-    file(absolutePath: { regex: "/og-default.png/" }) {
+    file(absolutePath: {regex: "/og-default.png/"}) {
       childImageSharp {
-        fixed(width: 400, height: 300) {
-          ...GatsbyImageSharpFixed
-        }
+        gatsbyImageData
       }
     }
   }
   `)
   const ogImageUrl =
-    (image ? site.siteUrl + image : site.siteUrl + defaultSEOImage!.file!.childImageSharp!.fixed!.src)
+    (image ? site.siteUrl + image : site.siteUrl + defaultSEOImage!.file!.childImageSharp!.gatsbyImageData!.images!.fallback!.src)
 
   console.log(defaultSEOImage?.file?.childImageSharp?.fixed?.src)
   console.log(image)
