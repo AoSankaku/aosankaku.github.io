@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blue Triangle's Homepage's RSS Feed]]></title><description><![CDATA[Blue Triangleのホームページです。プロフィール、趣味、作品などを紹介しています。]]></description><link>https://aosankaku.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 29 Jan 2023 17:59:43 GMT</lastBuildDate><item><title><![CDATA[「#コンパス履歴書ジェネレーター」のご紹介]]></title><description><![CDATA[…]]></description><link>https://aosankaku.github.io/blog/cps_resume_introduction/</link><guid isPermaLink="false">https://aosankaku.github.io/blog/cps_resume_introduction/</guid><pubDate>Sun, 29 Jan 2023 12:00:00 GMT</pubDate><content:encoded>&lt;p&gt;ブログをリニューアルしてから初の記事になります。&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blue Triangle's Homepage's RSS Feed]]></title><description><![CDATA[Blue Triangleのホームページです。プロフィール、趣味、作品などを紹介しています。]]></description><link>https://aosankaku.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 29 Jan 2023 20:01:19 GMT</lastBuildDate><item><title><![CDATA[「#コンパス履歴書ジェネレーター」のご紹介]]></title><description><![CDATA[…]]></description><link>https://aosankaku.github.io/blog/cps_resume_introduction/</link><guid isPermaLink="false">https://aosankaku.github.io/blog/cps_resume_introduction/</guid><pubDate>Sun, 29 Jan 2023 12:00:00 GMT</pubDate><content:encoded>&lt;p&gt;ブログをリニューアルしてから初の記事になります。&lt;/p&gt;
 &lt;h1&gt;「#コンパス履歴書ジェネレーター」紹介&lt;/h1&gt;
 &lt;h2&gt;「#コンパス履歴書ジェネレーター」ってなんだよ&lt;/h2&gt;
 &lt;p&gt;#コンパスというクソゲーには &lt;a href=&quot;https://twitter.com/search?q=%23%E3%82%B3%E3%83%B3%E3%83%91%E3%82%B9%E5%B1%A5%E6%AD%B4%E6%9B%B8&amp;#x26;src=typed_query&quot;&gt;#コンパス履歴書&lt;/a&gt; なる文化があるのですが、スマホで画像加工するのが面倒くさすぎて気がついたら衝動的に作っていました。&lt;br&gt;
@@ -1087,13 +1087,13 @@ normal paragraph. For example:&lt;/p&gt;
     background-color: var(--grvsc-line-highlighted-background-color, rgba(0, 0, 0, 0.05));
     box-shadow: inset var(--grvsc-line-highlighted-border-width, 4px) 0 0 0 var(--grvsc-line-highlighted-border-color, rgba(0, 0, 0, 0.2));
   }
-&lt;/style&gt;</content:encoded></item><item><title><![CDATA[【回答してみた】ウディタリアンに100の質問]]></title><description><![CDATA[※この記事は旧ブログからの移植です。 Q.1 お名前(ＨＮ)を教えて下さい。 Blue Triangle Q.2 ＨＮの由来はありますか？　あればそれは何？ 好きなアーティストの好きな曲の曲名 Q.3 宜しければ性別・年齢・血液型を教えて下さい。 男性・16・非公開 Q.…]]></description><link>https://aosankaku.github.io/blog/woditorian100/</link><guid isPermaLink="false">https://aosankaku.github.io/blog/woditorian100/</guid><pubDate>Sat, 09 Mar 2019 03:00:00 GMT</pubDate><content:encoded>&lt;p&gt;※この記事は旧ブログからの移植です。&lt;/p&gt;
+&lt;/style&gt;</content:encoded></item><item><title><![CDATA[【回答してみた】ウディタリアンに100の質問]]></title><description><![CDATA[※この記事は旧ブログからの移植です。 Q.1 お名前(ＨＮ)を教えて下さい。 Blue Triangle Q.2 ＨＮの由来はありますか？　あればそれは何？ 好きなアーティストの好きな曲の曲名 Q.3 宜しければ性別・年齢・血液型を教えて下さい。 男性・非公開・非公開 Q.…]]></description><link>https://aosankaku.github.io/blog/woditorian100/</link><guid isPermaLink="false">https://aosankaku.github.io/blog/woditorian100/</guid><pubDate>Sat, 09 Mar 2019 03:00:00 GMT</pubDate><content:encoded>&lt;p&gt;※この記事は旧ブログからの移植です。&lt;/p&gt;
 &lt;p&gt;Q.1 お名前(ＨＮ)を教えて下さい。&lt;/p&gt;
 &lt;p&gt;Blue Triangle&lt;/p&gt;
 &lt;p&gt;Q.2 ＨＮの由来はありますか？　あればそれは何？&lt;/p&gt;
 &lt;p&gt;好きなアーティストの好きな曲の曲名&lt;/p&gt;
 &lt;p&gt;Q.3 宜しければ性別・年齢・血液型を教えて下さい。&lt;/p&gt;
-&lt;p&gt;男性・16・非公開&lt;/p&gt;
+&lt;p&gt;男性・非公開・非公開&lt;/p&gt;
 &lt;p&gt;Q.4 普段は何をしてる人ですか？&lt;/p&gt;
 &lt;p&gt;学生&lt;/p&gt;
 &lt;p&gt;Q.5 アナタのＰＣ環境は？&lt;/p&gt;

@@ -3,8 +3,7 @@ title: "【回答してみた】ウディタリアンに100の質問"
 category: "Something"
 date: "2019-03-09 12:00:00 +09:00"
 desc: "「ウディタリアンに100の質問」に回答してみました。"
-thumbnail: "./images/default.jpg"
-alt: "altimage"
+thumbnail: "./images/code-block/thumbnail.jpg"
 ---
 
 ※この記事は旧ブログからの移植です。
@@ -25,7 +24,7 @@ Q.2 ＨＮの由来はありますか？　あればそれは何？
 
 Q.3 宜しければ性別・年齢・血液型を教えて下さい。
 
-男性・16・非公開
+男性・非公開・非公開
 
  
 
