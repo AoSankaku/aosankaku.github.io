@@ -4,7 +4,7 @@ import { Helmet } from "react-helmet"
 import useSiteMetadata from "Hooks/useSiteMetadata"
 import defaultOpenGraphImage from "../images/og-default.png"
 
-const DEFAULT_LANG = "en"
+const DEFAULT_LANG = "ja"
 
 type Meta = React.DetailedHTMLProps<
   React.MetaHTMLAttributes<HTMLMetaElement>,
@@ -21,7 +21,9 @@ const SEO: React.FC<SEOProps> = ({ title, desc = "", image }) => {
   const site = useSiteMetadata()
   const description = desc || site.description
   const ogImageUrl =
-    site.siteUrl ?? "" + (image || (defaultOpenGraphImage as string))
+    (image ? site.siteUrl + image : (defaultOpenGraphImage as string))
+
+  console.log(ogImageUrl)
 
   return (
     <Helmet
