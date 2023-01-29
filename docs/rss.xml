@@ -1,4 +1,181 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blue Triangle's Homepage's RSS Feed]]></title><description><![CDATA[descriptiondescriptiondescription]]></description><link>https://aosankaku.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 29 Jan 2023 11:54:45 GMT</lastBuildDate><item><title><![CDATA[Getting Started]]></title><description><![CDATA[Add Post Set Front matter NOTE : Properties other than alt must be required. Edit About Page Easy. You can modify the blog/about.md file. If…]]></description><link>https://aosankaku.github.io/blog/getting-started/</link><guid isPermaLink="false">https://aosankaku.github.io/blog/getting-started/</guid><pubDate>Sun, 01 Mar 2020 03:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;Add Post&lt;/h2&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blue Triangle's Homepage's RSS Feed]]></title><description><![CDATA[descriptiondescriptiondescription]]></description><link>https://aosankaku.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 29 Jan 2023 12:55:03 GMT</lastBuildDate><item><title><![CDATA[「#コンパス履歴書ジェネレーター」のご紹介]]></title><description><![CDATA[…]]></description><link>https://aosankaku.github.io/blog/cps_resume_introduction/</link><guid isPermaLink="false">https://aosankaku.github.io/blog/cps_resume_introduction/</guid><pubDate>Sun, 29 Jan 2023 12:00:00 GMT</pubDate><content:encoded>&lt;p&gt;ブログをリニューアルしてから初の記事になります。&lt;/p&gt;
+&lt;h1&gt;「#コンパス履歴書ジェネレーター」紹介&lt;/h1&gt;
+&lt;h2&gt;「#コンパス履歴書ジェネレーター」ってなんだよ&lt;/h2&gt;
+&lt;p&gt;#コンパスというクソゲーには &lt;a href=&quot;https://twitter.com/search?q=%23%E3%82%B3%E3%83%B3%E3%83%91%E3%82%B9%E5%B1%A5%E6%AD%B4%E6%9B%B8&amp;#x26;src=typed_query&quot;&gt;#コンパス履歴書&lt;/a&gt; なる文化があるのですが、スマホで画像加工するのが面倒くさすぎて気がついたら衝動的に作っていました。&lt;br&gt;
+一応プロフメーカーとかそういうのもあるのですが、何故か自分で作っていました。&lt;/p&gt;
+&lt;p&gt;それにしてもこれ、公開してからもうそろそろ3年も経つんですね…&lt;br&gt;
+このゲームがここまで続くとは正直思っていませんでした。&lt;/p&gt;
+&lt;p&gt;もちろん非公式なので、ずっと使える保証はありませんが3年持ったなら大丈夫じゃないんですかね（適当）&lt;/p&gt;
+&lt;h2&gt;リンク&lt;/h2&gt;
+&lt;h3&gt;&lt;a href=&quot;https://aosankaku.github.io/cps_resume/&quot;&gt;コンパス履歴書ジェネレーター&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 246px; &quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 100%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAIAAAAC64paAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAD7ElEQVQ4y22U30sqaRjH66I/oZviXFUXQUEE/SIXjLooKVKc6mxr2eI06njMxJg8jXvSgbTJKO1YUJY2BakRRSZGdZa6sCAOLtEPssxCptyTGERlllizbAounf1evbwvn+fh+b7P86RQP+nl5eX1P4rfUP+nFIqiXl9ffT7fycnJ8fHx4+MjRVHBYPDy8jIYDFIUdX19HQqF7t7k8XhOTk58Pl886L/w+fk5h8PR6XR8Pt9sNh8cHCwuLkIQVFFRQZJkfX19ZWWlUqlEEEQqlQ4PD3M4nPPz8wTs9XoxDMvMzJRIJH19fXa7nSAIOp2OomhDQ0NjY6NQKGxqasJxvLOzMyMjQ6VSeb3eBHx2diYQCORyuUQimZubMxqNarXa4XBMTEykpaWNjo52dHTo9Xocx8VisUKhgGE4CUejUbvdPjY2plarbTabSqVyOBx8Pn95eZkgiPX19aWlJQaD4XK57HY7hmFWqzUajSZgkiSdTqdGoxGJRLOzs3q9nsPh7O7ubm5uVlVVNTc37+zssFgss9k8NTWFYZjb7Y7bnBI3vb29HUGQlZUVjUZDo9HodLrH49nZ3gbYbKVS+ceXL11dXUNDQ/n5+fPz80VFRSRJJjJTFGW1WkdGRiAIkkqleXl5Fovlk0j0C40GsNk9nz//+vFjbm4uCILb29tMJhOCoGRmv99vNBpLS0vLy8uLi4vHx8cdKyuwQBCP+0kk+vPbt79//EhPTwdBEACAnp6eZM13d3fj4+MkSaIoqlAo3G43QRC/NTc/Pj7e39//3tYGC4UqDAMAICsrq7W1NRQKJTLHe4WiKBiGURRVqVR5eXmLi4uGr1//cruNExNsFmttba22tnZycnJ9fb2mpsZoNCY77OLiwmQy8fn8jo4ODMNaWloKCwsVCsXW1pbL5fL7/TabbW9vT6PRQBC0sbEhEAjC4XAC9vv9LBZLJpOtrq7qdLru7u6CggKxWAzDsFarra6ubmtrKykpQVG0rKxsdHSUy+VGIpEEHA6HEQTBcXxubs5iseh0OjabPTAwIJfLfT5fXV0dQRA8Hs9sNsvlcgAAnE5n0rDT01OZTIaiqEQiwXF8cHCwv78fBMGcnJzp6WmhUEij0VJTU1EU5XK5TCbTZDJRFBWLxRKD0dvbm5mZCcPwzMxMdnY2AAALCws8Hu/w8BDDsA8fPlRWVhoMBhRFl5aWWltbkzXHR1Kv14MgaLPZjo6OamtrDQaDWq3GMEyr1ba3tzMYjO9vgiAIQZCbm5v3y8Dj8Tw8PFAUdXNzEwgEnp+f9/f3b29vvW+6urqKRCKBQODp6Sm5SX5eQ+8O715jsVj8n/8B6qod3PTm9n4AAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;コンパス履歴書ジェネレーターQRコード&quot;
+        title=&quot;コンパス履歴書ジェネレーターQRコード&quot;
+        src=&quot;/static/bdd054bdff4d91e8de353c3bbd4260ca/92252/cps_rireki_qr_github.png&quot;
+        srcset=&quot;/static/bdd054bdff4d91e8de353c3bbd4260ca/222b7/cps_rireki_qr_github.png 163w,
+/static/bdd054bdff4d91e8de353c3bbd4260ca/92252/cps_rireki_qr_github.png 246w&quot;
+        sizes=&quot;(max-width: 246px) 100vw, 246px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+    &lt;/span&gt;&lt;br&gt;
+こちらから作成できます。デザインにこだわらなければ3分ぐらいで完成します。&lt;br&gt;
+最新のキャラがいないのは更新サボってるからです。ごめんなさい。&lt;/p&gt;
+&lt;h2&gt;サンプル&lt;/h2&gt;
+&lt;p&gt;こんな画像ができます。右上のQRコードはちゃんと履歴書ジェネレーターに飛ぶようになっていますので、この画像を拡散するだけで履歴書ジェネレーターを布教できます。やったね！
+&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 502px; &quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 144.17177914110428%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAdABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAECA//EABYBAQEBAAAAAAAAAAAAAAAAAAIAA//aAAwDAQACEAMQAAAB2UrDbcyEVNopiK//xAAXEAADAQAAAAAAAAAAAAAAAAAAAREQ/9oACAEBAAEFAsUKUQ8W0//EABYRAAMAAAAAAAAAAAAAAAAAAAAQEf/aAAgBAwEBPwEj/8QAFhEAAwAAAAAAAAAAAAAAAAAAABAR/9oACAECAQE/ASv/xAAXEAADAQAAAAAAAAAAAAAAAAAQITCx/9oACAEBAAY/Ag8l/8QAHhAAAgEFAAMAAAAAAAAAAAAAAAERITFBYYFRcaH/2gAIAQEAAT8hruPQ1NpnY6zQ3IbyS8lglcnC06x9Eix9P//aAAwDAQACAAMAAAAQ6CSC/8QAFhEBAQEAAAAAAAAAAAAAAAAAEAER/9oACAEDAQE/EMMP/8QAFxEAAwEAAAAAAAAAAAAAAAAAAAEQYf/aAAgBAgEBPxAWRz//xAAeEAEAAgICAwEAAAAAAAAAAAABABEhMVFxQWGB8P/aAAgBAQABPxCzdFmeE0NgsBBgCcOIBBdGPUXbtcapW25lIbZiJtSlu5pwA53AebfYcl/zqf/Z&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;sampleimage&quot;
+        title=&quot;sampleimage&quot;
+        src=&quot;/static/7eb44cd4fb9fbe2cba0a646d52cd2686/6f76c/sample.jpg&quot;
+        srcset=&quot;/static/7eb44cd4fb9fbe2cba0a646d52cd2686/d2f63/sample.jpg 163w,
+/static/7eb44cd4fb9fbe2cba0a646d52cd2686/c989d/sample.jpg 325w,
+/static/7eb44cd4fb9fbe2cba0a646d52cd2686/6f76c/sample.jpg 502w&quot;
+        sizes=&quot;(max-width: 502px) 100vw, 502px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;h2&gt;注意&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;パソコンからでも使えないことはないですが、キャラ選択が悲惨なことになっています。やめたほうが賢明です。&lt;/li&gt;
+&lt;li&gt;スマホの一部で、プレビュー画像を長押しするとクラッシュする不具合が発生しています。対処法は正直わかりません（preventDefaultも効かない）。タップで普通に保存できますので、その方法で保存していただけると助かります。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;ありそうな質問&lt;/h2&gt;
+&lt;h3&gt;記入可能項目は？&lt;/h3&gt;
+&lt;p&gt;ハンドルネーム、ランク、デキレ、使用キャラ、ギルド、連絡先、コメントです。ギルド以下の項目は、入力しなかった項目は自動的に非表示になります。&lt;br&gt;
+デキレについては「4～」って書いてるやつが死ぬほど嫌いなのでそういう事ができないようになっています。バカめ。&lt;/p&gt;
+&lt;h3&gt;無料ですか？&lt;/h3&gt;
+&lt;p&gt;金取ったら報復として運営が桃鍋と猫宮を上方するので一生無料です。プライム機能などの追加予定もありません。&lt;/p&gt;
+&lt;h3&gt;履歴書を加工したりイラストつけても大丈夫？&lt;/h3&gt;
+&lt;p&gt;好きにしてください。&lt;br&gt;
+ただ上の「#コンパス履歴書ジェネレーター」か下のコンパス履歴書ジェネレーターのURLを消す奴は個人的にムカつくのでブロックします。イラストの都合上やむを得ない場合はOKです。&lt;br&gt;
+「文字がダサいので消せるようにして欲しい」という要望の場合は&lt;a href=&quot;https://docs.google.com/forms/d/e/1FAIpQLSeXJZaiPBeYG2raNjZS-NbXX1gWkgYF_R7pdVQNDCVfYWHSjA/viewform&quot;&gt;こちら&lt;/a&gt;からお知らせください。僕もこれもうちょっとかっこよくできないかなと思っているので前向きに対応します。&lt;/p&gt;
+&lt;h3&gt;ハッシュタグは何？&lt;/h3&gt;
+&lt;p&gt;「&lt;a href=&quot;https://twitter.com/search?q=%23%E3%82%B3%E3%83%B3%E3%83%91%E3%82%B9%E5%B1%A5%E6%AD%B4%E6%9B%B8%E3%82%B8%E3%82%A7%E3%83%8D%E3%83%AC%E3%83%BC%E3%82%BF%E3%83%BC&amp;#x26;src=typed_query&quot;&gt;#コンパス履歴書ジェネレーター&lt;/a&gt;」です。更新と宣伝をサボっているので過疎っています。&lt;/p&gt;
+&lt;h3&gt;動作環境は？&lt;/h3&gt;
+&lt;p&gt;Chrome、Firefoxで動作確認済みです。&lt;br&gt;
+Safariは検証環境がないので動かなかったら&lt;a href=&quot;https://docs.google.com/forms/d/e/1FAIpQLSeXJZaiPBeYG2raNjZS-NbXX1gWkgYF_R7pdVQNDCVfYWHSjA/viewform&quot;&gt;こちら&lt;/a&gt;からクレーム入れてください。&lt;br&gt;
+スマホのFirefoxで何故か動かなかった気がします。&lt;br&gt;
+昔「Edgeは非対応」と書いていたのですが、最近のEdgeは実質中身がChromeになったので問題なく動作します。&lt;/p&gt;
+&lt;h3&gt;書いた内容はどこに保存されますか？&lt;/h3&gt;
+&lt;p&gt;ご利用の端末に保存することができます。私がそれを読み出したりすることはありません。と言うかやり方を知りません。&lt;br&gt;
+将来的にGoogle Driveとかと連携できないかな～と考えています。&lt;/p&gt;
+&lt;h3&gt;バグありました/要望があります/質問があります！&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&quot;https://docs.google.com/forms/d/e/1FAIpQLSeXJZaiPBeYG2raNjZS-NbXX1gWkgYF_R7pdVQNDCVfYWHSjA/viewform&quot;&gt;こちら&lt;/a&gt;にぶっこんでください。&lt;/p&gt;
+&lt;h2&gt;今後の展望&lt;/h2&gt;
+&lt;p&gt;正直コードがむちゃくちゃ汚いのと、パソコンでの操作性が悪すぎる（逆レスポンシブ非対応）ので、暇な時間があるうちにReact+Gatsbyで1から作り直そうかと思っています。旧作品互換性はないかもしれませんが許してください。&lt;/p&gt;
+&lt;p&gt;あと端末が変わるとデータが消滅するので、Googleとかと連携して消えないようにできないかなとか考えています。流石に住所とかメールアドレス書くアホはいないと思うので適当なセキュリティでいいかなと思っています。&lt;br&gt;
+でもDiscordのIDについては適当に保管するとやべーやつがスパムに悪用する可能性があるので悩みどころです。&lt;/p&gt;
+&lt;style class=&quot;grvsc-styles&quot;&gt;
+  .grvsc-container {
+    overflow: auto;
+    position: relative;
+    -webkit-overflow-scrolling: touch;
+    padding-top: 1rem;
+    padding-top: var(--grvsc-padding-top, var(--grvsc-padding-v, 1rem));
+    padding-bottom: 1rem;
+    padding-bottom: var(--grvsc-padding-bottom, var(--grvsc-padding-v, 1rem));
+    border-radius: 8px;
+    border-radius: var(--grvsc-border-radius, 8px);
+    font-feature-settings: normal;
+    line-height: 1.4;
+  }
+  
+  .grvsc-code {
+    display: table;
+  }
+  
+  .grvsc-line {
+    display: table-row;
+    box-sizing: border-box;
+    width: 100%;
+    position: relative;
+  }
+  
+  .grvsc-line &gt; * {
+    position: relative;
+  }
+  
+  .grvsc-gutter-pad {
+    display: table-cell;
+    padding-left: 0.75rem;
+    padding-left: calc(var(--grvsc-padding-left, var(--grvsc-padding-h, 1.5rem)) / 2);
+  }
+  
+  .grvsc-gutter {
+    display: table-cell;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+  }
+  
+  .grvsc-gutter::before {
+    content: attr(data-content);
+  }
+  
+  .grvsc-source {
+    display: table-cell;
+    padding-left: 1.5rem;
+    padding-left: var(--grvsc-padding-left, var(--grvsc-padding-h, 1.5rem));
+    padding-right: 1.5rem;
+    padding-right: var(--grvsc-padding-right, var(--grvsc-padding-h, 1.5rem));
+  }
+  
+  .grvsc-source:empty::after {
+    content: &apos; &apos;;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+  }
+  
+  .grvsc-gutter + .grvsc-source {
+    padding-left: 0.75rem;
+    padding-left: calc(var(--grvsc-padding-left, var(--grvsc-padding-h, 1.5rem)) / 2);
+  }
+  
+  /* Line transformer styles */
+  
+  .grvsc-has-line-highlighting &gt; .grvsc-code &gt; .grvsc-line::before {
+    content: &apos; &apos;;
+    position: absolute;
+    width: 100%;
+  }
+  
+  .grvsc-line-diff-add::before {
+    background-color: var(--grvsc-line-diff-add-background-color, rgba(0, 255, 60, 0.2));
+  }
+  
+  .grvsc-line-diff-del::before {
+    background-color: var(--grvsc-line-diff-del-background-color, rgba(255, 0, 20, 0.2));
+  }
+  
+  .grvsc-line-number {
+    padding: 0 2px;
+    text-align: right;
+    opacity: 0.7;
+  }
+  
+&lt;/style&gt;</content:encoded></item><item><title><![CDATA[Getting Started]]></title><description><![CDATA[Add Post Set Front matter NOTE : Properties other than alt must be required. Edit About Page Easy. You can modify the blog/about.md file. If…]]></description><link>https://aosankaku.github.io/blog/getting-started/</link><guid isPermaLink="false">https://aosankaku.github.io/blog/getting-started/</guid><pubDate>Sun, 01 Mar 2020 03:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;Add Post&lt;/h2&gt;
 &lt;h3&gt;Set Front matter&lt;/h3&gt;
 &lt;pre class=&quot;grvsc-container github-light-theme grvsc-ps-t4tStz&quot; data-language=&quot;md&quot; data-index=&quot;0&quot;&gt;&lt;code class=&quot;grvsc-code&quot;&gt;&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;grvsc-tiszgT-1 grvsc-t4tStz-1&quot;&gt;---&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
 &lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;grvsc-tiszgT-9 grvsc-t4tStz-3&quot;&gt;title&lt;/span&gt;&lt;span class=&quot;grvsc-tiszgT-1 grvsc-t4tStz-1&quot;&gt;: &lt;/span&gt;&lt;span class=&quot;grvsc-tiszgT-8 grvsc-t4tStz-10&quot;&gt;&amp;quot;Getting Started&amp;quot;&lt;/span&gt;&lt;span class=&quot;grvsc-tiszgT-1 grvsc-t4tStz-1&quot;&gt;  &lt;/span&gt;&lt;span class=&quot;grvsc-tiszgT-8 grvsc-t4tStz-10&quot;&gt;// Post title&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
@@ -409,97 +586,6 @@ Please refer to the link for more detailed instructions. It&apos;s a great plugi
     background-color: var(--grvsc-line-highlighted-background-color, rgba(0, 0, 0, 0.05));
     box-shadow: inset var(--grvsc-line-highlighted-border-width, 4px) 0 0 0 var(--grvsc-line-highlighted-border-color, rgba(0, 0, 0, 0.2));
   }
-&lt;/style&gt;</content:encoded></item><item><title><![CDATA[Secondary Category Test]]></title><description><![CDATA[Category Test 😎]]></description><link>https://aosankaku.github.io/blog/secondary/</link><guid isPermaLink="false">https://aosankaku.github.io/blog/secondary/</guid><pubDate>Wed, 15 Jan 2020 03:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;Category Test&lt;/h2&gt;
-&lt;p&gt;😎&lt;/p&gt;
-&lt;style class=&quot;grvsc-styles&quot;&gt;
-  .grvsc-container {
-    overflow: auto;
-    position: relative;
-    -webkit-overflow-scrolling: touch;
-    padding-top: 1rem;
-    padding-top: var(--grvsc-padding-top, var(--grvsc-padding-v, 1rem));
-    padding-bottom: 1rem;
-    padding-bottom: var(--grvsc-padding-bottom, var(--grvsc-padding-v, 1rem));
-    border-radius: 8px;
-    border-radius: var(--grvsc-border-radius, 8px);
-    font-feature-settings: normal;
-    line-height: 1.4;
-  }
-  
-  .grvsc-code {
-    display: table;
-  }
-  
-  .grvsc-line {
-    display: table-row;
-    box-sizing: border-box;
-    width: 100%;
-    position: relative;
-  }
-  
-  .grvsc-line &gt; * {
-    position: relative;
-  }
-  
-  .grvsc-gutter-pad {
-    display: table-cell;
-    padding-left: 0.75rem;
-    padding-left: calc(var(--grvsc-padding-left, var(--grvsc-padding-h, 1.5rem)) / 2);
-  }
-  
-  .grvsc-gutter {
-    display: table-cell;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    user-select: none;
-  }
-  
-  .grvsc-gutter::before {
-    content: attr(data-content);
-  }
-  
-  .grvsc-source {
-    display: table-cell;
-    padding-left: 1.5rem;
-    padding-left: var(--grvsc-padding-left, var(--grvsc-padding-h, 1.5rem));
-    padding-right: 1.5rem;
-    padding-right: var(--grvsc-padding-right, var(--grvsc-padding-h, 1.5rem));
-  }
-  
-  .grvsc-source:empty::after {
-    content: &apos; &apos;;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    user-select: none;
-  }
-  
-  .grvsc-gutter + .grvsc-source {
-    padding-left: 0.75rem;
-    padding-left: calc(var(--grvsc-padding-left, var(--grvsc-padding-h, 1.5rem)) / 2);
-  }
-  
-  /* Line transformer styles */
-  
-  .grvsc-has-line-highlighting &gt; .grvsc-code &gt; .grvsc-line::before {
-    content: &apos; &apos;;
-    position: absolute;
-    width: 100%;
-  }
-  
-  .grvsc-line-diff-add::before {
-    background-color: var(--grvsc-line-diff-add-background-color, rgba(0, 255, 60, 0.2));
-  }
-  
-  .grvsc-line-diff-del::before {
-    background-color: var(--grvsc-line-diff-del-background-color, rgba(255, 0, 20, 0.2));
-  }
-  
-  .grvsc-line-number {
-    padding: 0 2px;
-    text-align: right;
-    opacity: 0.7;
-  }
-  
 &lt;/style&gt;</content:encoded></item><item><title><![CDATA[Category Test]]></title><description><![CDATA[Category Test 🍎 alt用テキスト]]></description><link>https://aosankaku.github.io/blog/category-test/</link><guid isPermaLink="false">https://aosankaku.github.io/blog/category-test/</guid><pubDate>Wed, 01 Jan 2020 03:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;Category Test&lt;/h2&gt;
 &lt;p&gt;🍎&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;https://images.dog.ceo/breeds/shiba/shiba_20.jpg&quot; alt=&quot;alt用テキスト&quot;&gt;&lt;/p&gt;
@@ -984,4 +1070,294 @@ normal paragraph. For example:&lt;/p&gt;
     background-color: var(--grvsc-line-highlighted-background-color, rgba(0, 0, 0, 0.05));
     box-shadow: inset var(--grvsc-line-highlighted-border-width, 4px) 0 0 0 var(--grvsc-line-highlighted-border-color, rgba(0, 0, 0, 0.2));
   }
+&lt;/style&gt;</content:encoded></item><item><title><![CDATA[【回答してみた】ウディタリアンに100の質問]]></title><description><![CDATA[※この記事は旧ブログからの移植です。 Q.1 お名前(ＨＮ)を教えて下さい。 Blue Triangle Q.2 ＨＮの由来はありますか？　あればそれは何？ 好きなアーティストの好きな曲の曲名 Q.3 宜しければ性別・年齢・血液型を教えて下さい。 男性・16・非公開 Q.…]]></description><link>https://aosankaku.github.io/blog/woditorian100/</link><guid isPermaLink="false">https://aosankaku.github.io/blog/woditorian100/</guid><pubDate>Sat, 09 Mar 2019 03:00:00 GMT</pubDate><content:encoded>&lt;p&gt;※この記事は旧ブログからの移植です。&lt;/p&gt;
+&lt;p&gt;Q.1 お名前(ＨＮ)を教えて下さい。&lt;/p&gt;
+&lt;p&gt;Blue Triangle&lt;/p&gt;
+&lt;p&gt;Q.2 ＨＮの由来はありますか？　あればそれは何？&lt;/p&gt;
+&lt;p&gt;好きなアーティストの好きな曲の曲名&lt;/p&gt;
+&lt;p&gt;Q.3 宜しければ性別・年齢・血液型を教えて下さい。&lt;/p&gt;
+&lt;p&gt;男性・16・非公開&lt;/p&gt;
+&lt;p&gt;Q.4 普段は何をしてる人ですか？&lt;/p&gt;
+&lt;p&gt;学生&lt;/p&gt;
+&lt;p&gt;Q.5 アナタのＰＣ環境は？&lt;/p&gt;
+&lt;p&gt;ゴミ(i3,メモリ4GB)&lt;/p&gt;
+&lt;p&gt;Q.6 一日のウディタの平均使用時間は？&lt;/p&gt;
+&lt;p&gt;2時間程度！&lt;/p&gt;
+&lt;p&gt;Q.7 ゲーム制作の最高制作時間は？&lt;/p&gt;
+&lt;p&gt;一気にってこと…？まあどんなクソゲーでも30時間はかかるよね&lt;/p&gt;
+&lt;p&gt;Q.8 ゲームを完成させた事はありますか？&lt;/p&gt;
+&lt;p&gt;クソゲーなら&lt;/p&gt;
+&lt;p&gt;Q.9 今現在、自作ゲームを公開してますか？&lt;/p&gt;
+&lt;p&gt;はい&lt;/p&gt;
+&lt;p&gt;Q.10 ゲームを作る時に心がけていることは？&lt;/p&gt;
+&lt;p&gt;操作性を再重視、グラフィックはその次&lt;/p&gt;
+&lt;p&gt;Q.11 ゲームを作るときに欠かせないものは何かありますか？&lt;/p&gt;
+&lt;p&gt;アイデアを記録したノート&lt;/p&gt;
+&lt;p&gt;Q.12 貴方がウディタを始めたキッカケは何？&lt;/p&gt;
+&lt;p&gt;友人のすすめ&lt;/p&gt;
+&lt;p&gt;Q.13 ウディタ歴はどのくらいですか？&lt;/p&gt;
+&lt;p&gt;5年程度&lt;/p&gt;
+&lt;p&gt;Q.14 ウディタの良いところは何？&lt;/p&gt;
+&lt;p&gt;自由度が高く奥が深い&lt;/p&gt;
+&lt;p&gt;Q.15 逆に、ウディタの悪いところはありますか？&lt;/p&gt;
+&lt;p&gt;初心者に優しくない(笑)、はじめのうちから飛躍した発送を持つと挫折してしまう&lt;/p&gt;
+&lt;p&gt;Q.16 今作ってる(もしくは作りたい)ゲームはどんなゲーム？&lt;/p&gt;
+&lt;p&gt;タイピングゲーム&lt;/p&gt;
+&lt;p&gt;Q.17 貴方の技術力はどのくらい？(例：自作メニューが限界,STGくらいは作れます)&lt;/p&gt;
+&lt;p&gt;ウディタ歴5年とはいえクソザコ、未だに自作システムも作ったことがないが自作でやる予定&lt;/p&gt;
+&lt;p&gt;Q.18 貴方の一番得意なことは？(例：立ち絵が得意,ストーリーを考える事)&lt;/p&gt;
+&lt;p&gt;理論組み立て&lt;/p&gt;
+&lt;p&gt;Q.19 ゲーム製作を挫折するときってどんなとき？&lt;/p&gt;
+&lt;p&gt;初心者の頃変にDBとかをいじりまくって修正が面倒になったとき&lt;/p&gt;
+&lt;p&gt;Q.20 あなたの失敗談を一つ&lt;/p&gt;
+&lt;p&gt;あるマップでイベントを増やしすぎた(Ctrl+Delで一括で消せることは後日知った)&lt;/p&gt;
+&lt;p&gt;Q.21 ゲームを作るとき、素材は自作しますか？自作する場合、何を自作するのか教えて下さい。(グラフィック、音楽等)&lt;/p&gt;
+&lt;p&gt;ドット絵程度しか自作できない()&lt;/p&gt;
+&lt;p&gt;Q.22 ウディタに今後追加されるとうれしい機能はありますか？&lt;/p&gt;
+&lt;p&gt;コマンドごとに個別のヘルプボタン設置&lt;/p&gt;
+&lt;p&gt;Q.23 ウディタアクティブ時間よりも非アクティブ時間の方が多かったりする？&lt;/p&gt;
+&lt;p&gt;それはない(笑)&lt;/p&gt;
+&lt;p&gt;Q.24 よく利用している素材屋さん等はありますか？&lt;/p&gt;
+&lt;p&gt;やっぱりぴぽや&lt;/p&gt;
+&lt;p&gt;Q.25 ウディタ以外でよく使うソフトはありますか？&lt;/p&gt;
+&lt;p&gt;つかわない&lt;/p&gt;
+&lt;p&gt;Q.26 あなたはsnsなどのウディタコミュニティに参加していますか？&lt;/p&gt;
+&lt;p&gt;して入るけど過疎る一方&lt;/p&gt;
+&lt;p&gt;Q.27 参加している方は参加した目的は何ですか？&lt;/p&gt;
+&lt;p&gt;運営をしてみたかった(叶わぬ願い)&lt;/p&gt;
+&lt;p&gt;Q.28 ウディコン・ウディフェス等に参加した事はありますか？(ない方は今後参加する予定はありますか？)&lt;/p&gt;
+&lt;p&gt;ないです&lt;/p&gt;
+&lt;p&gt;Q.29 ゲーム製作の作業は早いですか？&lt;/p&gt;
+&lt;p&gt;学生の身分の上に自室にPCがないのでどうしても遅い&lt;/p&gt;
+&lt;p&gt;Q.30 製作意欲が湧いてくるときはどんなときですか？&lt;/p&gt;
+&lt;p&gt;なんか浮かんできたとき&lt;/p&gt;
+&lt;p&gt;Q.31 逆に製作意欲が落ちるときはどんなときですか？&lt;/p&gt;
+&lt;p&gt;テストが目の前に迫ってきたとき&lt;/p&gt;
+&lt;p&gt;Q.32 製作をしていて良かった！と思うことは？&lt;/p&gt;
+&lt;p&gt;自分の創作物を人に見てもらえる&lt;/p&gt;
+&lt;p&gt;Q.33 ゲームの容量は気になりますか？あと容量はどこまで許せる？&lt;/p&gt;
+&lt;p&gt;そんなでもない&lt;/p&gt;
+&lt;p&gt;Q.34 ゲーム制作は、まずどの部分から取りかかりますか？&lt;/p&gt;
+&lt;p&gt;ノートに構成とアイデアをまとめる&lt;/p&gt;
+&lt;p&gt;Q.35 製作中、どのあたりが苦労しますか？&lt;/p&gt;
+&lt;p&gt;どの変数を使うか、DBはどうするか&lt;/p&gt;
+&lt;p&gt;Q.36 貴方の現在の目標は？&lt;/p&gt;
+&lt;p&gt;自作システムで簡単なものでいいからゲームを作ること&lt;/p&gt;
+&lt;p&gt;Q.37 ウディタ公式サイトの作品登録ページに登録した作品はありますか？&lt;/p&gt;
+&lt;p&gt;ありますねえ&lt;/p&gt;
+&lt;p&gt;Q.38 ウディタ公式サイトのコモンイベント集&amp;#x26;素材集に登録した素材はありますか？&lt;/p&gt;
+&lt;p&gt;あるある&lt;/p&gt;
+&lt;p&gt;Q.39 配布日の発表は、配布日から何日前にしますか？&lt;/p&gt;
+&lt;p&gt;事前告知しても乗る人などいないので決まって当日&lt;/p&gt;
+&lt;p&gt;Q.40 ゲームシステムを作るときは何から作りますか？(例:処理内容から考える,とりあえず作る)&lt;/p&gt;
+&lt;p&gt;共通基本内部処理(メッセージウィンドウとか)&lt;/p&gt;
+&lt;p&gt;Q.41 ゲーム製作は何人でやってますか？&lt;/p&gt;
+&lt;p&gt;基本一人&lt;/p&gt;
+&lt;p&gt;Q.42 デバッグする時にあなたが心がけている事は？&lt;/p&gt;
+&lt;p&gt;一人でやらない、とんでもない遊び方も試す、Beta期間を設ける&lt;/p&gt;
+&lt;p&gt;Q.43 ウディタでオンライン機能を使うならどんな機能を付けますか？&lt;/p&gt;
+&lt;p&gt;ランキングかなーやっぱりwww&lt;/p&gt;
+&lt;p&gt;Q.44 サイトの名前を教えて下さい&lt;/p&gt;
+&lt;p&gt;名前は適当&lt;/p&gt;
+&lt;p&gt;Q.45 サイト名の由来を教えて下さい。&lt;/p&gt;
+&lt;p&gt;適当&lt;/p&gt;
+&lt;p&gt;Q.46 HPを作るときに使うソフトは？(ブログなら利用サイト等)&lt;/p&gt;
+&lt;p&gt;Jimdo&lt;/p&gt;
+&lt;p&gt;Q.47 今の自分のHP・ブログに満足していますか？&lt;/p&gt;
+&lt;p&gt;うんあそこデザインいいから満足、自作はCSSの知識がたりない&lt;/p&gt;
+&lt;p&gt;Q.48 自分のHP・ブログをどんな感じにしたい？&lt;/p&gt;
+&lt;p&gt;情報がわかりやすければまあなんでも&lt;/p&gt;
+&lt;p&gt;Q.49 HP・ブログの更新頻度はどのくらい？&lt;/p&gt;
+&lt;p&gt;月1以下&lt;/p&gt;
+&lt;p&gt;Q.50 「ここはオススメ！」っていうサイトはある？&lt;/p&gt;
+&lt;p&gt;一概にいえないけど強いて言うならパーフェクトガイド&lt;/p&gt;
+&lt;p&gt;Q.51 キャラクターメイキングについて、思う存分語って下さい。&lt;/p&gt;
+&lt;p&gt;嫌です…&lt;/p&gt;
+&lt;p&gt;Q.52 ストーリー製作について、思う存分語って下さい。&lt;/p&gt;
+&lt;p&gt;嫌です…&lt;/p&gt;
+&lt;p&gt;Q.53 ゲームシステムについて、思う存分語って下さい。&lt;/p&gt;
+&lt;p&gt;難しい(適当)&lt;/p&gt;
+&lt;p&gt;Q.54 やっぱり自作グラフィックのゲームには魅力を感じる？&lt;/p&gt;
+&lt;p&gt;あたりまえじゃないですかやだー&lt;/p&gt;
+&lt;p&gt;Q.55 好きなゲームのジャンルは？(RPG・アクション等)&lt;/p&gt;
+&lt;p&gt;基本何でも行けるけどPVPが好きじゃない&lt;/p&gt;
+&lt;p&gt;Q.56 貴方の好きな世界観は何？(例：SF,ファンタジー,現代)&lt;/p&gt;
+&lt;p&gt;こだわりなし&lt;/p&gt;
+&lt;p&gt;Q.57 主人公にするならどんなタイプにしますか？(例：熱血・クール等)&lt;/p&gt;
+&lt;p&gt;ついつい凡人にしてしまう&lt;/p&gt;
+&lt;p&gt;Q.58 ヒロインはどんな感じが好きですか(例：幼女・幼なじみ等)&lt;/p&gt;
+&lt;p&gt;頼りになるけど弱いところのある人(適当)&lt;/p&gt;
+&lt;p&gt;Q.59 ゲームの主人公は女性派？男性派？&lt;/p&gt;
+&lt;p&gt;男性派&lt;/p&gt;
+&lt;p&gt;Q.60 キャラの名前はどうやって考えますか？&lt;/p&gt;
+&lt;p&gt;英語か名前決め装置&lt;/p&gt;
+&lt;p&gt;Q.61 ゲーム製作で一番凝ってしまうところは？&lt;/p&gt;
+&lt;p&gt;チュートリアル&lt;/p&gt;
+&lt;p&gt;Q.62 ゲーム製作で一番重視する点はなんですか？&lt;/p&gt;
+&lt;p&gt;チュートリアル&lt;/p&gt;
+&lt;p&gt;Q.63 これは絶対外せないというものは？&lt;/p&gt;
+&lt;p&gt;チュートリアル&lt;/p&gt;
+&lt;p&gt;Q.64 グラフィックとストーリーならどっちを優先させますか？&lt;/p&gt;
+&lt;p&gt;グラフィックかな&lt;/p&gt;
+&lt;p&gt;Q.65 参考にしている作品はありますか？&lt;/p&gt;
+&lt;p&gt;得には&lt;/p&gt;
+&lt;p&gt;Q.66 あなたの作ったゲームキャラクターで気に入ったキャラはいますか？&lt;/p&gt;
+&lt;p&gt;いないな&lt;/p&gt;
+&lt;p&gt;Q.67 あなたの作中で登場するキャラクターの妄想はよくするほうですか？&lt;/p&gt;
+&lt;p&gt;しない&lt;/p&gt;
+&lt;p&gt;Q.68 新作を作るとして前作との世界観の相関を持たせたいですか？(または完全オリジナル)&lt;/p&gt;
+&lt;p&gt;短編ミニゲームだけどまあできるならね&lt;/p&gt;
+&lt;p&gt;Q.69 作品のタイトルはどんな感じでつけていますか？&lt;/p&gt;
+&lt;p&gt;勘&lt;/p&gt;
+&lt;p&gt;Q.70 ゲームプレイ時間はどれくらいが丁度良いと思いますか？&lt;/p&gt;
+&lt;p&gt;自分で自由に決められるのがベストだと思ってる&lt;/p&gt;
+&lt;p&gt;Q.71 システムは完全自作派？それとも基本システム利用？&lt;/p&gt;
+&lt;p&gt;最近自作派に移行しつつある&lt;/p&gt;
+&lt;p&gt;Q.72 ウディタのヴァージョンver1派ver2派(そのverを使っている理由もお願いします)&lt;/p&gt;
+&lt;p&gt;2.1からつかってます&lt;/p&gt;
+&lt;p&gt;Q.73 好きな市販ゲームは？&lt;/p&gt;
+&lt;p&gt;Minecraft&lt;/p&gt;
+&lt;p&gt;Q.74 ゲームのテストプレイはこまめにする方？&lt;/p&gt;
+&lt;p&gt;あんまりやりすぎると飽きるから程々にしてる(細かいところはガンガンやる)&lt;/p&gt;
+&lt;p&gt;Q.75 残り25問です。今の気持ちは？&lt;/p&gt;
+&lt;p&gt;疲れた&lt;/p&gt;
+&lt;p&gt;Q.76 やってみたい企画はありますか？&lt;/p&gt;
+&lt;p&gt;合作とかやりたいね&lt;/p&gt;
+&lt;p&gt;Q.77 ゲーム制作をしたことで失ったものはありますか？&lt;/p&gt;
+&lt;p&gt;中学の時の暇な時間を失いました&lt;/p&gt;
+&lt;p&gt;Q.78 製作中に起きたハプニングなどありましたら教えて下さい。&lt;/p&gt;
+&lt;p&gt;PCがオーバーヒートして落ちた&lt;/p&gt;
+&lt;p&gt;Q.79 ゲームの中身を見てみたいと思った作品はありますか？&lt;/p&gt;
+&lt;p&gt;大抵見たくなる&lt;/p&gt;
+&lt;p&gt;Q.80 貴方が今から共同制作するとします。あなたの役職は何？(例：テストプレイヤー)&lt;/p&gt;
+&lt;p&gt;内部処理担当&lt;/p&gt;
+&lt;p&gt;Q.81 テストプレイヤーはどんな人がプレイしていますか？&lt;/p&gt;
+&lt;p&gt;やべーやつ&lt;/p&gt;
+&lt;p&gt;Q.82 よいゲームの条件を一つ簡単にあげるとしたら?&lt;/p&gt;
+&lt;p&gt;チュートリアル&lt;/p&gt;
+&lt;p&gt;Q.83 製作をしていて一番上達したなーと思うことは？&lt;/p&gt;
+&lt;p&gt;内部処理のやり方、理論&lt;/p&gt;
+&lt;p&gt;Q.84 ゲーム製作を一言で言うとなんでしょうか？&lt;/p&gt;
+&lt;p&gt;人生の一部&lt;/p&gt;
+&lt;p&gt;Q.85 もしもゲーム会社に就職する事になったら、どこのゲーム会社に就職したい？&lt;/p&gt;
+&lt;p&gt;やっぱ任天堂&lt;/p&gt;
+&lt;p&gt;Q.86 友達のゲームをプレイしたらえらくつまらなかった･･･。さて、友達には何て言う？&lt;/p&gt;
+&lt;p&gt;クソゲー&lt;/p&gt;
+&lt;p&gt;Q.87 自分のゲームをテストプレーしてたらとんでもないバグが！！その時、貴方の心境は？&lt;/p&gt;
+&lt;p&gt;めんどくせーーーーーー&lt;/p&gt;
+&lt;p&gt;Q.88 ストーリーは良いけどシステムがクソなゲーム。システムは良いけどストーリーがクソなゲーム。遊ぶならどっち？&lt;/p&gt;
+&lt;p&gt;前者&lt;/p&gt;
+&lt;p&gt;Q.89 もし自分をゲームに出すとしたら配役は何？&lt;/p&gt;
+&lt;p&gt;野獣と化した先輩&lt;/p&gt;
+&lt;p&gt;Q.90 ひそかにライバルだと思っている人はいますか？&lt;/p&gt;
+&lt;p&gt;ウディタリアンはみんなライバルです&lt;/p&gt;
+&lt;p&gt;Q.91 ウルファールさん可愛いよね？&lt;/p&gt;
+&lt;p&gt;わかる&lt;/p&gt;
+&lt;p&gt;Q.92 貴方の現実世界での友達は貴方がゲーム制作をしている事を知ってる？&lt;/p&gt;
+&lt;p&gt;めっちゃ知ってる(ほとんど知らない)&lt;/p&gt;
+&lt;p&gt;Q.93 現実世界で、ウディタを使用している友達はいますか？&lt;/p&gt;
+&lt;p&gt;すごい適当にやってるやつなら&lt;/p&gt;
+&lt;p&gt;Q.94 突然ですが、叫んで下さい。&lt;/p&gt;
+&lt;p&gt;(≧Д≦)ンアアアアアアアアーッ！&lt;/p&gt;
+&lt;p&gt;Q.95 あなたにとってウディタとは？&lt;/p&gt;
+&lt;p&gt;人生の一部…ってこの質問さっきもなかったかい&lt;/p&gt;
+&lt;p&gt;Q.96 「完成が楽しみ！」なウディタ製ゲームはある？あればそれは何？&lt;/p&gt;
+&lt;p&gt;そうでもない&lt;/p&gt;
+&lt;p&gt;Q.97 これからウディタを始める人に何か一言&lt;/p&gt;
+&lt;p&gt;志は高く持つな、確実に技術を成長させろ。&lt;/p&gt;
+&lt;p&gt;Q.98 今後ウディタを使い続けて行きますか？&lt;/p&gt;
+&lt;p&gt;⚫はい&lt;/p&gt;
+&lt;p&gt;Q.99 今後の活動について教えてください。&lt;/p&gt;
+&lt;p&gt;大学受験までになんか一つ作りたいです、クソゲーでいいので&lt;/p&gt;
+&lt;p&gt;Q.100 お疲れ様でした。最後に、何か一言。&lt;/p&gt;
+&lt;p&gt;(≧Д≦)ンアアアアアアアアーッ！&lt;/p&gt;
+&lt;style class=&quot;grvsc-styles&quot;&gt;
+  .grvsc-container {
+    overflow: auto;
+    position: relative;
+    -webkit-overflow-scrolling: touch;
+    padding-top: 1rem;
+    padding-top: var(--grvsc-padding-top, var(--grvsc-padding-v, 1rem));
+    padding-bottom: 1rem;
+    padding-bottom: var(--grvsc-padding-bottom, var(--grvsc-padding-v, 1rem));
+    border-radius: 8px;
+    border-radius: var(--grvsc-border-radius, 8px);
+    font-feature-settings: normal;
+    line-height: 1.4;
+  }
+  
+  .grvsc-code {
+    display: table;
+  }
+  
+  .grvsc-line {
+    display: table-row;
+    box-sizing: border-box;
+    width: 100%;
+    position: relative;
+  }
+  
+  .grvsc-line &gt; * {
+    position: relative;
+  }
+  
+  .grvsc-gutter-pad {
+    display: table-cell;
+    padding-left: 0.75rem;
+    padding-left: calc(var(--grvsc-padding-left, var(--grvsc-padding-h, 1.5rem)) / 2);
+  }
+  
+  .grvsc-gutter {
+    display: table-cell;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+  }
+  
+  .grvsc-gutter::before {
+    content: attr(data-content);
+  }
+  
+  .grvsc-source {
+    display: table-cell;
+    padding-left: 1.5rem;
+    padding-left: var(--grvsc-padding-left, var(--grvsc-padding-h, 1.5rem));
+    padding-right: 1.5rem;
+    padding-right: var(--grvsc-padding-right, var(--grvsc-padding-h, 1.5rem));
+  }
+  
+  .grvsc-source:empty::after {
+    content: &apos; &apos;;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+  }
+  
+  .grvsc-gutter + .grvsc-source {
+    padding-left: 0.75rem;
+    padding-left: calc(var(--grvsc-padding-left, var(--grvsc-padding-h, 1.5rem)) / 2);
+  }
+  
+  /* Line transformer styles */
+  
+  .grvsc-has-line-highlighting &gt; .grvsc-code &gt; .grvsc-line::before {
+    content: &apos; &apos;;
+    position: absolute;
+    width: 100%;
+  }
+  
+  .grvsc-line-diff-add::before {
+    background-color: var(--grvsc-line-diff-add-background-color, rgba(0, 255, 60, 0.2));
+  }
+  
+  .grvsc-line-diff-del::before {
+    background-color: var(--grvsc-line-diff-del-background-color, rgba(255, 0, 20, 0.2));
+  }
+  
+  .grvsc-line-number {
+    padding: 0 2px;
+    text-align: right;
+    opacity: 0.7;
+  }
+  
 &lt;/style&gt;</content:encoded></item></channel></rss>

@@ -123,7 +123,7 @@ const GlobalStyle = createGlobalStyle`
       --color-floating-button-text-hover: #202020;
       --color-floating-button-shadow: rgba(0, 0, 0, 0.4);
       --color-floating-button-shadow-hover: rgba(0, 0, 0, 0.4);
-      --color-blue: #0a84ff;
+      --color-blue: #70b7ff;
       --color-icon: #d1d1d1;
     }
   }
