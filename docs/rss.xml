@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blue Triangle's Homepage's RSS Feed]]></title><description><![CDATA[descriptiondescriptiondescription]]></description><link>https://aosankaku.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 29 Jan 2023 11:24:25 GMT</lastBuildDate><item><title><![CDATA[Getting Started]]></title><description><![CDATA[Add Post Set Front matter NOTE : Properties other than alt must be required. Edit About Page Easy. You can modify the blog/about.md file. If…]]></description><link>https://aosankaku.github.io/blog/getting-started/</link><guid isPermaLink="false">https://aosankaku.github.io/blog/getting-started/</guid><pubDate>Sun, 01 Mar 2020 03:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;Add Post&lt;/h2&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blue Triangle's Homepage's RSS Feed]]></title><description><![CDATA[descriptiondescriptiondescription]]></description><link>https://aosankaku.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 29 Jan 2023 11:54:45 GMT</lastBuildDate><item><title><![CDATA[Getting Started]]></title><description><![CDATA[Add Post Set Front matter NOTE : Properties other than alt must be required. Edit About Page Easy. You can modify the blog/about.md file. If…]]></description><link>https://aosankaku.github.io/blog/getting-started/</link><guid isPermaLink="false">https://aosankaku.github.io/blog/getting-started/</guid><pubDate>Sun, 01 Mar 2020 03:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;Add Post&lt;/h2&gt;
 &lt;h3&gt;Set Front matter&lt;/h3&gt;
 &lt;pre class=&quot;grvsc-container github-light-theme grvsc-ps-t4tStz&quot; data-language=&quot;md&quot; data-index=&quot;0&quot;&gt;&lt;code class=&quot;grvsc-code&quot;&gt;&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;grvsc-tiszgT-1 grvsc-t4tStz-1&quot;&gt;---&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
 &lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;grvsc-tiszgT-9 grvsc-t4tStz-3&quot;&gt;title&lt;/span&gt;&lt;span class=&quot;grvsc-tiszgT-1 grvsc-t4tStz-1&quot;&gt;: &lt;/span&gt;&lt;span class=&quot;grvsc-tiszgT-8 grvsc-t4tStz-10&quot;&gt;&amp;quot;Getting Started&amp;quot;&lt;/span&gt;&lt;span class=&quot;grvsc-tiszgT-1 grvsc-t4tStz-1&quot;&gt;  &lt;/span&gt;&lt;span class=&quot;grvsc-tiszgT-8 grvsc-t4tStz-10&quot;&gt;// Post title&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
@@ -592,9 +592,34 @@ Please refer to the link for more detailed instructions. It&apos;s a great plugi
     opacity: 0.7;
   }
   
-&lt;/style&gt;</content:encoded></item><item><title><![CDATA[Markdown Test]]></title><description><![CDATA[Overview alt用テキスト
+&lt;/style&gt;</content:encoded></item><item><title><![CDATA[Markdown Test]]></title><description><![CDATA[Overview 
+alt用テキスト
  Philosophy Markdown is intended to be as easy-to-read and easy-to-write as is feasible. Readability, however, is…]]></description><link>https://aosankaku.github.io/blog/markdown-test/</link><guid isPermaLink="false">https://aosankaku.github.io/blog/markdown-test/</guid><pubDate>Sun, 01 Dec 2019 03:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;Overview&lt;/h2&gt;
-&lt;p&gt;&lt;img src=&quot;https://images.dog.ceo/breeds/shiba/shiba_20.jpg&quot; alt=&quot;alt用テキスト&quot;&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 650px; &quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 100%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,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&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;profilepic&quot;
+        title=&quot;profilepic&quot;
+        src=&quot;/static/14877b2dcc5b8d52fb1e55da94afe0bf/a6d36/profilepic.png&quot;
+        srcset=&quot;/static/14877b2dcc5b8d52fb1e55da94afe0bf/222b7/profilepic.png 163w,
+/static/14877b2dcc5b8d52fb1e55da94afe0bf/ff46a/profilepic.png 325w,
+/static/14877b2dcc5b8d52fb1e55da94afe0bf/a6d36/profilepic.png 650w,
+/static/14877b2dcc5b8d52fb1e55da94afe0bf/e548f/profilepic.png 975w,
+/static/14877b2dcc5b8d52fb1e55da94afe0bf/00d43/profilepic.png 1000w&quot;
+        sizes=&quot;(max-width: 650px) 100vw, 650px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+    &lt;/span&gt;
+&lt;img src=&quot;https://images.dog.ceo/breeds/shiba/shiba_20.jpg&quot; alt=&quot;alt用テキスト&quot;&gt;
 &lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 650px; &quot;

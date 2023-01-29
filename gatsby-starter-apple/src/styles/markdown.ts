@@ -149,7 +149,7 @@ const Markdown = styled.article<{ rhythm: typeof typography["rhythm"] }>`
     display: block;
     background-color: transparent;
     margin: auto;
-    box-shadow: none;
+    box-shadow: none !important;
   }
 
   pre,
