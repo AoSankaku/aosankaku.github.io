@@ -18,8 +18,8 @@
 /** @type {MetaConfig} */
 const metaConfig = {
   title: "Blue Triangle's Homepage",
-  description: `descriptiondescriptiondescription`,
-  author: "Blue Trialgle",
+  description: `Blue Triangleのホームページです。プロフィール、趣味、作品などを紹介しています。`,
+  author: "Blue Triangle",
   siteUrl: "https://aosankaku.github.io",
   lang: "ja",
   utterances: "AoSankaku/gatsby-starter-apple-comment",
