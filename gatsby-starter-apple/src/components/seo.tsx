@@ -1,4 +1,5 @@
 import React from "react"
+import { graphql, useStaticQuery } from "gatsby"
 import { Helmet } from "react-helmet"
 
 import useSiteMetadata from "Hooks/useSiteMetadata"
@@ -14,21 +15,35 @@ type Meta = React.DetailedHTMLProps<
 interface SEOProps extends Pick<Queries.MarkdownRemarkFrontmatter, "title"> {
   desc?: Queries.Maybe<string>
   image?: Queries.Maybe<string>
+  defaultSEOImage?: Queries.Maybe<Queries.ImageSharp>
   meta?: Meta
 }
 
 const SEO: React.FC<SEOProps> = ({ title, desc = "", image }) => {
   const site = useSiteMetadata()
   const description = desc || site.description
+  const defaultSEOImage = useStaticQuery<Queries.Query>(graphql`
+  query DefaultSEOImage {
+    file(absolutePath: { regex: "/og-default.png/" }) {
+        childImageSharp {
+          fixed(width: 400, height: 300) {
+            ...GatsbyImageSharpFixed
+          }
+        }
+      }
+  }
+  `)
   const ogImageUrl =
-    (image ? site.siteUrl + image : (defaultOpenGraphImage as string))
+    (image ? site.siteUrl + image : site.siteUrl + defaultSEOImage!.file!.childImageSharp!.fixed!.src)
 
+  console.log(defaultSEOImage?.file?.childImageSharp?.fixed?.src)
+  console.log(image)
   console.log(ogImageUrl)
 
   return (
     <Helmet
       htmlAttributes={{ lang: site.lang ?? DEFAULT_LANG }}
-      title={title ?? ""}
+      title={title ? title + " - Blue Triangle's Homepage" : "Blue Triangle's Homepage"}
       titleTemplate={`%s | ${site.title}`}
       meta={
         [
