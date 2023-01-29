@@ -19,18 +19,18 @@ interface SEOProps extends Pick<Queries.MarkdownRemarkFrontmatter, "title"> {
   meta?: Meta
 }
 
-const SEO: React.FC<SEOProps> = ({ title, desc = "", image }) => {
+const SEO: React.FC<SEOProps> = ({ title, desc = null, image }) => {
   const site = useSiteMetadata()
-  const description = desc || site.description
+  const description = desc ?? site.description
   const defaultSEOImage = useStaticQuery<Queries.Query>(graphql`
   query DefaultSEOImage {
     file(absolutePath: { regex: "/og-default.png/" }) {
-        childImageSharp {
-          fixed(width: 400, height: 300) {
-            ...GatsbyImageSharpFixed
-          }
+      childImageSharp {
+        fixed(width: 400, height: 300) {
+          ...GatsbyImageSharpFixed
         }
       }
+    }
   }
   `)
   const ogImageUrl =
