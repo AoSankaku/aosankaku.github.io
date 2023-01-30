@@ -37,7 +37,7 @@ const SEO: React.FC<SEOProps> = ({ title, desc = null, image }) => {
   return (
     <Helmet
       htmlAttributes={{ lang: site.lang ?? DEFAULT_LANG }}
-      title={title ? title + " - Blue Triangle's Homepage" : "Blue Triangle's Homepage"}
+      title={title ?? ""}
       titleTemplate={`%s | ${site.title}`}
       meta={
         [
