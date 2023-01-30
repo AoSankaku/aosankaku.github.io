@@ -32,7 +32,7 @@ All my profiles below are written in Japanese, but feel free to ask questions, c
 ## 趣味とか
 
 ### 開発（プログラミング）  
-公開作品としては#コンパス履歴書ジェネレーターを開発しました  
+公開作品としては[#コンパス履歴書ジェネレーター](/blog/cps_resume_introduction/)を開発しました  
 作りたいものがあるときに気まぐれで作るスタイルです
 
 このホームページを見ての通り、いろいろ自分で作ったりするのが好きです  
