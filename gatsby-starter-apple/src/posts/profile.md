@@ -11,6 +11,8 @@ Blue Triangleと名乗っています。省略して「ぶるとら」と呼ん�
 ちなみにぐぐたす(Google+)難民です。将来の夢は自由でぐぐたすライクなSNSを作って安住することです。  
 最近はよくわからないくせにWeb3やCryptoの勉強をしています。
 
+![ぐぐたす時代のスクショ](../images/gplus_certification.jpg)
+
 ## Brief Self-Introduction
 I'm Blue Triangle, an upper-intermediate English speaker.  
 I developed a web application named "#Compass resume generator" with HTML, CSS, and JavaScript.  
