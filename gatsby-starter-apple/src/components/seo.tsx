@@ -3,7 +3,6 @@ import { graphql, useStaticQuery } from "gatsby"
 import { Helmet } from "react-helmet"
 
 import useSiteMetadata from "Hooks/useSiteMetadata"
-import defaultOpenGraphImage from "../images/og-default.png"
 
 const DEFAULT_LANG = "ja"
 
