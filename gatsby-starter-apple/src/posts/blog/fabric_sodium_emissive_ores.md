@@ -82,7 +82,7 @@ Optifineであれば導入直後に入れればいいのですが、Sodiumの場
 
 「Optifine Required」と書いてあるものでもOptifineを入れなくて大丈夫ですので、そのまま入れましょう。私はこれを使っています。
 
-[$card](https://www.curseforge.com/minecraft/texture-packs/emissive-ores-1-17)
+[New Emissive Ores](https://www.curseforge.com/minecraft/texture-packs/emissive-ores-1-17)
 
 ### 注意
 [OptifineとSodiumはおそらく互換性がありません](https://www.reddit.com/r/Optifine/comments/hzk9yd/is_sodium_a_performance_enhancing_mod_compatible/)。同時に入れないように気をつけてください。
