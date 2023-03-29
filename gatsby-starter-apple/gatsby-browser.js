@@ -1,1 +1,0 @@
-import 'gatsby-remark-link-beautify/themes/twitter-card.css';
