@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
-Sitemap: https://aosankaku.github.io/sitemap/sitemap-index.xml
+Sitemap: https://aosankaku.github.io/sitemap-index.xml
 Host: https://aosankaku.github.io

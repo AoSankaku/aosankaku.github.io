@@ -43,6 +43,7 @@ const Markdown = styled.article<{ rhythm: typeof typography["rhythm"] }>`
 
   h1 {
     font-size: 2.5rem;
+    line-height: 1.8;
 
     @media (max-width: ${({ theme }) => theme.device.sm}) {
       font-size: 2rem;

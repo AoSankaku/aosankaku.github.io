@@ -96,6 +96,7 @@ const markdownPlugins = [
     options: {
       plugins: [
         "gatsby-remark-copy-linked-files",
+        "gatsby-remark-link-beautify",
         {
           resolve: "gatsby-remark-vscode",
           options: {

@@ -31,6 +31,7 @@
     "gatsby-plugin-typography": "^5.0.0-next.2",
     "gatsby-remark-copy-linked-files": "^6.0.0-next.2",
     "gatsby-remark-images": "^7.0.0-next.4",
+    "gatsby-remark-link-beautify": "^2.2.3",
     "gatsby-remark-vscode": "^3.3.1",
     "gatsby-source-filesystem": "^5.0.0-next.3",
     "gatsby-transformer-remark": "^6.0.0-next.6",
@@ -40,7 +41,7 @@
     "styled-components": "^5.3.6",
     "styled-reset": "^4.4.2",
     "typography": "^0.16.21",
-    "vscode-theme-github-light": "github:chuling/vscode-theme-github-light"
+    "vscode-theme-github-light": "github:yunlingz/vscode-theme-github-light"
   },
   "devDependencies": {
     "@graphql-eslint/eslint-plugin": "^3.13.1",
