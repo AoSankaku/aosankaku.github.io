@@ -4,6 +4,7 @@ TwitterのDMは通知がバグるので、直るまでそちらでのご連絡�
 
 ## メイン
 ### [Twitter](https://twitter.com/Ao_Sankaku)
+### [あかつきー（友人のMisskeyインスタンス）](https://yumk.xyz/@ao_sankaku)
 ### [YouTube](https://youtube.com/@Ao_Sankaku)
 ### [note](https://note.com/ao_sankaku)
 ### [Github](https://github.com/AoSankaku)
@@ -14,3 +15,5 @@ TwitterのDMは通知がバグるので、直るまでそちらでのご連絡�
 
 ## おまけ
 ### [このサイトのGithubリポジトリ](https://github.com/AoSankaku/aosankaku.github.io)
+### [このテンプレート元のGithubリポジトリ](https://github.com/sungik-choi/gatsby-starter-apple#readme)
+このホームページをパクりたい人におすすめ
