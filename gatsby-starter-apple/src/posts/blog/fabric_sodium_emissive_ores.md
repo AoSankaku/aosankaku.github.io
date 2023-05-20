@@ -7,7 +7,7 @@ thumbnail: "./images/fabric_sodium_emissive_ores/thumbnail.png"
 alt: "nazo alt"
 ---
 
-ここは別にMinecraftのブログではないのですが、英語の情報すらほとんど出てこないので書いてみることにしました。それと単純にどこのサイトに書くか迷ったので、ここに書いてみることにしました。
+ここは別にMinecraftのブログではないのですが、英語の情報すらほとんど出てこないので書いてみることにしました。
 
 # Sodiumとは？
 ![Sodiumのロゴ](./images/fabric_sodium_emissive_ores/sodium.png)
@@ -49,8 +49,8 @@ Sodiumは軽量化の機能**のみ**を保持しており、Sodiumを導入す�
 
 順に見ていきます。
 
-## Sodium、Fabric APIの導入
-ググってください。この記事を見ている人でFabricとSodium入らない人いないと思います。
+## Fabric API、Sodiumの導入
+ググってください。この記事を見ている人でFabric APIとSodium入らない人いないと思います。
 
 ## Indiumの導入
 Sodiumのアドオン（拡張）です。Sodiumが直接サポートしていない機能をサポートしています。

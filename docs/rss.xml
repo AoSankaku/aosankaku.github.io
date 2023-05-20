@@ -1,24 +1,107 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blue Triangle's Homepage's RSS Feed]]></title><description><![CDATA[Blue Triangleのホームページです。プロフィール、趣味、作品などを紹介しています。]]></description><link>https://aosankaku.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 25 Apr 2023 12:18:25 GMT</lastBuildDate><item><title><![CDATA[裏アカウント特定サービスに対する声明文]]></title><description><![CDATA[…]]></description><link>https://aosankaku.github.io/blog/s-toku/</link><guid isPermaLink="false">https://aosankaku.github.io/blog/s-toku/</guid><pubDate>Fri, 01 Jan 2100 03:00:00 GMT</pubDate><content:encoded>&lt;p&gt;昨今では、迷惑行為をインターネット上に掲載して「バズろう」と考える人が増加していることや、そうでなくても公衆の場で迷惑行為を行う動画をインターネット上に掲載するような人間が増えていることを背景に、様々な企業においても「裏アカウント特定サービス」を提供・利用なさっていることと思います。&lt;/p&gt;
-&lt;p&gt;結論から申し上げますと、私はこのサービスを使う企業を忌避し、すべての無断調査を拒否します。以下に理由を述べます。&lt;/p&gt;
-&lt;h1&gt;理由&lt;/h1&gt;
-&lt;p&gt;私の基本的な思想として、能力に基づく採用をしている企業様に貢献したいというものがあります。&lt;/p&gt;
-&lt;p&gt;企業様の中には、素行や問題のある発言がないかだけを確認しているだけという場合が多いと信じております。しかしながら、このような調査を依頼なさっている企業は、素行調査というよりもアカウントをとにかく知りたい、趣味を知りたい、どんな人と関わりがあるのかを知りたい…とまでいくと考えております。&lt;/p&gt;
-&lt;p&gt;そしてこういったものは、私の職務遂行能力には一切関係のないものであり、収集するのは&lt;strong&gt;プライベートの私に対して、意図的に危害を加える目的で行うストーキング行為&lt;/strong&gt;であると断言します。即刻おやめください。&lt;/p&gt;
-&lt;p&gt;職業によっては「どのような人と普段付き合っているか」「どんな話し方をするのか」というものは選考に入れる妥当性があると考えます。しかし、そうでない場合にこれらの情報を収集するのは明らかに過剰であると言わざるを得ません。&lt;/p&gt;
-&lt;p&gt;また、&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;・「労働者の個人情報保護に関する行動指針」では，使用者は，一定の場合を除き，労働者の人種，民族，社会的身分，門地，本籍，出身地そのほか社会的差別の原因となる恐れのある事項，思想，信条，進行，労働組合への加入・活動に関する個人情報，医療上の個人情報を収集してはならないとしている。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;&lt;a href=&quot;https://ikari-law.com/hanrei-12/2191/&quot;&gt;引用元&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;上記のような条項があります。おそらくこの「一定の場合」というのは労働者の同意があれば収集しても良い、ということだと考えます。&lt;/p&gt;
-&lt;p&gt;しかし、私はこのアカウント特定サービスが私の&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blue Triangle's Homepage's RSS Feed]]></title><description><![CDATA[Blue Triangleのホームページです。プロフィール、趣味、作品などを紹介しています。]]></description><link>https://aosankaku.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 20 May 2023 17:13:40 GMT</lastBuildDate><item><title><![CDATA[IFTTTでプロフィール画像が更新できなくなった]]></title><description><![CDATA[ある日突然、IFTTTでプロフィール画像が全く更新できなくなりました。 更新自体はできるんですが、プロフィール画像がこれになってしまうんです。 File not found ifttt 画像引用元：https://help.ifttt.com/hc/en-us/articles…]]></description><link>https://aosankaku.github.io/blog/profile_pic_update/</link><guid isPermaLink="false">https://aosankaku.github.io/blog/profile_pic_update/</guid><pubDate>Sun, 21 May 2023 03:00:00 GMT</pubDate><content:encoded>&lt;p&gt;ある日突然、IFTTTでプロフィール画像が全く更新できなくなりました。&lt;br&gt;
+更新自体はできるんですが、プロフィール画像がこれになってしまうんです。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://help.ifttt.com/hc/article_attachments/360041394694/no_image_card.png&quot; alt=&quot;File not found ifttt&quot;&gt;&lt;/p&gt;
+&lt;p&gt;画像引用元：&lt;a href=&quot;https://help.ifttt.com/hc/en-us/articles/115010361748-Why-is-there-a-File-not-found-image-on-my-post-&quot;&gt;https://help.ifttt.com/hc/en-us/articles/115010361748-Why-is-there-a-File-not-found-image-on-my-post-&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Google Driveから画像を引っ張ってきているのですが、「File not found」という画像になります。個性的っちゃ個性的ですが、真ん中を切り取るために真っ白けっけになります。あまりに没個性。&lt;/p&gt;
+&lt;p&gt;今回はこれを直していきます。&lt;/p&gt;
+&lt;h1&gt;発端&lt;/h1&gt;
+&lt;h2&gt;プロフィール画像を自動で更新したい！&lt;/h2&gt;
+&lt;p&gt;ありがたいことにプロフィール画像を複数の人に描いてもらうことができて、「どれか一つに決めるなんて私にはとても。。。。。。」という状態になっていました。&lt;/p&gt;
+&lt;p&gt;そういうわけで、自動的にプロフィール画像が変わるようにしました。これが2019年ぐらいの出来事です。懐かしい。&lt;/p&gt;
+&lt;blockquote class=&quot;twitter-tweet&quot;&gt;&lt;p lang=&quot;ja&quot; dir=&quot;ltr&quot;&gt;自動プロフィール画像更新 at April 28, 2019 at 12:01AM &lt;a href=&quot;https://twitter.com/hashtag/NewProfilePic?src=hash&amp;amp;ref_src=twsrc%5Etfw&quot;&gt;#NewProfilePic&lt;/a&gt; &lt;a href=&quot;https://twitter.com/hashtag/ifttt?src=hash&amp;amp;ref_src=twsrc%5Etfw&quot;&gt;#ifttt&lt;/a&gt;&lt;/p&gt;&amp;mdash; Blue Triangle+ (@Ao_Sankaku) &lt;a href=&quot;https://twitter.com/Ao_Sankaku/status/1122153743259262978?ref_src=twsrc%5Etfw&quot;&gt;April 27, 2019&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src=&quot;https://platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+&lt;p&gt;until検索をかけた感じでいうとおそらくこれが最古です。伝説の始まり。&lt;/p&gt;
+&lt;h2&gt;IFTTTとプロフィール画像更新&lt;/h2&gt;
+&lt;p&gt;ところで、世の中にはIFTTTという「サービスとサービスを繋げて自動化させてあげるヨ！」なサービスがあります。便利ですね。&lt;/p&gt;
+&lt;p&gt;しかし、&lt;a href=&quot;https://izuki.net/ifttt-upgrade/&quot;&gt;有料化がいきなり発表&lt;/a&gt;されました。しかも&lt;strong&gt;月10ドル&lt;/strong&gt;。青天の霹靂でした。&lt;/p&gt;
+&lt;p&gt;※現在は値下げ＆プランが分岐しており、一番高いプランで&lt;strong&gt;月5ドル&lt;/strong&gt;です。流石に利用者が少なかったのでしょうか（笑）&lt;/p&gt;
+&lt;p&gt;「無料だよ！！」とユーザーを引き込んでおきながらいきなり無料版ユーザーの首を絞める経営戦略は&lt;strong&gt;最低&lt;/strong&gt;だと思いますが、便利さには抗えず課金をして使い続けています。&lt;/p&gt;
+&lt;p&gt;プロフィール画像のアップデートは正常に動いています。つまり、問題部分は&lt;strong&gt;画像のURL&lt;/strong&gt;で間違いありません。&lt;/p&gt;
+&lt;p&gt;そうと分かれば早速直しにいきましょう。&lt;/p&gt;
+&lt;h2&gt;原因&lt;/h2&gt;
+&lt;p&gt;Google Driveで画像やファイルを共有すると、こんな見た目になります。&lt;/p&gt;
+&lt;pre class=&quot;grvsc-container github-light-theme grvsc-ps-t4tStz&quot; data-language=&quot;&quot; data-index=&quot;0&quot;&gt;&lt;code class=&quot;grvsc-code&quot;&gt;&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;https://drive.google.com/file/d/1234AbCd5678DeFg9012HiJk/view?usp=sharing&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;かつてはこのURLにリンクすればAPIが画像を返してくれていたようなのですが、現在は不可になっています。これが原因で画像を読み出せなくなっていたのですね。&lt;/p&gt;
+&lt;h2&gt;力技（画像の直リンクを取得する）&lt;/h2&gt;
+&lt;p&gt;ブラウザの開発者ツール（F12かCtrl+Shift+I押したら出てくるアレ）から無理やりURLを取得する方法です。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Google Driveを開く&lt;/li&gt;
+&lt;li&gt;フルサイズの画像を開く&lt;/li&gt;
+&lt;li&gt;F12を押す&lt;/li&gt;
+&lt;li&gt;画像の生URLゲット！&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;もちろんこの方法はよくありません。&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;個人的な思想信条&lt;/li&gt;
-&lt;li&gt;趣味や行動&lt;/li&gt;
-&lt;li&gt;交友関係&lt;/li&gt;
+&lt;li&gt;画像のURLが将来的に変わると取得できなくなる&lt;/li&gt;
+&lt;li&gt;めんどくさい&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;を、&lt;strong&gt;私への明示的な事前の許可なく&lt;/strong&gt;収集していることに対して大きな恐怖感を抱いております。&lt;/p&gt;
-&lt;p&gt;今一度、こういった職務能力に関係のない内容を収集し、選考過程に加えることが&lt;strong&gt;最悪の場合深刻な差別につながる&lt;/strong&gt;ことを、ぜひ認識していただきたく思います。こういった&lt;strong&gt;差別意識&lt;/strong&gt;のある会社に貢献する気は全くございませんので、ご承知おきください。&lt;/p&gt;
+&lt;p&gt;という欠点があります。&lt;/p&gt;
+&lt;p&gt;それとこのツイートを見てください。&lt;/p&gt;
+&lt;blockquote class=&quot;twitter-tweet&quot; data-conversation=&quot;none&quot; data-lang=&quot;ja&quot;&gt;&lt;p lang=&quot;ja&quot; dir=&quot;ltr&quot;&gt;IFTTTってやつで自動更新してるんだけど、なぞに画像の読み出しができなくなってめんどくさくなってきた &lt;a href=&quot;https://t.co/xQ7Cde3aDz&quot;&gt;pic.twitter.com/xQ7Cde3aDz&lt;/a&gt;&lt;/p&gt;&amp;mdash; Blue Triangle+ (@Ao_Sankaku) &lt;a href=&quot;https://twitter.com/Ao_Sankaku/status/1654813746328645632?ref_src=twsrc%5Etfw&quot;&gt;2023年5月6日&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src=&quot;https://platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+&lt;p&gt;&lt;strong&gt;URLが長すぎ&lt;/strong&gt;。これではメンテナンスが大変です。別の方法を考えましょう。&lt;/p&gt;
+&lt;h2&gt;解決へ&lt;/h2&gt;
+&lt;p&gt;そしてこのブログに行き着きました。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://3z1k.hatenablog.com/entry/2021/01/19/210000&quot;&gt;https://3z1k.hatenablog.com/entry/2021/01/19/210000&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;このサイトに変換ツールなるものがあり、ありがたく使わせてもらいました。&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 650px; &quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 57.668711656441715%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAMCAYAAABiDJ37AAAACXBIWXMAAA7DAAAOwwHHb6hkAAABsUlEQVR42qWS2XKcMBRE+YdUZkAbILSwmkVi85JUxfH/f1Kn0NSMHTsuP+ThVHOvWq0rIFrWBZN38N7h8ekB9w875mWGm2dMbkI/DPj1/Aw/e3z7fsYppjjFBKeEIiYfieq2Qdt1aNo2BDjv0LQ1JtdjGDt0dxXWzWGeR2irkEmBvEghMv4aRBkSyi6B/dCjqmsYa1FWVaDrS2x7g21rME4K21bj8ekOP36OWJYSy1phcgYiSyHSLISdExKImEhD41DKBBgXwRSTw0QDlKcglIdeQnmAMAHKL/5rYJjwmvyWU5wgJuR2pWs//of3tnZ9h2dCcONqIO82kM+D3hMlhIEcHNf4D46cMGGVt+jNiJTnIISDUvE15O/62JcLhZRLREaWSIUEZ9mnsDfPgucfYCwNQ6nMInp5+Y1t32HLGlIZaFNCafuqtgprpqygbYlMqkBe6ItKDVmYUB9fPXLOY9vv4ec5sKwr1m1HP4wYxgl+XoJOzmNyDpP3qNsuHFI3F82VQaEtmMgQyeI47cIxgdIG2lpksoAsNKTSEFke6sNjbIlCm1AXSgc9/mGeZiCM4w8l3U8EehOfkwAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;変換ツール&quot;
+        title=&quot;&quot;
+        src=&quot;/static/96e30aed6209c66f4dfa957ebedeaf66/a6d36/imgconvert.png&quot;
+        srcset=&quot;/static/96e30aed6209c66f4dfa957ebedeaf66/222b7/imgconvert.png 163w,
+/static/96e30aed6209c66f4dfa957ebedeaf66/ff46a/imgconvert.png 325w,
+/static/96e30aed6209c66f4dfa957ebedeaf66/a6d36/imgconvert.png 650w,
+/static/96e30aed6209c66f4dfa957ebedeaf66/63ec5/imgconvert.png 812w&quot;
+        sizes=&quot;(max-width: 650px) 100vw, 650px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;ここにGoogle Driveの共有用URLを貼り付けると、&lt;/p&gt;
+&lt;pre class=&quot;grvsc-container github-light-theme grvsc-ps-t4tStz&quot; data-language=&quot;html&quot; data-index=&quot;1&quot;&gt;&lt;code class=&quot;grvsc-code&quot;&gt;&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&lt;span class=&quot;grvsc-tiszgT-1 grvsc-t4tStz-1&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;grvsc-tiszgT-9 grvsc-t4tStz-3&quot;&gt;img&lt;/span&gt;&lt;span class=&quot;grvsc-tiszgT-1 grvsc-t4tStz-1&quot;&gt; &lt;/span&gt;&lt;span class=&quot;grvsc-tiszgT-10 grvsc-t4tStz-5&quot;&gt;src&lt;/span&gt;&lt;span class=&quot;grvsc-tiszgT-1 grvsc-t4tStz-1&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;grvsc-tiszgT-8 grvsc-t4tStz-10&quot;&gt;&amp;quot;https://drive.google.com/uc?id=1234AbCd5678DeFg9012HiJk&amp;quot;&lt;/span&gt;&lt;span class=&quot;grvsc-tiszgT-1 grvsc-t4tStz-1&quot;&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;のような感じで、変換してくれます。手動で変換するのは面倒だったので、素晴らしいツールです。&lt;/p&gt;
+&lt;p&gt;そしてこのURLをIFTTTに貼り付ければ…！&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 600px; &quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 85.88957055214723%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAARCAYAAADdRIy+AAAACXBIWXMAAA7DAAAOwwHHb6hkAAADxUlEQVR42p2SfUzUdRzHfxzc3e+ej4s7vCPk4e4gD48HnQssJVutWoYEWbaAmbIKZlPIkoUimIF5FgktKTGeDBlqS4snD3IQqdwBbroQA5kZ8tDWH1nm1uZe7Q5ja83N+m6ffb+fp/f383l/PkLG0zOkP/MDr+V6eX7dCE+kX2PTNi+vFE3wQuEvvPTWNHmlE+ys8lBQ+SO7G6Z4tWKal8umyC2/hqtumK7THg4dGybfNYRQ1ARr80u5PDLMmbOT5Baep7JyP+82XSVv1xBFB26wfhds3jNJTdt13u+ErQ1/UnAY9py8xezsDJNXx5mamWHwwihC1nZYlVaC51wvN//4nb6+Hmpq6kjb2MyHH1TQPThLZvk0G2puU3RkElftCfq9F2ntuULBsZvUe3/lS+8kJ9q+oaJ8N0LWXlj/Zitjo8P4zqmudtzfetn2Ti3tX31BTkUPW7bvp2ngN9YUt/JptQu3+xRXx0aobrvEPs8tDp69zr62QYqbOhGyam/zeskhmuuP09jST4+7m5auc5S9V427/zuyN+2gpaUZ10e1PPbcBmo/qaG3t48r4+NcHhuj3DPNx1+fobn/expOexFymybYWVpPzY4qqlpG6XBf4A1XLY3NrVQ3tFDX2MDwxUt0drRTVnWQvK1vM+D1MuQZoLJngOLzU+Rk57Bx3VpWP/Ukwov5JbgOd3P8yGaGR2/wWfc0Samrych4locfeZTkh1aSviaNzMxMklOWY7XZSVmRSnx8PHZnAokPprA4Lg5bTKzfJ5gWxHL08wP0nszm56mfaDjagSAEIQjCPYndZichMQmbzU6AROKzCSx1WCnbspyiQhsLI1T+wMDAwL8DCAgImJc5oLnb55eLIqKoQC6X+3MEi8VCVHQ0ljAjERGRREREI5NJ54HutdL5eJMpFIcjjvDwyDt3+H8G+gegr9SQEAMmYwiGYD1arQaz2YxOp8FkjiTEGEpYmAWj0Yhe7/Nr/W+1Wk1wcDA6nc5v12g0SKVSBK1WjzNhGQ7nMmz2RTji4lkU58TpjCd11ePEOhJY7ExkxcpUkpOTsVqtREVFkrRkCfaYGP/nFsv9aA0WgqQyhMAgORrDQvShDyCqDChUwUiCFCwwhxEVFYVU1BMo0xIWbiUxaSlGkxlBkMwN4F8tSxBEUUShEFGI8rmWNJo5XaFApw9GLpeh1hoQ1SakCgNylRG50nB3DlVqNYb7QlCpNCiVKgwGAzqdHp9doVTOrYR/NUSUSiWSO6t0V0AfmT5yZTK5n1QfoC/Rp/+fKf8FnbZ3yEqSPyEAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;変換ツール&quot;
+        title=&quot;&quot;
+        src=&quot;/static/4a16e4cf9364791773f520bc6062d65c/0a47e/twprofile.png&quot;
+        srcset=&quot;/static/4a16e4cf9364791773f520bc6062d65c/222b7/twprofile.png 163w,
+/static/4a16e4cf9364791773f520bc6062d65c/ff46a/twprofile.png 325w,
+/static/4a16e4cf9364791773f520bc6062d65c/0a47e/twprofile.png 600w&quot;
+        sizes=&quot;(max-width: 600px) 100vw, 600px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;大成功&lt;/strong&gt;。問題解決！&lt;/p&gt;
+&lt;p&gt;ところで、この画像URLに実際にアクセスしてみると&lt;strong&gt;とんでもない長さのURLにリダイレクトされます&lt;/strong&gt;。こちらももしかしたら将来使えなくなったり…？&lt;/p&gt;
+&lt;h2&gt;今気づいた&lt;/h2&gt;
+&lt;p&gt;ところで、IFTTTには課金プラン導入と同時に「フィルター」機能が実装されました。&lt;/p&gt;
+&lt;blockquote class=&quot;twitter-tweet&quot; data-conversation=&quot;none&quot;&gt;&lt;p lang=&quot;zxx&quot; dir=&quot;ltr&quot;&gt;&lt;a href=&quot;https://t.co/0vg1nlqT7m&quot;&gt;pic.twitter.com/0vg1nlqT7m&lt;/a&gt;&lt;/p&gt;&amp;mdash; Blue Triangle+ (@Ao_Sankaku) &lt;a href=&quot;https://twitter.com/Ao_Sankaku/status/1659902818583715841?ref_src=twsrc%5Etfw&quot;&gt;May 20, 2023&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src=&quot;https://platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+&lt;p&gt;これを使うと、「火曜日は実行しない」とか、「3で終わる日だけ実行する」とかができます。&lt;br&gt;
+&lt;strong&gt;変数の変換や操作もできます&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;あれ…？&lt;/p&gt;
+&lt;p&gt;画像の共有URLをこの形式に自動変換するスクリプトを組めばよかったのでは…？&lt;/p&gt;
+&lt;h2&gt;完全なる余談&lt;/h2&gt;
+&lt;p&gt;ブログにリンクを張ったときにカードが出るようにしたいです。見た目がいいので。そのうち実装します。&lt;/p&gt;
 &lt;style class=&quot;grvsc-styles&quot;&gt;
   .grvsc-container {
     overflow: auto;
@@ -108,7 +191,28 @@
     opacity: 0.7;
   }
   
-&lt;/style&gt;</content:encoded></item><item><title><![CDATA[【Minecraft】Fabric+Sodiumで鉱石を光らせる方法]]></title><description><![CDATA[ここは別にMinecraftのブログではないのですが、英語の情報すらほとんど出てこないので書いてみることにしました。それと単純にどこのサイトに書くか迷ったので、ここに書いてみることにしました。 Sodiumとは？  Sodiumの特徴 Sodiumは、Optifine…]]></description><link>https://aosankaku.github.io/blog/fabric_sodium_emissive_ores/</link><guid isPermaLink="false">https://aosankaku.github.io/blog/fabric_sodium_emissive_ores/</guid><pubDate>Wed, 29 Mar 2023 12:00:00 GMT</pubDate><content:encoded>&lt;p&gt;ここは別にMinecraftのブログではないのですが、英語の情報すらほとんど出てこないので書いてみることにしました。それと単純にどこのサイトに書くか迷ったので、ここに書いてみることにしました。&lt;/p&gt;
+  .github-light-theme {
+    background-color: #ffffff;
+    color: #000000;
+  }
+  .github-light-theme .grvsc-tiszgT-1 { color: #000000; }
+  .github-light-theme .grvsc-tiszgT-9 { color: #22863A; }
+  .github-light-theme .grvsc-tiszgT-10 { color: #6F42C1; }
+  .github-light-theme .grvsc-tiszgT-8 { color: #032F62; }
+  .github-light-theme .grvsc-line-highlighted::before {
+    background-color: var(--grvsc-line-highlighted-background-color, rgba(0, 0, 0, 0.05));
+    box-shadow: inset var(--grvsc-line-highlighted-border-width, 4px) 0 0 0 var(--grvsc-line-highlighted-border-color, rgba(0, 0, 0, 0.2));
+  }
+  body[data-theme=dark] .grvsc-ps-t4tStz { color: #ffffff; }
+  body[data-theme=dark] .grvsc-ps-t4tStz .grvsc-t4tStz-1 { color: #FFFFFF; }
+  body[data-theme=dark] .grvsc-ps-t4tStz .grvsc-t4tStz-3 { color: #66B5F6; }
+  body[data-theme=dark] .grvsc-ps-t4tStz .grvsc-t4tStz-5 { color: #BB97E7; }
+  body[data-theme=dark] .grvsc-ps-t4tStz .grvsc-t4tStz-10 { color: #9DCDF5; }
+  body[data-theme=dark] .grvsc-ps-t4tStz .grvsc-line-highlighted::before {
+    background-color: var(--grvsc-line-highlighted-background-color, rgba(0, 0, 0, 0.05));
+    box-shadow: inset var(--grvsc-line-highlighted-border-width, 4px) 0 0 0 var(--grvsc-line-highlighted-border-color, rgba(0, 0, 0, 0.2));
+  }
+&lt;/style&gt;</content:encoded></item><item><title><![CDATA[【Minecraft】Fabric+Sodiumで鉱石を光らせる方法]]></title><description><![CDATA[ここは別にMinecraftのブログではないのですが、英語の情報すらほとんど出てこないので書いてみることにしました。 Sodiumとは？  Sodiumの特徴 Sodiumは、Optifineよりも高パフォーマンスな軽量化MODです。Forge版はなく、Fabric…]]></description><link>https://aosankaku.github.io/blog/fabric_sodium_emissive_ores/</link><guid isPermaLink="false">https://aosankaku.github.io/blog/fabric_sodium_emissive_ores/</guid><pubDate>Wed, 29 Mar 2023 12:00:00 GMT</pubDate><content:encoded>&lt;p&gt;ここは別にMinecraftのブログではないのですが、英語の情報すらほとんど出てこないので書いてみることにしました。&lt;/p&gt;
 &lt;h1&gt;Sodiumとは？&lt;/h1&gt;
 &lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
@@ -170,8 +274,8 @@
 &lt;li&gt;鉱石を光らせるリソースパック&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;順に見ていきます。&lt;/p&gt;
-&lt;h2&gt;Sodium、Fabric APIの導入&lt;/h2&gt;
-&lt;p&gt;ググってください。この記事を見ている人でFabricとSodium入らない人いないと思います。&lt;/p&gt;
+&lt;h2&gt;Fabric API、Sodiumの導入&lt;/h2&gt;
+&lt;p&gt;ググってください。この記事を見ている人でFabric APIとSodium入らない人いないと思います。&lt;/p&gt;
 &lt;h2&gt;Indiumの導入&lt;/h2&gt;
 &lt;p&gt;Sodiumのアドオン（拡張）です。Sodiumが直接サポートしていない機能をサポートしています。&lt;/p&gt;
 &lt;p&gt;なお、あくまで拡張であるため&lt;strong&gt;Sodiumの導入は前提&lt;/strong&gt;です。入っていないと動かないので気をつけてください。&lt;/p&gt;
@@ -947,6 +1051,116 @@ Safariは検証環境がないので動かなかったら&lt;a href=&quot;https:
 &lt;p&gt;大学受験までになんか一つ作りたいです、クソゲーでいいので&lt;/p&gt;
 &lt;p&gt;Q.100 お疲れ様でした。最後に、何か一言。&lt;/p&gt;
 &lt;p&gt;(≧Д≦)ンアアアアアアアアーッ！&lt;/p&gt;
+&lt;style class=&quot;grvsc-styles&quot;&gt;
+  .grvsc-container {
+    overflow: auto;
+    position: relative;
+    -webkit-overflow-scrolling: touch;
+    padding-top: 1rem;
+    padding-top: var(--grvsc-padding-top, var(--grvsc-padding-v, 1rem));
+    padding-bottom: 1rem;
+    padding-bottom: var(--grvsc-padding-bottom, var(--grvsc-padding-v, 1rem));
+    border-radius: 8px;
+    border-radius: var(--grvsc-border-radius, 8px);
+    font-feature-settings: normal;
+    line-height: 1.4;
+  }
+  
+  .grvsc-code {
+    display: table;
+  }
+  
+  .grvsc-line {
+    display: table-row;
+    box-sizing: border-box;
+    width: 100%;
+    position: relative;
+  }
+  
+  .grvsc-line &gt; * {
+    position: relative;
+  }
+  
+  .grvsc-gutter-pad {
+    display: table-cell;
+    padding-left: 0.75rem;
+    padding-left: calc(var(--grvsc-padding-left, var(--grvsc-padding-h, 1.5rem)) / 2);
+  }
+  
+  .grvsc-gutter {
+    display: table-cell;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+  }
+  
+  .grvsc-gutter::before {
+    content: attr(data-content);
+  }
+  
+  .grvsc-source {
+    display: table-cell;
+    padding-left: 1.5rem;
+    padding-left: var(--grvsc-padding-left, var(--grvsc-padding-h, 1.5rem));
+    padding-right: 1.5rem;
+    padding-right: var(--grvsc-padding-right, var(--grvsc-padding-h, 1.5rem));
+  }
+  
+  .grvsc-source:empty::after {
+    content: &apos; &apos;;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+  }
+  
+  .grvsc-gutter + .grvsc-source {
+    padding-left: 0.75rem;
+    padding-left: calc(var(--grvsc-padding-left, var(--grvsc-padding-h, 1.5rem)) / 2);
+  }
+  
+  /* Line transformer styles */
+  
+  .grvsc-has-line-highlighting &gt; .grvsc-code &gt; .grvsc-line::before {
+    content: &apos; &apos;;
+    position: absolute;
+    width: 100%;
+  }
+  
+  .grvsc-line-diff-add::before {
+    background-color: var(--grvsc-line-diff-add-background-color, rgba(0, 255, 60, 0.2));
+  }
+  
+  .grvsc-line-diff-del::before {
+    background-color: var(--grvsc-line-diff-del-background-color, rgba(255, 0, 20, 0.2));
+  }
+  
+  .grvsc-line-number {
+    padding: 0 2px;
+    text-align: right;
+    opacity: 0.7;
+  }
+  
+&lt;/style&gt;</content:encoded></item><item><title><![CDATA[裏アカウント特定サービスに対する声明文]]></title><description><![CDATA[…]]></description><link>https://aosankaku.github.io/blog/s-toku/</link><guid isPermaLink="false">https://aosankaku.github.io/blog/s-toku/</guid><pubDate>Sat, 01 Jan 2000 03:00:00 GMT</pubDate><content:encoded>&lt;p&gt;昨今では、迷惑行為をインターネット上に掲載して「バズろう」と考える人が増加していることや、そうでなくても公衆の場で迷惑行為を行う動画をインターネット上に掲載するような人間が増えていることを背景に、様々な企業においても「裏アカウント特定サービス」を提供・利用なさっていることと思います。&lt;/p&gt;
+&lt;p&gt;結論から申し上げますと、私はこのサービスを使う企業を忌避し、すべての無断調査を拒否します。以下に理由を述べます。&lt;/p&gt;
+&lt;h1&gt;理由&lt;/h1&gt;
+&lt;p&gt;私の基本的な思想として、能力に基づく採用をしている企業様に貢献したいというものがあります。&lt;/p&gt;
+&lt;p&gt;企業様の中には、素行や問題のある発言がないかだけを確認しているだけという場合が多いと信じております。しかしながら、このような調査を依頼なさっている企業は、素行調査というよりもアカウントをとにかく知りたい、趣味を知りたい、どんな人と関わりがあるのかを知りたい…とまでいくと考えております。&lt;/p&gt;
+&lt;p&gt;そしてこういったものは、私の職務遂行能力には一切関係のないものであり、収集するのは&lt;strong&gt;プライベートの私に対して、意図的に危害を加える目的で行うストーキング行為&lt;/strong&gt;であると断言します。即刻おやめください。&lt;/p&gt;
+&lt;p&gt;職業によっては「どのような人と普段付き合っているか」「どんな話し方をするのか」というものは選考に入れる妥当性があると考えます。しかし、そうでない場合にこれらの情報を収集するのは明らかに過剰であると言わざるを得ません。&lt;/p&gt;
+&lt;p&gt;また、&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;・「労働者の個人情報保護に関する行動指針」では，使用者は，一定の場合を除き，労働者の人種，民族，社会的身分，門地，本籍，出身地そのほか社会的差別の原因となる恐れのある事項，思想，信条，進行，労働組合への加入・活動に関する個人情報，医療上の個人情報を収集してはならないとしている。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;a href=&quot;https://ikari-law.com/hanrei-12/2191/&quot;&gt;引用元&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;上記のような条項があります。おそらくこの「一定の場合」というのは労働者の同意があれば収集しても良い、ということだと考えます。&lt;/p&gt;
+&lt;p&gt;しかし、私はこのアカウント特定サービスが私の&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;個人的な思想信条&lt;/li&gt;
+&lt;li&gt;趣味や行動&lt;/li&gt;
+&lt;li&gt;交友関係&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;を、&lt;strong&gt;私への明示的な事前の許可なく&lt;/strong&gt;収集していることに対して大きな恐怖感を抱いております。&lt;/p&gt;
+&lt;p&gt;今一度、こういった職務能力に関係のない内容を収集し、選考過程に加えることが&lt;strong&gt;容易に深刻な差別につながる&lt;/strong&gt;ことを、ぜひ認識していただきたく思います。こういった&lt;strong&gt;差別意識&lt;/strong&gt;のある会社に貢献する気は全くございませんので、ご承知おきください。&lt;/p&gt;
 &lt;style class=&quot;grvsc-styles&quot;&gt;
   .grvsc-container {
     overflow: auto;

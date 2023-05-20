@@ -10,7 +10,7 @@ import { rhythm } from "Styles/typography"
 const Profile = () => {
   const data = useStaticQuery<Queries.Query>(graphql`
     query Profile {
-      allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/profile/" } }) {
+      allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/.*\/profile.md$/" } }) {
         edges {
           node {
             html
