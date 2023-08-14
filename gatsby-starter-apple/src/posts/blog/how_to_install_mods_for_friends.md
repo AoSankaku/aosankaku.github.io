@@ -3,7 +3,7 @@ title: "【Minecraft】楽にMODを入れる方法【Prism Launcher】"
 category: "Minecraft"
 date: "2023-08-12 21:00:00 +09:00"
 desc: "マイクラでMODを簡単に入れる方法を説明しています。"
-thumbnail: "./images/fabric_sodium_emissive_ores/thumbnail.png"
+thumbnail: "./images/how_to_install_mods_for_friends/thumbnail.png"
 alt: "nazo alt"
 ---
 
