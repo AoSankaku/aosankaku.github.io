@@ -114,6 +114,14 @@ const markdownPlugins = [
             linkImagesToOriginal: false,
           },
         },
+        /*
+        {
+          resolve: `gatsby-remark-link-unfurl`,
+          options: {
+            processedUrlsFile: `${__dirname}/link-cache/cache.json`,
+          },
+        },
+        */
       ],
     },
   },

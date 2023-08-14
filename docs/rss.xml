@@ -1,4 +1,455 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blue Triangle's Homepage's RSS Feed]]></title><description><![CDATA[Blue Triangleのホームページです。プロフィール、趣味、作品などを紹介しています。]]></description><link>https://aosankaku.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 20 May 2023 17:13:40 GMT</lastBuildDate><item><title><![CDATA[IFTTTでプロフィール画像が更新できなくなった]]></title><description><![CDATA[ある日突然、IFTTTでプロフィール画像が全く更新できなくなりました。 更新自体はできるんですが、プロフィール画像がこれになってしまうんです。 File not found ifttt 画像引用元：https://help.ifttt.com/hc/en-us/articles…]]></description><link>https://aosankaku.github.io/blog/profile_pic_update/</link><guid isPermaLink="false">https://aosankaku.github.io/blog/profile_pic_update/</guid><pubDate>Sun, 21 May 2023 03:00:00 GMT</pubDate><content:encoded>&lt;p&gt;ある日突然、IFTTTでプロフィール画像が全く更新できなくなりました。&lt;br&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blue Triangle's Homepage's RSS Feed]]></title><description><![CDATA[Blue Triangleのホームページです。プロフィール、趣味、作品などを紹介しています。]]></description><link>https://aosankaku.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 14 Aug 2023 13:42:23 GMT</lastBuildDate><item><title><![CDATA[【Minecraft】楽にMODを入れる方法【Prism Launcher】]]></title><description><![CDATA[概要 この記事ではMODを入れたことがない人向けに、MOD…]]></description><link>https://aosankaku.github.io/blog/how_to_install_mods_for_friends/</link><guid isPermaLink="false">https://aosankaku.github.io/blog/how_to_install_mods_for_friends/</guid><pubDate>Sat, 12 Aug 2023 12:00:00 GMT</pubDate><content:encoded>&lt;h1&gt;概要&lt;/h1&gt;
+&lt;p&gt;この記事ではMODを入れたことがない人向けに、MODを楽に入れる方法について説明しています。&lt;/p&gt;
+&lt;p&gt;「楽に」入れる方法に付いてのみ解説します。正攻法もありますが、面倒な上に非効率なので解説しません。（私もこの記事の書き方でしかやってません）&lt;/p&gt;
+&lt;p&gt;実は身内向け記事です。マイクラは持ってるけどMOD入れたことない、という人たちのために書きました。&lt;/p&gt;
+&lt;h2&gt;過去に「GDLauncherいいよ！！」と私に言われた人たちへ&lt;/h2&gt;
+&lt;p&gt;あのランチャーは以下の理由により、見限りました。必要なデータがなければアンインストールを推奨します。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;たまにデータが消える致命的なバグが有る&lt;/strong&gt;（これが一番危険な要素）&lt;/li&gt;
+&lt;li&gt;動作がなんか全体的に不安定&lt;/li&gt;
+&lt;li&gt;勝手にログアウトする不具合がある&lt;/li&gt;
+&lt;li&gt;マルチプレイ時に頻繁に認証に失敗する&lt;/li&gt;
+&lt;li&gt;ランチャーの起動が遅い&lt;/li&gt;
+&lt;li&gt;Modrinthに非対応（&lt;a href=&quot;https://github.com/gorilla-devs/GDLauncher/issues/768#issuecomment-886901324&quot;&gt;今後も対応予定なし&lt;/a&gt;）&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://gdlauncher.com/en/blog/curseforge-partnership-announcement/&quot;&gt;今後クローズドソースになり、広告がつく可能性がある&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;これだけのバグが有るにも関わらず、半年間更新がない&lt;/li&gt;
+&lt;li&gt;日本語非対応&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;一応今回紹介するランチャーと比べてGDLauncherが有利な点もあります。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;前提MODを勝手に入れてくれる（ただしバージョンが正確とは言ってない）&lt;/li&gt;
+&lt;li&gt;Javaを入れるのが楽&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;でも基本知識があれば対処できることばかりです。なので特にこのランチャーに拘る必要はないかな、と思います。&lt;/p&gt;
+&lt;h1&gt;MODの基礎知識&lt;/h1&gt;
+&lt;p&gt;「そもそもMODってなんだよ」という人向けに、簡単にMODの概要から説明します。&lt;br&gt;
+「Forge」と「Fabric」について知っている人は読み飛ばしてください。&lt;/p&gt;
+&lt;h2&gt;そもそも「MOD」とは&lt;/h2&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 512px; &quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 100%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAUABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAIDBP/EABcBAQEBAQAAAAAAAAAAAAAAAAABAgP/2gAMAwEAAhADEAAAAe/NOeeyCVmQB//EABsQAAIBBQAAAAAAAAAAAAAAAAABEQISICEi/9oACAEBAAEFAi7oqcD2Th//xAAWEQADAAAAAAAAAAAAAAAAAAARIFH/2gAIAQMBAT8BFT//xAAUEQEAAAAAAAAAAAAAAAAAAAAg/9oACAECAQE/AR//xAAXEAADAQAAAAAAAAAAAAAAAAAAAREw/9oACAEBAAY/AiPD/8QAGRABAAIDAAAAAAAAAAAAAAAAAQARECEx/9oACAEBAAE/IYcKnGkBawHZDSJef//aAAwDAQACAAMAAAAQNAi//8QAFxEBAQEBAAAAAAAAAAAAAAAAARAhQf/aAAgBAwEBPxDIPUJ//8QAFREBAQAAAAAAAAAAAAAAAAAAASD/2gAIAQIBAT8QEj//xAAbEAEAAgIDAAAAAAAAAAAAAAABABEQQSExUf/aAAgBAQABPxCDYGhuxwq0yvoI8oC+SkCXUAc5/9k=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;Alt text&quot;
+        title=&quot;&quot;
+        src=&quot;/static/a8f3f621c4ef2e29be042696e4109335/36dd4/hammer.jpg&quot;
+        srcset=&quot;/static/a8f3f621c4ef2e29be042696e4109335/d2f63/hammer.jpg 163w,
+/static/a8f3f621c4ef2e29be042696e4109335/c989d/hammer.jpg 325w,
+/static/a8f3f621c4ef2e29be042696e4109335/36dd4/hammer.jpg 512w&quot;
+        sizes=&quot;(max-width: 512px) 100vw, 512px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;もとは「Modification」という英単語から来ていて、広く「改造」を意味します。&lt;br&gt;
+つまり、MODは別に&lt;strong&gt;マイクラの専売特許ではありません&lt;/strong&gt;。&lt;br&gt;
+PCゲームが好きな人達の間ではゲームを改造して遊ぶのが一般的であり、総称してMODと呼びます。もちろん、ここではマイクラMODについて説明します。&lt;/p&gt;
+&lt;h2&gt;MOD Loaderという概念&lt;/h2&gt;
+&lt;p&gt;マイクラ（に限らず一般的なMOD）は、いくつかの理由があってそれぞれは直接ゲームをいじりません。「MODを入れるためのMOD」を介して、間接的にMODをいじります。&lt;br&gt;
+これを「&lt;strong&gt;モッドローダー&lt;/strong&gt;」と言います。「ビッグモーター」と響きがそっくりですね。&lt;/p&gt;
+&lt;p&gt;マイクラのMODローダーには大きく2種類あります。&lt;/p&gt;
+&lt;h3&gt;Forge&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;https://avatars.githubusercontent.com/u/1390178?s=200&amp;#x26;v=4&quot; alt=&quot;Forge Logo&quot;&gt;&lt;/p&gt;
+&lt;p&gt;言わずとしれた有名にして元祖MODローダーです。かなり昔のバージョンから存在しています。&lt;/p&gt;
+&lt;p&gt;かつてはForgeしかありませんでした。ゆえに、すべてのMODはForge向けだったのですが、ある日「Forge開発遅すぎィ！」という理由から他のMODローダーが爆誕しました。それがFabricです。&lt;/p&gt;
+&lt;h3&gt;Fabric&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/github/explore/dc35ab4a9426f588b2689d76cb3ec43af019380e/topics/fabricmc/fabricmc.png&quot; alt=&quot;Fabric Logo&quot;&gt;&lt;/p&gt;
+&lt;p&gt;「軽く、別バージョンへの移植が速い」という特徴を持ったMODローダーです。&lt;br&gt;
+比較的最近に出たため、1.14～しか対応していません。&lt;/p&gt;
+&lt;h3&gt;互換性&lt;/h3&gt;
+&lt;p&gt;ForgeとFabricは互換性がありません。&lt;br&gt;
+つまり、「Forgeで動くMODはFabricで動かないし、Fabricで動くMODはForgeで動かない」ということです。&lt;/p&gt;
+&lt;p&gt;たまに例外はあります。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;制作者が両方向けを開発している&lt;/li&gt;
+&lt;li&gt;特殊技術により、一つのMODファイルでどっちでも読み込めるようになっている&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;こういうときは使用できます。ありがたく使わせていただきましょう。&lt;/p&gt;
+&lt;p&gt;ただし、これは逆に言えば「Forge版しかないMOD」や「Fabric版しかないMOD」も、それなりの数で存在するということです。&lt;/p&gt;
+&lt;h3&gt;おすすめは？&lt;/h3&gt;
+&lt;p&gt;結論から言えば、使い分けてください。&lt;br&gt;
+同時に合体させて使用することはできませんが、2つともインストールして使い分けることはできます。&lt;/p&gt;
+&lt;p&gt;それでも個人的なおすすめは、&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;どうしても入れたいMODがある？
+&lt;ul&gt;
+&lt;li&gt;はい→そのMODの対応するMODローダー&lt;/li&gt;
+&lt;li&gt;いいえ→バージョンは？
+&lt;ul&gt;
+&lt;li&gt;1.16.3以降→Fabric&lt;/li&gt;
+&lt;li&gt;1.16.2以前→Forge&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;です。&lt;/p&gt;
+&lt;h3&gt;なぜおすすめの切れ目が1.16.3？&lt;/h3&gt;
+&lt;p&gt;Sodiumという優秀な軽量化MODが使える最小バージョンがそれだからです。&lt;br&gt;
+軽量化MODといえばOptifineが有名ですが、この軽量化MODはその2倍以上の性能を発揮します。とんでもないですね。&lt;/p&gt;
+&lt;h3&gt;そのMODローダーはどうやって入れるのさ？&lt;/h3&gt;
+&lt;p&gt;この説明は省略します。なぜなら、これから入れてもらうソフトにはForgeとFabricが勝手をインストールする機能を内包しているからです。&lt;/p&gt;
+&lt;p&gt;手動で入れたい人はググってください。なお、入れてもこれから下に書く作業は特に楽になりませんので注意してください。&lt;/p&gt;
+&lt;h3&gt;「前提MOD」について&lt;/h3&gt;
+&lt;p&gt;MODは同じ人が何度も同じ処理を書くことを忌み嫌って、または他の人が開発した優秀なライブラリを使用したいと思って、前提MODを設定することがあります。&lt;/p&gt;
+&lt;p&gt;前提MODは &lt;strong&gt;入れなければそのMODが動きません&lt;/strong&gt; 。&lt;/p&gt;
+&lt;p&gt;例えば、Sodiumという軽量化MODの拡張機能であるIndiumなどをSodiumなしで入れようとすると、以下の警告が出ます。&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 650px; &quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 60.122699386503065%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAMCAYAAABiDJ37AAAACXBIWXMAAA7DAAAOwwHHb6hkAAABPklEQVR42q1Sa2vCUAy9//+3TT+MfZi4Pu6797al1traKnpGMiuTgXRg4JCQNicnyRWpspDKI5MW1peomu4OZQMy5ZDkBlIXyJWHMgGh3CFUN5Q7rotVi/ePT4hktYKPEc45hrUOeZ5zTD7LMnwlKYwxP3nvcTweMQw3cDzgfD5zrXDaQCmFJEm4QGuNpmkwjiOW2vV6Ze+9h2h2LXefCeu6xjhO6LoO+/0eh8OB/Yy+7/8QXi4X9sZaiL4fmJlGk1LyqDFGlGWJqqr425wjFEXBeYrbtsU0TXdCHpkUkMLNZoM0TZl4u92yYgLF836JLITAnmqImPZ3V2gsBC2YErSz0+nEoK6zn39+Zg8jU4clS3+GB4V0+iVFSwjtb4WvIIy1h6An8ioLoYCgqzrnobXhy/0Plp+alIrxtlrjG53JmJFScpykAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;Incompatible Mod Set Error&quot;
+        title=&quot;&quot;
+        src=&quot;/static/ae2c9c88452c3fcb701df3ac704b4270/a6d36/incompatibility-error.png&quot;
+        srcset=&quot;/static/ae2c9c88452c3fcb701df3ac704b4270/222b7/incompatibility-error.png 163w,
+/static/ae2c9c88452c3fcb701df3ac704b4270/ff46a/incompatibility-error.png 325w,
+/static/ae2c9c88452c3fcb701df3ac704b4270/a6d36/incompatibility-error.png 650w,
+/static/ae2c9c88452c3fcb701df3ac704b4270/321ea/incompatibility-error.png 786w&quot;
+        sizes=&quot;(max-width: 650px) 100vw, 650px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;上の「A potential solution...」が解決法です（言語設定を日本語にすれば、ちゃんと日本語になります）。下の「Unmet Dependency Listing:」が問題の起きたMODになります。&lt;br&gt;
+上にあるMODを導入するか、下にあるMODを消すかのどちらかでこのエラーは解消します。&lt;/p&gt;
+&lt;p&gt;なお、前提MODの必要ないMODも多く存在します。&lt;/p&gt;
+&lt;h1&gt;MODの入手方法&lt;/h1&gt;
+&lt;p&gt;MODは基本的に配布サイトから保存することで入手します。&lt;/p&gt;
+&lt;h2&gt;配布サイト&lt;/h2&gt;
+&lt;p&gt;以下の2つが有名です。&lt;/p&gt;
+&lt;h3&gt;CurseForge&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;https://gist.githubusercontent.com/thecodewarrior/110057b210551c4ecf2c9be6d58ff824/raw/38748511ca1eb5677f009092fb3fcd71cc76cdf0/logo.png&quot; alt=&quot;CurseForge Logo&quot;&gt;&lt;/p&gt;
+&lt;p&gt;元祖配布サイトです。&lt;/p&gt;
+&lt;p&gt;注意してほしいのは、名前に「Forge」が入っているからと言って &lt;strong&gt;Forge用MOD専用サイトではない&lt;/strong&gt; ことです。&lt;br&gt;
+Fabric用のMODも普通にあります。&lt;/p&gt;
+&lt;p&gt;このサイトにMODを消されるなどして、運営方針に嫌気が差した人はModrinthに引っ越しています。&lt;/p&gt;
+&lt;h3&gt;Modrinth&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;https://media.beehiiv.com/cdn-cgi/image/format=auto,width=800,height=421,fit=scale-down,onerror=redirect/uploads/publication/thumbnail/a49f8e1b-3835-4ea1-a85b-118c6425ebc3/landscape_1667087426098458.png&quot; alt=&quot;Modrinth Logo&quot;&gt;&lt;/p&gt;
+&lt;p&gt;ここ2、3年で人気が出てきた配布サイトです。&lt;br&gt;
+このサイトにもForge用MODとFabric用MODの両方があります。&lt;/p&gt;
+&lt;h3&gt;注意&lt;/h3&gt;
+&lt;p&gt;基本的に、 &lt;strong&gt;この2つのサイト以外からMODを入れてはいけません&lt;/strong&gt; 。&lt;br&gt;
+いくつか理由はあります。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;無断転載である可能性が高い&lt;/li&gt;
+&lt;li&gt;ウィルスな可能性がある&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;CurseForgeやModrinthには掲載にあたり審査があります。&lt;/p&gt;
+&lt;p&gt;ちなみに、審査があると言っても100％ウィルスの混入を防げるわけではありません。&lt;strong&gt;MODは全て自己責任&lt;/strong&gt;です。それを踏まえた上で読み進めてください。&lt;/p&gt;
+&lt;p&gt;ちなみに、ごく少ない例外もあります。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Optifineは専用サイトでしか入手できません（CurseForgeにもModrinthにもありません）。&lt;/li&gt;
+&lt;li&gt;Cocricot（オシャンティーな家具MOD）も同様です。&lt;/li&gt;
+&lt;li&gt;一部のシェーダー（影MOD）は、配布主のサイトにしかないことがあります。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;Prism Launcherの入れ方&lt;/h1&gt;
+&lt;p&gt;&lt;img src=&quot;https://avatars.githubusercontent.com/u/116031705?s=200&amp;#x26;v=4&quot; alt=&quot;Prism Launcher Logo&quot;&gt;&lt;/p&gt;
+&lt;h2&gt;Prism Launcherって誰だよ&lt;/h2&gt;
+&lt;p&gt;マイクラJava版にはランチャーというものがあります。簡単に言うと「マイクラ起動装置」ですね。&lt;/p&gt;
+&lt;p&gt;マイクラの公式ランチャーは、基本的にマイクラを改造しない人―つまりMODを入れない人―向けに設計してあります。&lt;br&gt;
+MODを入れたデータと入れないデータを分けるためには、フォルダーを手動でコピーしなければなりません。相当面倒ですよね。&lt;/p&gt;
+&lt;p&gt;これを解決すべく生まれたのが「非公式ランチャー」です。非公式なのでMicrosoftやその他マイクラに関係する公式からのサポートは一切受けていませんが、MODを入れるのに最適な機能が多く入っています。&lt;/p&gt;
+&lt;h2&gt;インストールはどうやるの？&lt;/h2&gt;
+&lt;p&gt;画像を貼って説明するのが面倒なので、以下の動画を参考に進めてください。&lt;/p&gt;
+&lt;div&gt;&lt;div style=&quot;text-align:center;&quot;&gt;&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/UPxsCiMVaFE&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;リンクと注意点、その他動画で触れていないところだけいくつか挙げておきます。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3&gt;スペック足りる？&lt;/h3&gt;
+&lt;p&gt;こればかりは一度起動してみないとわかりませんが、Sodiumがかなり優秀なのでそれだけで快適に動作する可能性はあります。&lt;br&gt;
+5年前に買ったi3のノートPCとかじゃなければ大丈夫じゃないですか？&lt;/p&gt;
+&lt;h3&gt;必要な容量は？&lt;/h3&gt;
+&lt;p&gt;Prism Launcher自体は超軽いです。ただし、MODを入れまくったマイクラで、調子に乗ってマップを探索しまくると容量が膨れ上がります。MODで遊び尽くしたい人はパソコンの容量にも目を向けましょう。&lt;br&gt;
+マルチをするだけであれば、MODの容量もたかが知れているので対して確保する必要はありません。&lt;/p&gt;
+&lt;h3&gt;Mac/Linuxでもいける？&lt;/h3&gt;
+&lt;p&gt;いけます。Chromebookは無理です。&lt;/p&gt;
+&lt;h3&gt;日本語対応してる？&lt;/h3&gt;
+&lt;p&gt;全部じゃないけど9割方対応してるっぽいです🗾&lt;/p&gt;
+&lt;h3&gt;Prism Launcherのダウンロードサイトはどこ？&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&quot;https://prismlauncher.org/&quot;&gt;https://prismlauncher.org/&lt;/a&gt;
+です。&lt;/p&gt;
+&lt;h3&gt;Javaはどこから入れるの？&lt;/h3&gt;
+&lt;p&gt;以下のサイトから入れてください。事情がなければ「64bit」版を入れましょう。&lt;/p&gt;
+&lt;p&gt;なお、両方入れても支障はありません。&lt;/p&gt;
+&lt;h4&gt;Java 8（1.12.2など古いバージョンを遊ぶ可能性がある人）&lt;/h4&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.java.com/en/download/&quot;&gt;https://www.java.com/en/download/&lt;/a&gt;
+なぜこのURLからJava 8が入手できるのかは私もわかりません。&lt;/p&gt;
+&lt;h4&gt;Java 17（最新版に近いバージョンを遊ぶ可能性がある人）&lt;/h4&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html&quot;&gt;https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;Javaのデフォルトは8と17のどっちがいいの？&lt;/h3&gt;
+&lt;p&gt;好みですが、17が個人的にはおすすめです。&lt;/p&gt;
+&lt;h3&gt;「インスタンス」って何？&lt;/h3&gt;
+&lt;p&gt;「起動構成」とほぼ同じ意味です。&lt;br&gt;
+インスタンスごとに、データはフォルダーごと分けてあり、そのインスタンスを消去したりワールドを増やす/消すなどしても他のインスタンスに影響が及ばないようになっています。便利。&lt;/p&gt;
+&lt;p&gt;なお、バニラのマイクラランチャーでは起動構成を変えてもフォルダーは（手動で変更しない限り）変わりません。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1&gt;MODマルチプレイの基礎&lt;/h1&gt;
+&lt;p&gt;MODを入れたマルチプレイ、やりたいですよね。&lt;br&gt;
+簡易的なやり方を紹介します。&lt;/p&gt;
+&lt;h2&gt;前提知識&lt;/h2&gt;
+&lt;h3&gt;クライアントMOD&lt;/h3&gt;
+&lt;p&gt;「ゲスト側で完結するMOD」の総称です。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;軽量化系MOD全般&lt;/li&gt;
+&lt;li&gt;影MOD（シェーダー）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;などが該当します。&lt;/p&gt;
+&lt;h3&gt;サーバーMOD&lt;/h3&gt;
+&lt;p&gt;これは「マルチをするときに、サーバー（ホスト）とゲストの両方に導入が必須」なMODのことです。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;アイテム、ブロック、MOBを追加するMOD&lt;/li&gt;
+&lt;li&gt;その他マイクラの動作を変えるMOD全般&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;などが該当します。&lt;/p&gt;
+&lt;p&gt;つまり、MODを入れたマルチプレイをするためには&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;すべてのサーバーMODを&lt;/li&gt;
+&lt;li&gt;バージョンを全員で揃え&lt;/li&gt;
+&lt;li&gt;1つも抜けないように入れる&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;事が必要になります。&lt;/p&gt;
+&lt;h2&gt;MODを簡単に共有する方法&lt;/h2&gt;
+&lt;p&gt;でもいちいち「MODとバージョン」を伝えて、リストにして、それを一つずつ入れてもらう作業を参加者全員にやってもらうのはあまりにめんどくさいものがあります。&lt;/p&gt;
+&lt;p&gt;そこで2つの解決法があります。&lt;/p&gt;
+&lt;h3&gt;ModPack&lt;/h3&gt;
+&lt;p&gt;MODの寄せ集めリストです。リストを共有すれば、これを元に勝手にMODを入れてきてくれます。&lt;/p&gt;
+&lt;p&gt;ただし、これには重大な欠点があり、MOD配布プラットフォームから消えた（消された）MODはエラーになり、手動で入れる必要があります。&lt;/p&gt;
+&lt;h3&gt;Zipファイル共有&lt;/h3&gt;
+&lt;p&gt;Prism Launcherは今のインスタンスをzipファイルに出力できます。&lt;br&gt;
+バックアップにも役立ちます。&lt;/p&gt;
+&lt;p&gt;これを配布すればMODごと共有できるのですが、以下の点に注意してください。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;MODの再配布になる
+&lt;ul&gt;
+&lt;li&gt;MODはリストにならず、そのまま配布されます。二次配布を禁止しているMODもありますので、気をつけましょう。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;セーブデータを取り除かないと、ワールドごと配布される&lt;/li&gt;
+&lt;li&gt;サーバーデータを取り除かないと、入っているサーバーごと配布される&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;マルチができるようになるMOD&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;https://images.essential.gg/general/social-960.jpg&quot; alt=&quot;Essential Logo&quot;&gt;&lt;/p&gt;
+&lt;p&gt;EssentialというMODがあります。これを導入すると、サーバーを立てなくてもマルチができます。&lt;br&gt;
+詳しくは以下の動画を見てください。&lt;/p&gt;
+&lt;div&gt;&lt;div style=&quot;text-align:center;&quot;&gt;&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/bEtqq_DiNQc&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;ちなみにこの動画ではForge版を入れていますが、Fabric版もあります。&lt;/p&gt;
+&lt;h1&gt;トラブルが起きたときは&lt;/h1&gt;
+&lt;p&gt;以下に起きそうなトラブルをまとめておきました。困ったときに読んでください。&lt;/p&gt;
+&lt;p&gt;ただし、MODはそもそも自己責任なため、基本的にはググる習慣をつけておくと幸せになると思います。&lt;/p&gt;
+&lt;h2&gt;Prism Launcherでマイクラが起動しない&lt;/h2&gt;
+&lt;p&gt;Javaのバージョンを間違えていませんか？現代のマイクラはめんどくさいことに、バージョンごとにJavaを変更しなければいけません。バニラランチャーでは自動で切り替えてくれますが、PrismLauncherはなぜか切り替えてくれません。めんどくさい。&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;マイクラバージョン&lt;/th&gt;
+&lt;th&gt;推奨Javaバージョン&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;1.7.10～1.16.5&lt;/td&gt;
+&lt;td&gt;Java8またはJava11&lt;br&gt;※Java8とJava11は互換性がある&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;1.17～1.17.1&lt;/td&gt;
+&lt;td&gt;Java16&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;1.18～&lt;/td&gt;
+&lt;td&gt;Java17&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;引用元：&lt;a href=&quot;https://mcpoteton.com/mcserver/java-version-about&quot;&gt;https://mcpoteton.com/mcserver/java-version-about&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;この表の通りバージョンを切り替える必要があります。&lt;/p&gt;
+&lt;h2&gt;MOD関係のマルウェアの情報ってどこで知るの？&lt;/h2&gt;
+&lt;p&gt;Prism Launcherを起動したとき、下にニュースが出るようになっています。&lt;br&gt;
+以下のような単語があった場合、MOD界隈でセキュリティ関係の問題が発生しています。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Vulnerability（脆弱性）&lt;/li&gt;
+&lt;li&gt;Warning（警告）&lt;/li&gt;
+&lt;li&gt;Malware（マルウェア）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;幸いにしてMOD配布プラットフォームが適正に審査をしてくれているので、こういう騒動は頻繁には起きません。&lt;br&gt;
+しかし、直近では今年の6月に自己拡散型のマルウェアが発覚したりしています。&lt;br&gt;
+自己防衛を怠らないようにしましょう。&lt;/p&gt;
+&lt;h2&gt;ModPack入れようとしたらエラーが出て入らないんだけど？&lt;/h2&gt;
+&lt;p&gt;ModPackは実は中身はただのZipファイルなことが多いです。つまり、中身を覗いてMODだけ拝借できればどういうわけかModPackが読み込めなくても普通に導入できます。&lt;/p&gt;
+&lt;h2&gt;CurseForgeにもModrinthにもないMODを入れたい！&lt;/h2&gt;
+&lt;h2&gt;パソコンを買い変える/初期化するので、データを引っ越したい&lt;/h2&gt;
+&lt;p&gt;まず、マイクラの主要なファイルとフォルダーのリストは以下です。MODがフォルダーを作ることもあるため、同じ構造になっているとは限りません。&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;名前&lt;/th&gt;
+&lt;th&gt;種類&lt;/th&gt;
+&lt;th&gt;説明&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;config&lt;/td&gt;
+&lt;td&gt;フォルダー&lt;/td&gt;
+&lt;td&gt;MODの設定が入っています。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;logs&lt;/td&gt;
+&lt;td&gt;フォルダー&lt;/td&gt;
+&lt;td&gt;マイクラのログが入っています。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;mods&lt;/td&gt;
+&lt;td&gt;フォルダー&lt;/td&gt;
+&lt;td&gt;MODが入っています。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;resourcepacks&lt;/td&gt;
+&lt;td&gt;フォルダー&lt;/td&gt;
+&lt;td&gt;リソースパック（テクスチャなど）が入っています。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;saves&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;フォルダー&lt;/td&gt;
+&lt;td&gt;ワールドのセーブデータが入っています。これが最重要フォルダーです。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;screenshots&lt;/td&gt;
+&lt;td&gt;フォルダー&lt;/td&gt;
+&lt;td&gt;スクショが入っています。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;shaderpacks&lt;/td&gt;
+&lt;td&gt;フォルダー&lt;/td&gt;
+&lt;td&gt;シェーダー（影MOD用）パックが入っています。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;options.txt&lt;/td&gt;
+&lt;td&gt;ファイル&lt;/td&gt;
+&lt;td&gt;マイクラの設定が入っています。MODの設定はconfigに入っています。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;servers.dat&lt;/td&gt;
+&lt;td&gt;ファイル&lt;/td&gt;
+&lt;td&gt;多分サーバーが入っています。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;「data」とかいう名前のフォルダーは一見重要そうに見えますが、別に消えても構いません。多分。&lt;/p&gt;
+&lt;p&gt;データを移動させるときは、これらのフォルダーごと引っ越せば大丈夫です。というか、バラバラに管理するよりも&lt;code&gt;C:\Users\YourUserName\AppData\Roaming\PrismLauncher\instances&lt;/code&gt;をまるごと圧縮してコピーしたほうが安心だと思います。&lt;/p&gt;
+&lt;h3&gt;注記&lt;/h3&gt;
+&lt;p&gt;このサイトにあるクレジットなしの画像は、転載が許可されているか、またはこのホームページのサーバー上にない画像です。画像の著作権は、原則としてそれぞれの配信元または元サイトの掲載者に属します。&lt;/p&gt;
+&lt;h3&gt;余談&lt;/h3&gt;
+&lt;p&gt;上にある「ディレクトリ構造」のやつですが、ScrollHintを使いたいんですよね。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://appleple.github.io/scroll-hint/&quot;&gt;https://appleple.github.io/scroll-hint/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;上の表はMarkdown文法で書いているんですが、これに&lt;code&gt;&amp;#x3C;div class=&quot;js-scrollable&quot;&gt;&lt;/code&gt;をかけると表ではなく文字の羅列になってエライことになってしまいます。&lt;/p&gt;
+&lt;p&gt;ここのMarkdownには最悪HTMLをベタ書きできるのですが、それは面白くない。なにかいい方法はないものか…と模索中です。&lt;br&gt;
+普通に検索して「gatsby-transformer-remarkでmarkdownから生成したtableが横長だったときにscrollhintを自動的に適用する方法」なんて出てくるわけないんですよ。よかったら助けてください。&lt;/p&gt;
+&lt;p&gt;それと、上みたいにリンクをベタ貼りしたときもリンクじゃなくてブログカードで表示するようにしたいです。これは改造するしかないんですかね？&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://note.shironekoworks.com/gatsby-simple-blog-card/&quot;&gt;https://note.shironekoworks.com/gatsby-simple-blog-card/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;神記事を発見しました。でも動きません。ぴえん。&lt;/p&gt;
+&lt;p&gt;他に、ZennやQiitaで見かける「警告」「注意」「情報」エリアも欲しいですね。&lt;/p&gt;
+&lt;style class=&quot;grvsc-styles&quot;&gt;
+  .grvsc-container {
+    overflow: auto;
+    position: relative;
+    -webkit-overflow-scrolling: touch;
+    padding-top: 1rem;
+    padding-top: var(--grvsc-padding-top, var(--grvsc-padding-v, 1rem));
+    padding-bottom: 1rem;
+    padding-bottom: var(--grvsc-padding-bottom, var(--grvsc-padding-v, 1rem));
+    border-radius: 8px;
+    border-radius: var(--grvsc-border-radius, 8px);
+    font-feature-settings: normal;
+    line-height: 1.4;
+  }
+  
+  .grvsc-code {
+    display: table;
+  }
+  
+  .grvsc-line {
+    display: table-row;
+    box-sizing: border-box;
+    width: 100%;
+    position: relative;
+  }
+  
+  .grvsc-line &gt; * {
+    position: relative;
+  }
+  
+  .grvsc-gutter-pad {
+    display: table-cell;
+    padding-left: 0.75rem;
+    padding-left: calc(var(--grvsc-padding-left, var(--grvsc-padding-h, 1.5rem)) / 2);
+  }
+  
+  .grvsc-gutter {
+    display: table-cell;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+  }
+  
+  .grvsc-gutter::before {
+    content: attr(data-content);
+  }
+  
+  .grvsc-source {
+    display: table-cell;
+    padding-left: 1.5rem;
+    padding-left: var(--grvsc-padding-left, var(--grvsc-padding-h, 1.5rem));
+    padding-right: 1.5rem;
+    padding-right: var(--grvsc-padding-right, var(--grvsc-padding-h, 1.5rem));
+  }
+  
+  .grvsc-source:empty::after {
+    content: &apos; &apos;;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+  }
+  
+  .grvsc-gutter + .grvsc-source {
+    padding-left: 0.75rem;
+    padding-left: calc(var(--grvsc-padding-left, var(--grvsc-padding-h, 1.5rem)) / 2);
+  }
+  
+  /* Line transformer styles */
+  
+  .grvsc-has-line-highlighting &gt; .grvsc-code &gt; .grvsc-line::before {
+    content: &apos; &apos;;
+    position: absolute;
+    width: 100%;
+  }
+  
+  .grvsc-line-diff-add::before {
+    background-color: var(--grvsc-line-diff-add-background-color, rgba(0, 255, 60, 0.2));
+  }
+  
+  .grvsc-line-diff-del::before {
+    background-color: var(--grvsc-line-diff-del-background-color, rgba(255, 0, 20, 0.2));
+  }
+  
+  .grvsc-line-number {
+    padding: 0 2px;
+    text-align: right;
+    opacity: 0.7;
+  }
+  
+&lt;/style&gt;</content:encoded></item><item><title><![CDATA[IFTTTでプロフィール画像が更新できなくなった]]></title><description><![CDATA[ある日突然、IFTTTでプロフィール画像が全く更新できなくなりました。 更新自体はできるんですが、プロフィール画像がこれになってしまうんです。 File not found ifttt 画像引用元：https://help.ifttt.com/hc/en-us/articles…]]></description><link>https://aosankaku.github.io/blog/profile_pic_update/</link><guid isPermaLink="false">https://aosankaku.github.io/blog/profile_pic_update/</guid><pubDate>Sun, 21 May 2023 03:00:00 GMT</pubDate><content:encoded>&lt;p&gt;ある日突然、IFTTTでプロフィール画像が全く更新できなくなりました。&lt;br&gt;
 更新自体はできるんですが、プロフィール画像がこれになってしまうんです。&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;https://help.ifttt.com/hc/article_attachments/360041394694/no_image_card.png&quot; alt=&quot;File not found ifttt&quot;&gt;&lt;/p&gt;
 &lt;p&gt;画像引用元：&lt;a href=&quot;https://help.ifttt.com/hc/en-us/articles/115010361748-Why-is-there-a-File-not-found-image-on-my-post-&quot;&gt;https://help.ifttt.com/hc/en-us/articles/115010361748-Why-is-there-a-File-not-found-image-on-my-post-&lt;/a&gt;&lt;/p&gt;

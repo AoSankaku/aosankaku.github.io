@@ -44,6 +44,7 @@ const Markdown = styled.article<{ rhythm: typeof typography["rhythm"] }>`
   h1 {
     font-size: 2.5rem;
     line-height: 1.8;
+    margin: 20px 0px 10px;
 
     @media (max-width: ${({ theme }) => theme.device.sm}) {
       font-size: 2rem;
@@ -178,6 +179,32 @@ const Markdown = styled.article<{ rhythm: typeof typography["rhythm"] }>`
     margin: 0;
     font-size: 85%;
     border-radius: 3px;
+  }
+
+  table {
+    :extend(js-scrollable);
+    display: block;
+    padding: 10px;
+    margin: 30px 0px;
+    white-space: nowrap;
+    overflow-x: auto;
+    ScrollHint;
+  }
+
+  th {
+    padding: 12px 20px;
+    border-bottom: 1px solid;
+    font-weight: bold;
+  }
+
+  td {
+    padding: 12px 20px;
+    word-break: break-word;
+  }
+
+  strong {
+    color: var(--color-strong);
+    //text-decoration: underline;
   }
 `
 

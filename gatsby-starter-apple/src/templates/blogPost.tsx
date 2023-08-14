@@ -10,6 +10,16 @@ import Category from "Styles/category"
 import DateTime from "Styles/dateTime"
 import Markdown from "Styles/markdown"
 
+/*
+import ScrollHint from "scroll-hint"
+
+new ScrollHint('.js-scrollable', {
+  i18n: {
+    scrollable: 'スクロールできます'
+  }
+});
+*/
+
 const BlogPost: React.FC<PageProps<Queries.Query>> = ({ data }) => {
   const { markdownRemark } = data
   const { frontmatter, html } = markdownRemark!

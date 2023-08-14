@@ -90,6 +90,7 @@ const GlobalStyle = createGlobalStyle`
       --color-floating-button-shadow-hover: rgba(0, 0, 0, 0.4);
       --color-blue: #0066cc;
       --color-icon: #2c2c2c;
+      --color-strong: #ff6a00;
     }
 
     body.dark {
@@ -125,6 +126,7 @@ const GlobalStyle = createGlobalStyle`
       --color-floating-button-shadow-hover: rgba(0, 0, 0, 0.4);
       --color-blue: #70b7ff;
       --color-icon: #d1d1d1;
+      --color-strong: #ffc41f;
     }
   }
 
