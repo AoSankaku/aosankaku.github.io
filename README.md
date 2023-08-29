@@ -4,3 +4,6 @@ ReactとGatsbyで動かしてるのでサックサクです
 よかったら見てね
 
 ## https://aosankaku.github.io
+
+# どんな事が書いてある？
+マイクラとかGithubでの活動などを雑多に書いています。

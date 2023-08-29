@@ -93,7 +93,7 @@ Sodiumという優秀な軽量化MODが使える最小バージョンがそれ�
 軽量化MODといえばOptifineが有名ですが、この軽量化MODはその2倍以上の性能を発揮します。とんでもないですね。
 
 ### そのMODローダーはどうやって入れるのさ？
-この説明は省略します。なぜなら、これから入れてもらうソフトにはForgeとFabricが勝手をインストールする機能を内包しているからです。
+この説明は省略します。これから入れてもらうソフトはForgeとFabricの両方を勝手にインストールしてくれるからです。
 
 手動で入れたい人はググってください。なお、入れてもこれから下に書く作業は特に楽になりませんので注意してください。
 
@@ -165,7 +165,7 @@ MODを入れたデータと入れないデータを分けるためには、フ�
 
 画像を貼って説明するのが面倒なので、以下の動画を参考に進めてください。
 
-<div><div style="text-align:center;"><iframe width="560" height="315" src="https://www.youtube.com/embed/UPxsCiMVaFE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div></div>
+<div><div style="text-align:center;"><iframe width="100%" height="315" src="https://www.youtube.com/embed/UPxsCiMVaFE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div></div>
 
 リンクと注意点、その他動画で触れていないところだけいくつか挙げておきます。
 
@@ -260,7 +260,7 @@ Prism Launcherは今のインスタンスをzipファイルに出力できます
 EssentialというMODがあります。これを導入すると、サーバーを立てなくてもマルチができます。  
 詳しくは以下の動画を見てください。
 
-<div><div style="text-align:center;"><iframe width="560" height="315" src="https://www.youtube.com/embed/bEtqq_DiNQc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div></div>
+<div><div style="text-align:center;"><iframe width="100%" height="315" src="https://www.youtube.com/embed/bEtqq_DiNQc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div></div>
 
 ちなみにこの動画ではForge版を入れていますが、Fabric版もあります。
 

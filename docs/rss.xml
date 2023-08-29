@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blue Triangle's Homepage's RSS Feed]]></title><description><![CDATA[Blue Triangleのホームページです。プロフィール、趣味、作品などを紹介しています。]]></description><link>https://aosankaku.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 14 Aug 2023 14:02:52 GMT</lastBuildDate><item><title><![CDATA[【Minecraft】楽にMODを入れる方法【Prism Launcher】]]></title><description><![CDATA[概要 この記事ではMODを入れたことがない人向けに、MOD…]]></description><link>https://aosankaku.github.io/blog/how_to_install_mods_for_friends/</link><guid isPermaLink="false">https://aosankaku.github.io/blog/how_to_install_mods_for_friends/</guid><pubDate>Sat, 12 Aug 2023 12:00:00 GMT</pubDate><content:encoded>&lt;h1&gt;概要&lt;/h1&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blue Triangle's Homepage's RSS Feed]]></title><description><![CDATA[Blue Triangleのホームページです。プロフィール、趣味、作品などを紹介しています。]]></description><link>https://aosankaku.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 29 Aug 2023 19:12:07 GMT</lastBuildDate><item><title><![CDATA[【Minecraft】楽にMODを入れる方法【Prism Launcher】]]></title><description><![CDATA[概要 この記事ではMODを入れたことがない人向けに、MOD…]]></description><link>https://aosankaku.github.io/blog/how_to_install_mods_for_friends/</link><guid isPermaLink="false">https://aosankaku.github.io/blog/how_to_install_mods_for_friends/</guid><pubDate>Sat, 12 Aug 2023 12:00:00 GMT</pubDate><content:encoded>&lt;h1&gt;概要&lt;/h1&gt;
 &lt;p&gt;この記事ではMODを入れたことがない人向けに、MODを楽に入れる方法について説明しています。&lt;/p&gt;
 &lt;p&gt;「楽に」入れる方法に付いてのみ解説します。正攻法もありますが、面倒な上に非効率なので解説しません。（私もこの記事の書き方でしかやってません）&lt;/p&gt;
 &lt;p&gt;実は身内向け記事です。マイクラは持ってるけどMOD入れたことない、という人たちのために書きました。&lt;/p&gt;
@@ -94,7 +94,7 @@ PCゲームが好きな人達の間ではゲームを改造して遊ぶのが一
 &lt;p&gt;Sodiumという優秀な軽量化MODが使える最小バージョンがそれだからです。&lt;br&gt;
 軽量化MODといえばOptifineが有名ですが、この軽量化MODはその2倍以上の性能を発揮します。とんでもないですね。&lt;/p&gt;
 &lt;h3&gt;そのMODローダーはどうやって入れるのさ？&lt;/h3&gt;
-&lt;p&gt;この説明は省略します。なぜなら、これから入れてもらうソフトにはForgeとFabricが勝手をインストールする機能を内包しているからです。&lt;/p&gt;
+&lt;p&gt;この説明は省略します。これから入れてもらうソフトはForgeとFabricの両方を勝手にインストールしてくれるからです。&lt;/p&gt;
 &lt;p&gt;手動で入れたい人はググってください。なお、入れてもこれから下に書く作業は特に楽になりませんので注意してください。&lt;/p&gt;
 &lt;h3&gt;「前提MOD」について&lt;/h3&gt;
 &lt;p&gt;MODは同じ人が何度も同じ処理を書くことを忌み嫌って、または他の人が開発した優秀なライブラリを使用したいと思って、前提MODを設定することがあります。&lt;/p&gt;
@@ -164,7 +164,7 @@ MODを入れたデータと入れないデータを分けるためには、フ�
 &lt;p&gt;これを解決すべく生まれたのが「非公式ランチャー」です。非公式なのでMicrosoftやその他マイクラに関係する公式からのサポートは一切受けていませんが、MODを入れるのに最適な機能が多く入っています。&lt;/p&gt;
 &lt;h2&gt;インストールはどうやるの？&lt;/h2&gt;
 &lt;p&gt;画像を貼って説明するのが面倒なので、以下の動画を参考に進めてください。&lt;/p&gt;
-&lt;div&gt;&lt;div style=&quot;text-align:center;&quot;&gt;&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/UPxsCiMVaFE&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;div&gt;&lt;div style=&quot;text-align:center;&quot;&gt;&lt;iframe width=&quot;100%&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/UPxsCiMVaFE&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;p&gt;リンクと注意点、その他動画で触れていないところだけいくつか挙げておきます。&lt;/p&gt;
 &lt;hr&gt;
 &lt;h3&gt;スペック足りる？&lt;/h3&gt;
@@ -243,7 +243,7 @@ MODを入れたデータと入れないデータを分けるためには、フ�
 &lt;p&gt;&lt;img src=&quot;https://images.essential.gg/general/social-960.jpg&quot; alt=&quot;Essential Logo&quot;&gt;&lt;/p&gt;
 &lt;p&gt;EssentialというMODがあります。これを導入すると、サーバーを立てなくてもマルチができます。&lt;br&gt;
 詳しくは以下の動画を見てください。&lt;/p&gt;
-&lt;div&gt;&lt;div style=&quot;text-align:center;&quot;&gt;&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/bEtqq_DiNQc&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;div&gt;&lt;div style=&quot;text-align:center;&quot;&gt;&lt;iframe width=&quot;100%&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/bEtqq_DiNQc&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;p&gt;ちなみにこの動画ではForge版を入れていますが、Fabric版もあります。&lt;/p&gt;
 &lt;h1&gt;トラブルが起きたときは&lt;/h1&gt;
 &lt;p&gt;以下に起きそうなトラブルをまとめておきました。困ったときに読んでください。&lt;/p&gt;
