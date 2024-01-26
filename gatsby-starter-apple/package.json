@@ -19,7 +19,7 @@
   },
   "dependencies": {
     "dark-theme-github": "github:remorses/dark-github-theme",
-    "gatsby": "^5.0.0-next.16",
+    "gatsby": "^5.13.3",
     "gatsby-plugin-feed": "^5.0.0-next.4",
     "gatsby-plugin-image": "^3.0.0-next.5",
     "gatsby-plugin-manifest": "^5.0.0-next.4",

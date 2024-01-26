@@ -1,4 +1,264 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blue Triangle's Homepage's RSS Feed]]></title><description><![CDATA[Blue Triangleのホームページです。プロフィール、趣味、作品などを紹介しています。]]></description><link>https://aosankaku.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 29 Aug 2023 19:12:07 GMT</lastBuildDate><item><title><![CDATA[【Minecraft】楽にMODを入れる方法【Prism Launcher】]]></title><description><![CDATA[概要 この記事ではMODを入れたことがない人向けに、MOD…]]></description><link>https://aosankaku.github.io/blog/how_to_install_mods_for_friends/</link><guid isPermaLink="false">https://aosankaku.github.io/blog/how_to_install_mods_for_friends/</guid><pubDate>Sat, 12 Aug 2023 12:00:00 GMT</pubDate><content:encoded>&lt;h1&gt;概要&lt;/h1&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blue Triangle's Homepage's RSS Feed]]></title><description><![CDATA[Blue Triangleのホームページです。プロフィール、趣味、作品などを紹介しています。]]></description><link>https://aosankaku.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 26 Jan 2024 08:32:18 GMT</lastBuildDate><item><title><![CDATA[【Minecraft】マイクラサーバーでDiscordに通知を送るスクリプトを作りました]]></title><description><![CDATA[嘘つきました。正確には作っていません。超大幅な改良を加えました。 簡単に使えるサーバー通知BOT…]]></description><link>https://aosankaku.github.io/blog/mcpynotify/</link><guid isPermaLink="false">https://aosankaku.github.io/blog/mcpynotify/</guid><pubDate>Thu, 21 Sep 2023 03:00:00 GMT</pubDate><content:encoded>&lt;p&gt;嘘つきました。正確には作っていません。超大幅な改良を加えました。&lt;/p&gt;
+&lt;h1&gt;簡単に使えるサーバー通知BOTがほしい！&lt;/h1&gt;
+&lt;h2&gt;サーバー参加者のモチベの問題&lt;/h2&gt;
+&lt;p&gt;最近、訳あってマイクラサーバーを開いたり閉じたりしています。&lt;/p&gt;
+&lt;p&gt;参加者視点では、「今サーバーに人がいるのかどうか」というのは結構重要だったりします。やっぱり人がいるときのほうが「行きてえなあ…行きましょうよ」ってなりやすいですからね。しょうがないですね。&lt;/p&gt;
+&lt;p&gt;しかし当然のことながら、マイクラサーバー自体にはそういう通知をしてくれる機能などありません。プラグインならあります。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.spigotmc.org/resources/discordsrv.18494/&quot;&gt;https://www.spigotmc.org/resources/discordsrv.18494/&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;要件&lt;/h2&gt;
+&lt;p&gt;技術の選定に当たり、以下を重視しました。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;batまたはshでないこと
+&lt;ul&gt;
+&lt;li&gt;単純にUbuntuとWindowsで交互に互換性がありません。基本的にはUbuntuで動かすとは思いますが、デバッグの容易さや個人が自宅でポート開放して小さいサーバーを開く状況を考えると、OSに依存せず動かせるものが理想です。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;バニラ、Forge、Fabric、プラグインサーバーのいずれでもうごく普遍的（ユニバーサル）で独立（スタンドアロン）なスクリプトであること
+&lt;ul&gt;
+&lt;li&gt;BOTではこれは不可能です。また、BOT作成の手間も結構あります。正直言って小規模サーバーを作るためだけにBOTを作成するのは結構だるいです。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Webhookを使用すること
+&lt;ul&gt;
+&lt;li&gt;これができるとDiscordでの通知が簡単になります。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;方法&lt;/h2&gt;
+&lt;p&gt;しかし、いくつかの方法で取得することはできそうです。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;マイクラサーバーの標準出力を受け取り、それを元に処理を行う&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;ブログを書いている今思いついたアイデアなのですが、&lt;a href=&quot;https://qiita.com/yutake27/items/033155608d64eac0adc2&quot;&gt;ありました&lt;/a&gt;。&lt;/li&gt;
+&lt;li&gt;こっちで作ってみてもいいかもしれない…というかこっちのほうが断然簡単じゃない？あーしくった……😫&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol start=&quot;2&quot;&gt;
+&lt;li&gt;マイクラ標準のログを利用する&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;マイクラは「latest.log」というファイルを都度出力します。これを監視して通知に加工してやろう、という算段です。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;今回は2番を採用しました。まじでなんで1じゃなくてこっちを改造したんだろう。馬鹿じゃん。&lt;/p&gt;
+&lt;h2&gt;あった&lt;/h2&gt;
+&lt;p&gt;ひとまず「Discord minecraft サーバー 通知」とか、そんな感じで適当なキーワードで検索したら出てきました。コレです。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://qiita.com/somakai_sumasi/items/6dc76c5eaabe53c8118e&quot;&gt;https://qiita.com/somakai_sumasi/items/6dc76c5eaabe53c8118e&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/somakai-sumasi/Send-Minecraft-notifications&quot;&gt;https://github.com/somakai-sumasi/Send-Minecraft-notifications&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;しかし、大量のバグや問題点がありました。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;latest.logは1行ずつ更新するとは限らないため、複数行更新すると一気に意味がわからなくなる&lt;/li&gt;
+&lt;li&gt;サーバーの起動、閉鎖に関するログが流れなかった&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;README.md&lt;/code&gt;が充実していないために、使い方がPythonを知らないとよくわからない&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;ということで、これを超大規模改修して、実用に足る水準まで上げました。&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 650px; &quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 126.38036809815951%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAZCAYAAAAxFw7TAAAACXBIWXMAAA7DAAAOwwHHb6hkAAAEqUlEQVQ4y3WVyYtcZRTF6z8QccgIxnSS7nR3ddfwqt48z/VevRq6qofqTpMQyWAUXEjEje7EATEixE0QQXQrLuNCFy4EXaqIW1e69R/4yffFLrpoXFze48F3vnPuuee+2uFOQp4FOEFOkpU4XkKS5Ux37hFldzFtD9tNaHcMNptdGi11Xs22tvAuqubFDpFrMwxjkqwiS0uqwZQ0r2T1B1OG413ipMS0A1qKPq8jkCNgCbi20aGrGOTFGLeaUM5uMJ3dIMn6JPmA8WSPoj/G8WKyYii/226EajjUN9tz1kegtWZDpela3Et0Pr68yoPlq2y7EW5S4oqDuoPtxvhhJhm6foJmuBiWTxDl8tsCw8ZGFyVzeDjq8s/Tz/HT0hJ74x3y/hZR3JMH+9WUajgl7Q0kSwEi2lOUY3nZQg/rTRXPtPhc7/Dn86d4vLJKsX1AllUE0RNWoodZb4Bph5KxMEhcpJseStdclFxf79CwTa5nJh9cWeVuQ8FNCvwgx3JSecALUlmij6J/HdXC9RL8IJPyFxgeTGMGpc9u6POGbvOKojHIemzPXiVMbmG7AbaXohkemuFIVgJQuCwMEbXQQz+yEXXb6fLO1TrvLa8y9WOSahvXL6QJfijYRgRxThgX8l1IFqCNtrowPrXZOKLo+cxCn9cMh9Lyiaohk+kdwvQ2hu1iuYmUK+RLkJY6Z3ZiDt3QoRi4fFU0+PvZ0/xy4QI3tw8YbR+Q94ZkvSG9/hbTnWuMxrtESYklBrytLSRnbsrKikLTt3i3UPj51Dl+PXOGt5odovGUJE7l/Ik49gcTeuWYtDckjHvSDJGeIOqh6e6ccS10LUzbwnR9AjvA12xi2yXtzbDcGR3VoKM60ogjeS3lyVOMj6ijNkjA63spxV7G+5nFj5dX+KzZZjg7ZHf3FknvEMsJKP/LtmATp3000yNKClmC6XGna8trbZqGxduawuOz5/l0eUUmIExyXC+Qch0vwgsy2b+y2pKRs72YrmYvGCMZTvo+UeiR2hH7bkhgeoRJxmjrNl70EqpuoVvBguTjUo87LAEHQ5+4F/GR0uGP8+d5tL5JuX3AeLRHEA2Ik4IwKeUsemEmZebFiDTr4/qxHPTmMcdraxtdWi2Vb5Yu8fvZc7y52UALc3Qvou0EtHSRDlceNGyRmkgCixaEUS4vEMMvBr2rWdTWmypqU+XbCxf57fRp7m+2aPgpd9brfHHxRT5cWSVwQxTVotM1pVSla8ghV1RzLl+0pN01qAWOhWWYTDSHlw2bUHfougGH0RbX1SH9ZhtVc2i0Neqbyjy/x38FR8mRkvf3UqY7AQ+TJl8vLfNgs8Xe7gGTa/fwq5s4aUmcDRiMduTouH6Kbrgn3J2bsrahoAcej/oxP19a5oelS9zvmuTjHar+gKIcyZQII8ReFCmxnFDKPO7uHHBzo40R57x+4xb3DYd93aHqb8n/iViqRX+LfjWRmRYMj5bE//716hsqfmzwZbLKX089w/dXrjCZXZcrX7AR+RVyy2oiHRUb/DjgCYbrGyphbPJJpfDd2Rd4uFannO7LtIioif0XpU+WQJoPJLAYE8G01dFPAP8LjE50QC6zcpEAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;screenshot&quot;
+        title=&quot;screenshot&quot;
+        src=&quot;/static/330e3b5b7edd38d5e95c1714f5806617/a6d36/image.png&quot;
+        srcset=&quot;/static/330e3b5b7edd38d5e95c1714f5806617/222b7/image.png 163w,
+/static/330e3b5b7edd38d5e95c1714f5806617/ff46a/image.png 325w,
+/static/330e3b5b7edd38d5e95c1714f5806617/a6d36/image.png 650w,
+/static/330e3b5b7edd38d5e95c1714f5806617/295bd/image.png 667w&quot;
+        sizes=&quot;(max-width: 650px) 100vw, 650px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;実用するとこんな感じです。中々でしょう？&lt;/p&gt;
+&lt;h2&gt;内容&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/AoSankaku/Send-Minecraft-notifications#send-minecraft-notifications%E6%97%A5%E6%9C%AC%E8%AA%9E%E8%AA%AC%E6%98%8E&quot;&gt;https://github.com/AoSankaku/Send-Minecraft-notifications#send-minecraft-notifications%E6%97%A5%E6%9C%AC%E8%AA%9E%E8%AA%AC%E6%98%8E&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;ここにすべてを置いてきました。使い方から変更点まですべて書いてあります。つまりこの記事はただの宣伝用です。ハハハハ。&lt;/p&gt;
+&lt;style class=&quot;grvsc-styles&quot;&gt;
+  .grvsc-container {
+    overflow: auto;
+    position: relative;
+    -webkit-overflow-scrolling: touch;
+    padding-top: 1rem;
+    padding-top: var(--grvsc-padding-top, var(--grvsc-padding-v, 1rem));
+    padding-bottom: 1rem;
+    padding-bottom: var(--grvsc-padding-bottom, var(--grvsc-padding-v, 1rem));
+    border-radius: 8px;
+    border-radius: var(--grvsc-border-radius, 8px);
+    font-feature-settings: normal;
+    line-height: 1.4;
+  }
+  
+  .grvsc-code {
+    display: table;
+  }
+  
+  .grvsc-line {
+    display: table-row;
+    box-sizing: border-box;
+    width: 100%;
+    position: relative;
+  }
+  
+  .grvsc-line &gt; * {
+    position: relative;
+  }
+  
+  .grvsc-gutter-pad {
+    display: table-cell;
+    padding-left: 0.75rem;
+    padding-left: calc(var(--grvsc-padding-left, var(--grvsc-padding-h, 1.5rem)) / 2);
+  }
+  
+  .grvsc-gutter {
+    display: table-cell;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+  }
+  
+  .grvsc-gutter::before {
+    content: attr(data-content);
+  }
+  
+  .grvsc-source {
+    display: table-cell;
+    padding-left: 1.5rem;
+    padding-left: var(--grvsc-padding-left, var(--grvsc-padding-h, 1.5rem));
+    padding-right: 1.5rem;
+    padding-right: var(--grvsc-padding-right, var(--grvsc-padding-h, 1.5rem));
+  }
+  
+  .grvsc-source:empty::after {
+    content: &apos; &apos;;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+  }
+  
+  .grvsc-gutter + .grvsc-source {
+    padding-left: 0.75rem;
+    padding-left: calc(var(--grvsc-padding-left, var(--grvsc-padding-h, 1.5rem)) / 2);
+  }
+  
+  /* Line transformer styles */
+  
+  .grvsc-has-line-highlighting &gt; .grvsc-code &gt; .grvsc-line::before {
+    content: &apos; &apos;;
+    position: absolute;
+    width: 100%;
+  }
+  
+  .grvsc-line-diff-add::before {
+    background-color: var(--grvsc-line-diff-add-background-color, rgba(0, 255, 60, 0.2));
+  }
+  
+  .grvsc-line-diff-del::before {
+    background-color: var(--grvsc-line-diff-del-background-color, rgba(255, 0, 20, 0.2));
+  }
+  
+  .grvsc-line-number {
+    padding: 0 2px;
+    text-align: right;
+    opacity: 0.7;
+  }
+  
+&lt;/style&gt;</content:encoded></item><item><title><![CDATA[【配布あり】Botaniaの種をコンポスターに入れる方法【Minecraft 1.19.2対応】]]></title><description><![CDATA[Botania、使ってますか？ このMODは鉱石を農地で育てられるという、ゲームバランスを容易に破壊する威力を持ったMODです。]]></description><link>https://aosankaku.github.io/blog/botania_compost/</link><guid isPermaLink="false">https://aosankaku.github.io/blog/botania_compost/</guid><pubDate>Fri, 01 Sep 2023 03:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Botania、使ってますか？&lt;/p&gt;
+&lt;p&gt;このMODは鉱石を農地で育てられるという、ゲームバランスを容易に破壊する威力を持ったMODです。&lt;/p&gt;
+&lt;style class=&quot;grvsc-styles&quot;&gt;
+  .grvsc-container {
+    overflow: auto;
+    position: relative;
+    -webkit-overflow-scrolling: touch;
+    padding-top: 1rem;
+    padding-top: var(--grvsc-padding-top, var(--grvsc-padding-v, 1rem));
+    padding-bottom: 1rem;
+    padding-bottom: var(--grvsc-padding-bottom, var(--grvsc-padding-v, 1rem));
+    border-radius: 8px;
+    border-radius: var(--grvsc-border-radius, 8px);
+    font-feature-settings: normal;
+    line-height: 1.4;
+  }
+  
+  .grvsc-code {
+    display: table;
+  }
+  
+  .grvsc-line {
+    display: table-row;
+    box-sizing: border-box;
+    width: 100%;
+    position: relative;
+  }
+  
+  .grvsc-line &gt; * {
+    position: relative;
+  }
+  
+  .grvsc-gutter-pad {
+    display: table-cell;
+    padding-left: 0.75rem;
+    padding-left: calc(var(--grvsc-padding-left, var(--grvsc-padding-h, 1.5rem)) / 2);
+  }
+  
+  .grvsc-gutter {
+    display: table-cell;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+  }
+  
+  .grvsc-gutter::before {
+    content: attr(data-content);
+  }
+  
+  .grvsc-source {
+    display: table-cell;
+    padding-left: 1.5rem;
+    padding-left: var(--grvsc-padding-left, var(--grvsc-padding-h, 1.5rem));
+    padding-right: 1.5rem;
+    padding-right: var(--grvsc-padding-right, var(--grvsc-padding-h, 1.5rem));
+  }
+  
+  .grvsc-source:empty::after {
+    content: &apos; &apos;;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+  }
+  
+  .grvsc-gutter + .grvsc-source {
+    padding-left: 0.75rem;
+    padding-left: calc(var(--grvsc-padding-left, var(--grvsc-padding-h, 1.5rem)) / 2);
+  }
+  
+  /* Line transformer styles */
+  
+  .grvsc-has-line-highlighting &gt; .grvsc-code &gt; .grvsc-line::before {
+    content: &apos; &apos;;
+    position: absolute;
+    width: 100%;
+  }
+  
+  .grvsc-line-diff-add::before {
+    background-color: var(--grvsc-line-diff-add-background-color, rgba(0, 255, 60, 0.2));
+  }
+  
+  .grvsc-line-diff-del::before {
+    background-color: var(--grvsc-line-diff-del-background-color, rgba(255, 0, 20, 0.2));
+  }
+  
+  .grvsc-line-number {
+    padding: 0 2px;
+    text-align: right;
+    opacity: 0.7;
+  }
+  
+&lt;/style&gt;</content:encoded></item><item><title><![CDATA[【Minecraft】楽にMODを入れる方法【Prism Launcher】]]></title><description><![CDATA[概要 この記事ではMODを入れたことがない人向けに、MOD…]]></description><link>https://aosankaku.github.io/blog/how_to_install_mods_for_friends/</link><guid isPermaLink="false">https://aosankaku.github.io/blog/how_to_install_mods_for_friends/</guid><pubDate>Sat, 12 Aug 2023 12:00:00 GMT</pubDate><content:encoded>&lt;h1&gt;概要&lt;/h1&gt;
 &lt;p&gt;この記事ではMODを入れたことがない人向けに、MODを楽に入れる方法について説明しています。&lt;/p&gt;
 &lt;p&gt;「楽に」入れる方法に付いてのみ解説します。正攻法もありますが、面倒な上に非効率なので解説しません。（私もこの記事の書き方でしかやってません）&lt;/p&gt;
 &lt;p&gt;実は身内向け記事です。マイクラは持ってるけどMOD入れたことない、という人たちのために書きました。&lt;/p&gt;
@@ -36,7 +296,7 @@
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;Alt text&quot;
-        title=&quot;&quot;
+        title=&quot;Alt text&quot;
         src=&quot;/static/a8f3f621c4ef2e29be042696e4109335/36dd4/hammer.jpg&quot;
         srcset=&quot;/static/a8f3f621c4ef2e29be042696e4109335/d2f63/hammer.jpg 163w,
 /static/a8f3f621c4ef2e29be042696e4109335/c989d/hammer.jpg 325w,
@@ -106,12 +366,12 @@ PCゲームが好きな人達の間ではゲームを改造して遊ぶのが一
     &gt;
       &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 60.122699386503065%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAMCAYAAABiDJ37AAAACXBIWXMAAA7DAAAOwwHHb6hkAAABPklEQVR42q1Sa2vCUAy9//+3TT+MfZi4Pu6797al1traKnpGMiuTgXRg4JCQNicnyRWpspDKI5MW1peomu4OZQMy5ZDkBlIXyJWHMgGh3CFUN5Q7rotVi/ePT4hktYKPEc45hrUOeZ5zTD7LMnwlKYwxP3nvcTweMQw3cDzgfD5zrXDaQCmFJEm4QGuNpmkwjiOW2vV6Ze+9h2h2LXefCeu6xjhO6LoO+/0eh8OB/Yy+7/8QXi4X9sZaiL4fmJlGk1LyqDFGlGWJqqr425wjFEXBeYrbtsU0TXdCHpkUkMLNZoM0TZl4u92yYgLF836JLITAnmqImPZ3V2gsBC2YErSz0+nEoK6zn39+Zg8jU4clS3+GB4V0+iVFSwjtb4WvIIy1h6An8ioLoYCgqzrnobXhy/0Plp+alIrxtlrjG53JmJFScpykAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+    style=&quot;padding-bottom: 60.122699386503065%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAMCAYAAABiDJ37AAAACXBIWXMAAA7DAAAOwwHHb6hkAAABJ0lEQVQoz62SiWrDMAyG/f5P1lcIcRIfiR3nWLLm6kH7D4m6gzFoNir4sSTkTxK2yHUJbT0KXaF0LbqPCd0woR8mmCpwXhaWa5RxULZGaEc03YjwkA89Kt/B1T1EejjANw2cc6yqqqCUYl9rDa0UsjznvDEGznms64Zt+13C2RLWWmRZxiDyh2HA6XTCf0wM4ydPE4Ft2zJsmiYcj0fM88xnFMU/7X6/PyWWZUEIAUVR8Iq0GsVN0zDce88NY66ua85THDe53W5PsKCOdClJEuR5zmApJU9MStOUgVRDMIISjBoTeF1XBj2ByyNxPp9xvV5xuVzYj2fs/soilFfeU/xK3xM+gHsu7ZGY5zcD6TO+04SUGb+isZY/9d9UQikNbQzSVPK3+wLrb5twGktVqQAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;Incompatible Mod Set Error&quot;
-        title=&quot;&quot;
+        title=&quot;Incompatible Mod Set Error&quot;
         src=&quot;/static/ae2c9c88452c3fcb701df3ac704b4270/a6d36/incompatibility-error.png&quot;
         srcset=&quot;/static/ae2c9c88452c3fcb701df3ac704b4270/222b7/incompatibility-error.png 163w,
 /static/ae2c9c88452c3fcb701df3ac704b4270/ff46a/incompatibility-error.png 325w,
@@ -499,12 +759,12 @@ MODを入れたデータと入れないデータを分けるためには、フ�
     &gt;
       &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 57.668711656441715%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAMCAYAAABiDJ37AAAACXBIWXMAAA7DAAAOwwHHb6hkAAABsUlEQVR42qWS2XKcMBRE+YdUZkAbILSwmkVi85JUxfH/f1Kn0NSMHTsuP+ThVHOvWq0rIFrWBZN38N7h8ekB9w875mWGm2dMbkI/DPj1/Aw/e3z7fsYppjjFBKeEIiYfieq2Qdt1aNo2BDjv0LQ1JtdjGDt0dxXWzWGeR2irkEmBvEghMv4aRBkSyi6B/dCjqmsYa1FWVaDrS2x7g21rME4K21bj8ekOP36OWJYSy1phcgYiSyHSLISdExKImEhD41DKBBgXwRSTw0QDlKcglIdeQnmAMAHKL/5rYJjwmvyWU5wgJuR2pWs//of3tnZ9h2dCcONqIO82kM+D3hMlhIEcHNf4D46cMGGVt+jNiJTnIISDUvE15O/62JcLhZRLREaWSIUEZ9mnsDfPgucfYCwNQ6nMInp5+Y1t32HLGlIZaFNCafuqtgprpqygbYlMqkBe6ItKDVmYUB9fPXLOY9vv4ec5sKwr1m1HP4wYxgl+XoJOzmNyDpP3qNsuHFI3F82VQaEtmMgQyeI47cIxgdIG2lpksoAsNKTSEFke6sNjbIlCm1AXSgc9/mGeZiCM4w8l3U8EehOfkwAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+    style=&quot;padding-bottom: 57.668711656441715%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAMCAYAAABiDJ37AAAACXBIWXMAAA7DAAAOwwHHb6hkAAABo0lEQVQoz6WS27abIBRF/YaOtokgiOIFMVHxhrmc0yf7/3+0OiAxOZf25fRhjsVebtbYCIFdLIZxwDSNeP31guv1gtnOGGeLfhjQGYN1Xf362/cdfu4pfuyI1z35TKBrjfpwQFVrv7kzHXStMEwNTH9A01aw1mCanV8gywWyIkEi+bugkEa3wLZrUSqFoiy9lqpC0yrMVmOcKrRdBms1zpcGl2uLYSwxTgqdycFFDC4SH7YLiScgEUNIKCjjcGvqYDF24fNoJOLYh5H3nDpCyh79bjIX5ifckj+yJ+RxnGf95H3/m3/4r8CvElDKEdEYTv+HkNwvRadHHPMWPBIghN0anG7Qu0dvNfnA5sm4gGASgSo04jgFYwn4X3A+iwRYdKtjnn7C9bSFQcpzBOvvFafzGaqqIfMShdLIS4VCVV7LSqPSB//deULmEGmG5I2mWQEhM3/rgel72GXBME6YZovZLlhOJzSdgekHjNOE9r7uh9HX9bFBWdU3VdqHumEiFiMQSYr4TprlSKREIjP/YDefcfGoZeYmk77e1L3hiMf+gf8ByA1OpLmthWsAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;変換ツール&quot;
-        title=&quot;&quot;
+        title=&quot;変換ツール&quot;
         src=&quot;/static/96e30aed6209c66f4dfa957ebedeaf66/a6d36/imgconvert.png&quot;
         srcset=&quot;/static/96e30aed6209c66f4dfa957ebedeaf66/222b7/imgconvert.png 163w,
 /static/96e30aed6209c66f4dfa957ebedeaf66/ff46a/imgconvert.png 325w,
@@ -526,12 +786,12 @@ MODを入れたデータと入れないデータを分けるためには、フ�
     &gt;
       &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 85.88957055214723%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAARCAYAAADdRIy+AAAACXBIWXMAAA7DAAAOwwHHb6hkAAADxUlEQVR42p2SfUzUdRzHfxzc3e+ej4s7vCPk4e4gD48HnQssJVutWoYEWbaAmbIKZlPIkoUimIF5FgktKTGeDBlqS4snD3IQqdwBbroQA5kZ8tDWH1nm1uZe7Q5ja83N+m6ffb+fp/f383l/PkLG0zOkP/MDr+V6eX7dCE+kX2PTNi+vFE3wQuEvvPTWNHmlE+ys8lBQ+SO7G6Z4tWKal8umyC2/hqtumK7THg4dGybfNYRQ1ARr80u5PDLMmbOT5Baep7JyP+82XSVv1xBFB26wfhds3jNJTdt13u+ErQ1/UnAY9py8xezsDJNXx5mamWHwwihC1nZYlVaC51wvN//4nb6+Hmpq6kjb2MyHH1TQPThLZvk0G2puU3RkElftCfq9F2ntuULBsZvUe3/lS+8kJ9q+oaJ8N0LWXlj/Zitjo8P4zqmudtzfetn2Ti3tX31BTkUPW7bvp2ngN9YUt/JptQu3+xRXx0aobrvEPs8tDp69zr62QYqbOhGyam/zeskhmuuP09jST4+7m5auc5S9V427/zuyN+2gpaUZ10e1PPbcBmo/qaG3t48r4+NcHhuj3DPNx1+fobn/expOexFymybYWVpPzY4qqlpG6XBf4A1XLY3NrVQ3tFDX2MDwxUt0drRTVnWQvK1vM+D1MuQZoLJngOLzU+Rk57Bx3VpWP/Ukwov5JbgOd3P8yGaGR2/wWfc0Samrych4locfeZTkh1aSviaNzMxMklOWY7XZSVmRSnx8PHZnAokPprA4Lg5bTKzfJ5gWxHL08wP0nszm56mfaDjagSAEIQjCPYndZichMQmbzU6AROKzCSx1WCnbspyiQhsLI1T+wMDAwL8DCAgImJc5oLnb55eLIqKoQC6X+3MEi8VCVHQ0ljAjERGRREREI5NJ54HutdL5eJMpFIcjjvDwyDt3+H8G+gegr9SQEAMmYwiGYD1arQaz2YxOp8FkjiTEGEpYmAWj0Yhe7/Nr/W+1Wk1wcDA6nc5v12g0SKVSBK1WjzNhGQ7nMmz2RTji4lkU58TpjCd11ePEOhJY7ExkxcpUkpOTsVqtREVFkrRkCfaYGP/nFsv9aA0WgqQyhMAgORrDQvShDyCqDChUwUiCFCwwhxEVFYVU1BMo0xIWbiUxaSlGkxlBkMwN4F8tSxBEUUShEFGI8rmWNJo5XaFApw9GLpeh1hoQ1SakCgNylRG50nB3DlVqNYb7QlCpNCiVKgwGAzqdHp9doVTOrYR/NUSUSiWSO6t0V0AfmT5yZTK5n1QfoC/Rp/+fKf8FnbZ3yEqSPyEAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+    style=&quot;padding-bottom: 85.88957055214723%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAARCAYAAADdRIy+AAAACXBIWXMAAA7DAAAOwwHHb6hkAAAD2ElEQVQ4y5WSf0zUdRjHv/f7x/d7d9+DOweclOLRRfy6g380bdIfTCapTDF1M0vXqVj+KG1ZkoT9oTBIDwmUBSIwBUxNqJwcp84571RymOgpidSmCGvNWbP+aOPV7muxtVbZZ3vvsz173s/ez/t5C4Wzh3kpf5ClxWHmFV2loGiIVRsvs2LDDRZvuMeyzcOUlEUp3RPhzV232d4whH/HHV55f4gVZbf5YG+EjhPnqG6OsPKjCMLWg7B0fTXXv+mnJ3iPZWsHCNTsp7L9Pv7yW2wKPGJlOWypuEN9931298CmpnHeaoOdJ35lbHSUsbtDjI6NEe4fQljxIeTNf5dLkbP89PMDQqdDBAJ1LPB3UlVVQe/lMRbveshrteOUHRmhoqmHUDjKgZPfsfnoL3T0/ciXfd9zMniemj1VCMt3wvJNh7l962tiL3jqK3rPXWZzWSMnjrXzRk2YNVs/oeH8IxaWf0HD3irOnu5lePA6lV2DVPX9xqeR++z+/Dzv1HciLG8YZ315C0c7ujnWdZFQMEhn8CLlFbWcuRCmeM122lqbCTS182Kxn8b99fSGzvDt4CDR6E12XrjLvp4rtF4apjV8A2FV2wilpQ3UbQvwccsAp4JX2FbbRlPrYfYdOkpzSzN916IcP36c0qo63i7dQf/Vq9wcuEbjxQG2Rx+yem0JG19fyZLiRQivbqmg8mCIIy3vER54wIHgCNMLXsbv91O4YBEFhfNZs9rPunUlzCmcx3OZWRQWLSQvbzZZs/KYMWcu2ZkZeNLS8HieRUh+2stnnU2c6VrCD6MPONR9AbXOhCAI/wmVIOCemkKW18c0dyoarS5WF8h/PoeasgKqd80gKztRadZoNKjU6sdElWoCfxmoVmOxWrFabUiSReEITqeThMQEXJNtJLucTJqUiE6nnRj0+BeeTHGsPynJhc+Xy5SpqXi9uaSmpqL+Q9n/hTJQr9cjyzbi4+xYrRZMRiMOhwNJErHHJyLLcTidDmRZxmKxIIoismzHYDAgSdIERNGMVqtFsNlksry5pGf6eMaTRkZGNhmZ2aSnp/NCXj5p6V6yvT5mzpxFbm4OKSkpuN1ufL4cPB4PLpeLyZOTkeNdaHUGBI3WgOycRrwrC5PFiWh1oDNYSH5qikIwSQ70Jjsp7jSmT59BQmISKpUao9GkKIqtqVik0ih1wWg0YjIZMRkN2Gw2Za3YOjGC1SYrBzJLdgyiE50pDr3oRG+O+2cPzWYzsj0OUZQUxPz5MwaiJGE2i5jMovIr0dBq//0oMVUOhxODwYhOrycWo5jJBqPxb7l7kiv/DkgXexRyok66AAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;変換ツール&quot;
-        title=&quot;&quot;
+        title=&quot;変換ツール&quot;
         src=&quot;/static/4a16e4cf9364791773f520bc6062d65c/0a47e/twprofile.png&quot;
         srcset=&quot;/static/4a16e4cf9364791773f520bc6062d65c/222b7/twprofile.png 163w,
 /static/4a16e4cf9364791773f520bc6062d65c/ff46a/twprofile.png 325w,
@@ -671,12 +931,12 @@ MODを入れたデータと入れないデータを分けるためには、フ�
     &gt;
       &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 100%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAACbklEQVR42q2S7U9ScRTHf39j68nM1FIh5UkeTNFAQrHVVraeVlu1Zq+stl7U2nrRErg8XKCBs9JKy3I0FJkQxMTBt50DF288uNq622fn7JzzPffcc67Qe49BQadCHWvlt8uJVoX/QqNWGLzHoaBX+QpG3wkYfB1N8XYIErTD5OuE9s0h6LxH2SeG/SdxkEZQQSvM/i4MLRzB/Kd78ESt7FNDspRrpxOUrHKqRhesUg8GFw7j8ef7oCdVSGIkcBrnw4O4vXSR92aRurGv3UdYpW5OWmvYAr28yxuLU9ysXCmzfZ+JYzmzyP5s3Mn7skm9dZ2CoAYKNAVNNxbsx4/Cxh8N1U8y/x3nAmdgk3owotZLvRCUUKBGRl8Hnq09YmGlUsaDD9eQSMtNTZ+uPuTrk0bdQ4wF+1Cln6Epv+VWWeRLvuIjuGQjcrs7SBdTkFM+zq1lVzBaG6JKtY+whwZAjIc0XDAVNeNnKcui64vu+qfRMWYTk7gad3Du114eLtmA0WAfa+3BAUaMh7QgJkJa2EMaOGUdtotbLLr77jIvelLWc43J34k7S5c4lyluwSnra8No6wj6FRQc4SFecmwzUL/sROgsH4qWTpMk0hHORTclnp406h7CGdZx0EnwGzX8qaXyLgvXc6t4uf4EL77O40v2I8dK5RLX0HQ0PemrPXQQFFDjihh5F3MrN1HYyzddl2Jzy7e45kLEiEa9oGAj7sgw7/RK3IHXG8+xtP2WIZ9ilHNHTPzyRq0gcSumo+baMaqHIsh3yXrOtdMJ+k0ama5bCzwxG1u136yx1K3wxKz4n4iZmA0H4akx8xdQ3W8j7HBA4/KjBgAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+    style=&quot;padding-bottom: 100%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAACcUlEQVQ4y62S2U9TQRTG5280iuIGSASkK6UXaMui2Ba3aGIEH4xPasKDPhgVebJ05VJaMDSaVJMiUiIQG1LZ7PqZc9ppb29aoomT/DLTme/75sy5FabAWUiMGky6tUm3NrXQiWbCf0HvFebAObSmHZbgeZiD7ThZV0eQoRnW4AWe+xZO8c30mxgIXYS1QdfoEyRohgyc33gFT8wOg/8MV0qzLXQJrXzCFroMPYPhDhj8bfiw+RY0tg/TUCJduBUfxtPPDzjUHu7g4LqvshZ0oGUocgXGQBueJx9zWLFc5Dm5l8DWwXde3/84xv1Vwl3Q+wXdLKEwumly2Yr9fJbNuWIO5XIZ2rG5v44h8oQrnoq3ghiOdEPiWLwKS7AdvvQ7Nh4VDvFwbRKfMivQj9mvT1hLHm2GoA3JSKQbo+o1/DzeZdOb9Vn0+0/j5vIADvK/kMp+gbrtq7VACXdC6yeEU+0B4VJ7ufy7q07kSzkUSnncWXGwiIwzCS88sUHMJKY4cO93BqNqH5871V44Fys5wqX2gaDKHIs9tWpoPFrzwB7uxPWoiTX0RPmx0vvfOEj6JWJsqR+S8SUD9yGRibOJZtqnUPoAdFkqm+SzhfQcf4yJJSO0GYI2JFQJlT2d8KJQKrCR/iq+9Bz8W/PYPfpRe+7tlRF+1US07qe1oBAtk8sWDn2WnK79dbSDQqmP1HPS6v2CNvXQ06jh91ZdeL/xErGdEKI7AbxOvYA3buenkaaZV9AB4a7OEvqiN6JmrmS82h9qOpk8MVuDVotwxwahxVPFHbPx7I0rXFUFpXpW10id3BN18f9BTMUVnIS3yt/q/gDC+HB4xEG+HQAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;Sodiumのロゴ&quot;
-        title=&quot;&quot;
+        title=&quot;Sodiumのロゴ&quot;
         src=&quot;/static/0d7d678b8d91300374717a208782634d/01e7c/sodium.png&quot;
         srcset=&quot;/static/0d7d678b8d91300374717a208782634d/222b7/sodium.png 163w,
 /static/0d7d678b8d91300374717a208782634d/ff46a/sodium.png 325w,
@@ -746,12 +1006,12 @@ MODを入れたデータと入れないデータを分けるためには、フ�
     &gt;
       &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 53.37423312883436%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAABgklEQVR42oVS23LBUBTNK1qEIggh2gpDKpWEEJSiSuuhM+1ov8CE/39dnX0SaVxm+rBmn31bZ9+4cobHOeIoCzzuxTSqhQzuSBYzTPf9wdjAm3MNQfwRthQZRqMKrVaBqSpMJ/tR3Ak4cshCAnL2HKV0HFI65oP0S3GUf1RhIXkFMREJIMxkIRFB8eYapXSMvUU+jHw8hDwfRJj5DlVz1EJHa2DQbWNk6RhZBoZdVxI6WhOKlMXQMjAZ9DAfDzAd9TEd2Zg92czWNzTI3ig4Knnz9YntdovdzsF+v4PjOAxk+/neoHErwe60MRlYPiGRkRzbFnp6y58tq9B4qKNvarDNxyPQz2argUou6beXo5aD4ENsPIGlnM7QnQnZCDRDaodIffy3FEpgm/a2TRsVPVKSh+rYsvgwiqlo4HwunM0BREgV0QjWywWW82e8Leb4WK+wepkx/f31BXpTgZSKuosQvHzh0mELPAusyyIjpURdrcGkt1pjuqHWUSuL7JQuHfcv6tkzWqXWD4gAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+    style=&quot;padding-bottom: 53.37423312883436%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAABmElEQVQoz3WTW1PCMBCF+wpeaKlcS4GCUi4iWKEglCIIiIMz/grUgvz/x+PshhpRefjmZLLJ6UmyVayUhkNUWGkNxZSKciaOipnCVS6Biplkylmda7SG1/7aq8hJVUKGyRjsfBrdpg2nVmYl6pbBNWl4uF8JDUqZ+B9ovpCMsUEhIZTWH1srDPdpzPgJckx0rwJTP0Uhcc5QzdCiMNQIDC3yrTktynXyUihBzTIwdG8x6jnw+3fMqEfaYb2pWGjZJUy8ezz6A8zGQ6mjASZeHzd2iU0VSuC2r7FerxEEH9jtPrHZBNhuN9gEAd7e3zGf+GhWinj0h5g/eFhMfSwmAjKd+gO0qntDmdDBiJL1RbLxfRee6/B8u3YJUz/ho9Exs2pEqiYoJM7EkcOL/32HZEDp8/op3zG1y0+OP0r4yum4ICOUzELj8CE4oRbljxb/azdhqAn3EGrorI7Z2MPLco7n+RSvqyVD49XTDIvpGFdmUvZjWja38l+3U0KnYcNtN9Bt1dFrXzM0dlsNdJpVlLMXP/4Y+ad8AbtbM5C+b2kZAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;設定画面&quot;
-        title=&quot;&quot;
+        title=&quot;設定画面&quot;
         src=&quot;/static/488402752b7e71838d7e65645fe296ca/a6d36/settings.png&quot;
         srcset=&quot;/static/488402752b7e71838d7e65645fe296ca/222b7/settings.png 163w,
 /static/488402752b7e71838d7e65645fe296ca/ff46a/settings.png 325w,
@@ -1031,12 +1291,12 @@ JSでスクロールさせようとしたのですが、最終的に失敗した
     &gt;
       &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 100%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAIAAAAC64paAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAD5UlEQVR42m2U3UtqaRTG6+L8Cd0UXVUXQUEEfZEDhl2UGOlxV2ca0wZ1q9sxE8M8bSndkGZGaUeDsjQLLCOSTIzsooIK4uAQfZBmWrJLSgyiMiusPUwKDp15rl7el99aPOtda2Vgv+jt7e39P0reYP+nDAzD3t/fA4GAz+c7OTl5enrCMCwSiVxeXkYiEQzDbm5uotHo/Ye8Xq/P5wsEAsmg/8LBYJBGo2m1Wg6HYzabDw8Pl5aWQBCsqalBUbSxsZFAIMjlcolEIhKJRkZGaDRaMBhMwX6/H0GQnJwcoVDY39/vcDgsFgsej4dhuKmpqbm5mcfjtbS0qNXqzs7O7OxshULh9/tT8NnZGZfLlUqlQqHQarUajUalUul0OicmJr58+WIwGDo6OnQ6nVqtFggEMpkMgqA0/Pr66nA4xsbGlEqlzWZTKBROp5PD4SwvL1ssFrfbbbfbiUTi9va2w+FAEGR+fv719TUFoyjqcrlUKhWfz5+dndXpdDQabW9vb2Njo7a2trW1dXd3l0KhmM3mqakpBEE8Hk+yzBnJorPZbIlEsrKyolKpcDgcHo/3er0729tUKlUul/f29nZ1dQ0PDxcXFy8sLJSVlaEomsqMYdj8/Pzo6CgIgiKRqKioaG5u7i8+/zccDqBSe75///3bt8LCQhaLtbOzQyaTQRBMZw6FQkajsbKysrq6ury8fHx83LmywuNyk3H5EOReW7u+vs7KymKxWAAA9PT0pD3f39+Pj4+jKArDsEwm83g8Fovlj9bWp6enh4eHPxkMiMdTIAgAAHl5eXQ6PRqNpjInewXDMAiCYBhWKBRJY/ofP/72eIwTE9SvX9fW1kgk0uTkpNvtrq+vNxqN6Q47Pz83mUwcDqejowNBkLa2ttLSUplMtrm5ubW1dXFxYbPZ9vf3VSoVCILr6+tcLjcWi6XgUChEoVDEYvHq6qpWq+3u7i4pKREIBBAEaTSaurq69vb2iooKGIarqqoMBgODwYjH4yk4FotJJBK1Wm21Wufm5rRaLZVKHRwclEqlgUCgoaHBYrEwmUyz2SyVSgEAcLlc6YKdnp6KxWIYhoVCoVqtHhoaGhgYYLFYBQUF09PTPB4Ph8NlZmbCMMxgMMhksslkwjAskUikBqOvry8nJweCoJmZmfz8fAAAFhcXmUzm0dERgiC5ubkEAkGv18MwbLfb6XR62nNyJHU6HYvFstlsx8fHJBJJr9crlUoEQTQaDZvNJhKJPz8EgqBEIrm9vf28DLxe7+PjI4Zht7e34XD45eXl4ODg7u7O/6Grq6t4PB4Oh5+fn9Ob5Nc19Onw6TWRSCT/+R+bph24YB57lwAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+    style=&quot;padding-bottom: 100%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAIAAAAC64paAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAD7ElEQVQ4y22U30sqaRjH66I/oZviXFUXQUEE/SIXjLooKVKc6mxr2eI06njMxJg8jXvSgbTJKO1YUJY2BakRRSZGdZa6sCAOLtEPssxCptyTGERlllizbAounf1evbwvn+fh+b7P86RQP+nl5eX1P4rfUP+nFIqiXl9ffT7fycnJ8fHx4+MjRVHBYPDy8jIYDFIUdX19HQqF7t7k8XhOTk58Pl886L/w+fk5h8PR6XR8Pt9sNh8cHCwuLkIQVFFRQZJkfX19ZWWlUqlEEEQqlQ4PD3M4nPPz8wTs9XoxDMvMzJRIJH19fXa7nSAIOp2OomhDQ0NjY6NQKGxqasJxvLOzMyMjQ6VSeb3eBHx2diYQCORyuUQimZubMxqNarXa4XBMTEykpaWNjo52dHTo9Xocx8VisUKhgGE4CUejUbvdPjY2plarbTabSqVyOBx8Pn95eZkgiPX19aWlJQaD4XK57HY7hmFWqzUajSZgkiSdTqdGoxGJRLOzs3q9nsPh7O7ubm5uVlVVNTc37+zssFgss9k8NTWFYZjb7Y7bnBI3vb29HUGQlZUVjUZDo9HodLrH49nZ3gbYbKVS+ceXL11dXUNDQ/n5+fPz80VFRSRJJjJTFGW1WkdGRiAIkkqleXl5Fovlk0j0C40GsNk9nz//+vFjbm4uCILb29tMJhOCoGRmv99vNBpLS0vLy8uLi4vHx8cdKyuwQBCP+0kk+vPbt79//EhPTwdBEACAnp6eZM13d3fj4+MkSaIoqlAo3G43QRC/NTc/Pj7e39//3tYGC4UqDAMAICsrq7W1NRQKJTLHe4WiKBiGURRVqVR5eXmLi4uGr1//cruNExNsFmttba22tnZycnJ9fb2mpsZoNCY77OLiwmQy8fn8jo4ODMNaWloKCwsVCsXW1pbL5fL7/TabbW9vT6PRQBC0sbEhEAjC4XAC9vv9LBZLJpOtrq7qdLru7u6CggKxWAzDsFarra6ubmtrKykpQVG0rKxsdHSUy+VGIpEEHA6HEQTBcXxubs5iseh0OjabPTAwIJfLfT5fXV0dQRA8Hs9sNsvlcgAAnE5n0rDT01OZTIaiqEQiwXF8cHCwv78fBMGcnJzp6WmhUEij0VJTU1EU5XK5TCbTZDJRFBWLxRKD0dvbm5mZCcPwzMxMdnY2AAALCws8Hu/w8BDDsA8fPlRWVhoMBhRFl5aWWltbkzXHR1Kv14MgaLPZjo6OamtrDQaDWq3GMEyr1ba3tzMYjO9vgiAIQZCbm5v3y8Dj8Tw8PFAUdXNzEwgEnp+f9/f3b29vvW+6urqKRCKBQODp6Sm5SX5eQ+8O715jsVj8n/8B6qod3PTm9n4AAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;コンパス履歴書ジェネレーターQRコード&quot;
-        title=&quot;&quot;
+        title=&quot;コンパス履歴書ジェネレーターQRコード&quot;
         src=&quot;/static/bdd054bdff4d91e8de353c3bbd4260ca/92252/cps_rireki_qr_github.png&quot;
         srcset=&quot;/static/bdd054bdff4d91e8de353c3bbd4260ca/222b7/cps_rireki_qr_github.png 163w,
 /static/bdd054bdff4d91e8de353c3bbd4260ca/92252/cps_rireki_qr_github.png 246w&quot;
@@ -1061,7 +1321,7 @@ JSでスクロールさせようとしたのですが、最終的に失敗した
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;sampleimage&quot;
-        title=&quot;&quot;
+        title=&quot;sampleimage&quot;
         src=&quot;/static/7eb44cd4fb9fbe2cba0a646d52cd2686/6f76c/sample.jpg&quot;
         srcset=&quot;/static/7eb44cd4fb9fbe2cba0a646d52cd2686/d2f63/sample.jpg 163w,
 /static/7eb44cd4fb9fbe2cba0a646d52cd2686/c989d/sample.jpg 325w,
