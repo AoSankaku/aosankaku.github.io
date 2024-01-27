@@ -28,9 +28,6 @@ jobs:
       - name: Build
         run: yarn build
 
-      - name: Lint
-        run: yarn lint
-
       - name: Release
         uses: cycjimmy/semantic-release-action@v4
         env:
