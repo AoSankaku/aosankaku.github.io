@@ -2,7 +2,7 @@
 title: "【Minecraft】マイクラサーバーでDiscordに通知を送るスクリプトを作りました"
 category: "Minecraft"
 date: "2023-09-21 12:00:00 +09:00"
-desc: "PythonとWebhookを利用した"
+desc: "PythonとWebhookを利用した、マイクラ通知用スクリプトを作成（改造）しました。その使い方について説明しています。"
 thumbnail: ""
 ---
 
