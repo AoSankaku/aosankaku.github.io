@@ -28,11 +28,10 @@ jobs:
       - name: Build
         run: yarn build
 
-      - name: Upload as an Artifact
+      - name: Upload Artifact
         uses: actions/upload-pages-artifact@v3
         with:
           name: github-pages
-          path: ./public
 
   deploy:
     needs: build
