@@ -28,6 +28,9 @@ jobs:
       - name: Build
         run: yarn build
 
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+
       - name: Upload as an Artifact
         uses: actions/upload-artifact@v4
         with:
