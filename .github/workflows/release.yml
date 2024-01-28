@@ -29,7 +29,7 @@ jobs:
         run: yarn build
 
       - name: Upload as an Artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v2
         with:
           name: github-pages
           path: ./public
@@ -44,5 +44,5 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-22.04
     steps:
-      - uses: actions/deploy-pages@v4
+      - uses: actions/deploy-pages@v2
         id: deployment
