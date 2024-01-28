@@ -29,14 +29,14 @@ jobs:
         run: yarn build
 
   deploy:
-  needs: build
-  permissions:
-    id-token: write
-    pages: write
-  environment:
-    name: github-pages
-    url: ${{ steps.deployment.outputs.page_url }}
-  runs-on: ubuntu-22.04
-  steps:
-    - uses: actions/deploy-pages@v2
-      id: deployment
+    needs: build
+    permissions:
+      id-token: write
+      pages: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/deploy-pages@v2
+        id: deployment
