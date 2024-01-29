@@ -8,7 +8,7 @@
     "build": "gatsby build",
     "develop": "gatsby develop -H 0.0.0.0 && start http://localhost:8000",
     "dev": "gatsby develop -H 0.0.0.0 && start http://localhost:8000",
-    "deploy": "gatsby build && rm -r ../docs/* && cp -f -r public/* ../docs/ && git add ../ && git commit && git push",
+    "deploy": "gatsby build && cp -r public docs",
     "test": "cp -f -r public/* ../docs/",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
     "start": "gatsby develop -H 0.0.0.0",
