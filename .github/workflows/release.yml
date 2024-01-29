@@ -23,7 +23,7 @@ jobs:
           node-version-file: .nvmrc
 
       - name: Install Dependencies
-        run: yarn install --frozen-lockfile
+        run: yarn install
 
       - name: Build
         run: yarn build --verbose --log-pages
