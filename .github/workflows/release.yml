@@ -23,7 +23,9 @@ jobs:
           node-version-file: .nvmrc
 
       - name: Install Dependencies
-        run: yarn install --frozen-lockfile
+        run: |
+          yarn config set network-timeout 300000
+          yarn install --frozen-lockfile
 
       - name: Check Running Environment
         run: gatsby info --clipboard
