@@ -27,9 +27,6 @@ jobs:
           yarn config set network-timeout 450000
           yarn install --frozen-lockfile
 
-      - name: Check Running Environment
-        run: gatsby info --clipboard
-
       - name: Build
         run: yarn build --verbose --log-pages
 
