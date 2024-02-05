@@ -182,6 +182,11 @@ const GlobalStyle = createGlobalStyle`
     clip: rect(1px, 1px, 1px, 1px);
     white-space: no-wrap;
   }
+  
+  .anchor.before {
+    fill: var(--color-text);
+    stroke: var(--color-text);
+  }
 `
 
 export default GlobalStyle

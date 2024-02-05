@@ -96,6 +96,7 @@ const markdownPlugins = [
     options: {
       plugins: [
         "gatsby-remark-copy-linked-files",
+        "gatsby-remark-autolink-headers",
         {
           resolve: "gatsby-remark-vscode",
           options: {
@@ -114,6 +115,17 @@ const markdownPlugins = [
             linkImagesToOriginal: false,
           },
         },
+        {
+          resolve: `gatsby-remark-table-of-contents`,
+          options: {
+            exclude: "目次",
+            tight: true,
+            ordered: false,
+            fromHeading: 2,
+            toHeading: 6,
+            className: "table-of-contents"
+          },
+        },
         /*
         {
           resolve: `gatsby-remark-link-unfurl`,
@@ -125,6 +137,7 @@ const markdownPlugins = [
       ],
     },
   },
+
 ]
 
 const searchPlugins = [
