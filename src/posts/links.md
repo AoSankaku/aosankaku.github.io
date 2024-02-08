@@ -3,11 +3,15 @@ __重要：ご連絡は基本的にDiscordのDMにお願いします。__
 TwitterのDMは通知がバグるので、直るまでそちらでのご連絡は控えていただけますとありがたいです。
 
 ## メイン
-### [Twitter](https://twitter.com/Ao_Sankaku)
-### [あかつきー（友人のMisskeyインスタンス）](https://yumk.xyz/@ao_sankaku)
+### [Twitter（旧X）](https://twitter.com/Ao_Sankaku)
+### [[ActivityPub/Misskey] あかつきー（友人インスタンス）](https://yumk.xyz/@ao_sankaku)
+### [Bluesky](https://bsky.app/profile/aosankaku.bsky.social)
 ### [YouTube](https://youtube.com/@Ao_Sankaku)
-### [note](https://note.com/ao_sankaku)
 ### [Github](https://github.com/AoSankaku)
+
+## サブ（飽きて更新してない）
+### [[ActivityPub/Mastodon] Yづどん](https://mstdn.jp/@Ao_Sankaku@mstdn.y-zu.org)
+### [note](https://note.com/ao_sankaku)
 ### [Zenn](https://zenn.dev/ao_sankaku)
 
 ## 作品
