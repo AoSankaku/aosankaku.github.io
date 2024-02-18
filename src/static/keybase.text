@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/ao_sankaku
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://aosankaku.github.io
+  * I am ao_sankaku (https://keybase.io/ao_sankaku) on keybase.
+  * I have a public key ASD0Uer4Z9UU94tkiB3RhZ5BvWMbsGnxeiSZu2rqZdHwkwo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "01209a30b76c5f1f806eccbe91944d97f39a21a2c5646a7e672fdfd3f768a88e29250a",
+      "host": "keybase.io",
+      "kid": "0120f451eaf867d514f78b64881dd1859e41bd631bb069f17a2499bb6aea65d1f0930a",
+      "uid": "2df7359b47e5edbb7109acce0fa8c019",
+      "username": "ao_sankaku"
+    },
+    "merkle_root": {
+      "ctime": 1708229340,
+      "hash": "3f54b41380c309256dfe8211aa887d958d469f30f2ecb532de9e00093e7e519a3996aece927874dcc74abe7e9fb2a35e75aca6b6c76de85fef8fad8ad9f8b1e1",
+      "hash_meta": "b7975c8b1d03df849b6fe559351ba8d72d067710dd41a97b84cc33f879b2a87a",
+      "seqno": 25469132
+    },
+    "service": {
+      "entropy": "bKxPMMRMwSNb8VNLYmBLx5Bd",
+      "hostname": "aosankaku.github.io",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "6.2.7"
+  },
+  "ctime": 1708229474,
+  "expire_in": 504576000,
+  "prev": "a1ab1ece257b6770139e0358f202651f7189b4ea92911230787bc7f8d99516d9",
+  "seqno": 27,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEg9FHq+GfVFPeLZIgd0YWeQb1jG7Bp8Xokmbtq6mXR8JMKp3BheWxvYWTESpcCG8QgoaseziV7Z3ATngNY8gJlH3GJtOqSkRIweHvH+NmVFtnEIOgpyVhKvZ8+Z3enzAEnY+BROioKYhYFoEywdW4xH940AgHCo3NpZ8RAxTeBAW/ypYjFBYKSCQmnFRPLPBXUW5kGG2ETc3GfhqOxIFKFUWEawhYNFDlaWQam+thwS3SZd1n/cekAmeD2BahzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIGDsYnialAqULSzNeDds7N4viUrtuYZ5wxWfAW7gkPpoo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/ao_sankaku
+
+==================================================================
