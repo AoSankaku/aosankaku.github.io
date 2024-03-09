@@ -221,7 +221,7 @@ const pwaPlugins = [
 ]
 
 module.exports = {
-  graphqlTypegen: true,
+  graphqlTypegen: false,
   siteMetadata,
   plugins: [
     ...corePlugins,
