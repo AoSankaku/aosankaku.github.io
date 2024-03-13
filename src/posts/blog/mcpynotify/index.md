@@ -75,7 +75,7 @@ https://github.com/AoSankaku/Send-Minecraft-notifications#send-minecraft-notific
 
 を機械的に判定して拾っているからです。バニラであればおそらく漏れませんが、MODで死亡理由が新しく増えたりすると正直わかりません。
 
-### ごく一部のプレイヤーの志望ログが取得できない
+### ごく一部のプレイヤーの死亡ログが取得できない
 
 例えば、初期設定だと「ChunkTaskScheduler」「STDOUT」「Simple_Harvest」さんのsayコマンド経由のチャットは届きません。
 
@@ -107,5 +107,13 @@ https://github.com/somakai-sumasi/Send-Minecraft-notifications?tab=MIT-1-ov-file
 特にこれを使うのに許可などは必要ありません。勝手に使ってください。使い方はすべてREADME.mdに記してあります。
 
 https://github.com/AoSankaku/Send-Minecraft-notifications#send-minecraft-notifications%E6%97%A5%E6%9C%AC%E8%AA%9E%E8%AA%AC%E6%98%8E
+
+マイクラサーバーのディレクトリに行き、
+
+```cmd
+git clone https://github.com/AoSankaku/Send-Minecraft-notifications.git
+```
+
+って打ってから、Windowsであればダブルクリックして、UbuntuであればScreenなどで別枠起動すればOKです。初期設定などはリポジトリをご覧ください。2回書くのは面倒です。
 
 「おい！バグあるやんけ！」と思ったら、遠慮なく修正してもらってOKです。MITライセンスですから。知識のある方は、よろしければPRなどしていただけると助かります。
