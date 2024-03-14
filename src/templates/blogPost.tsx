@@ -109,7 +109,6 @@ const Desc = styled.p`
   margin-top: var(--sizing-lg);
   line-height: 1.5;
   font-size: var(--text-lg);
-  border: solid 100px red;
 
   @media (max-width: ${({ theme }) => theme.device.sm}) {
     line-height: 1.31579;
