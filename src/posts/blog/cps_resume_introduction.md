@@ -1,7 +1,7 @@
 ---
 title: "「#コンパス履歴書ジェネレーター」のご紹介"
 category: "Works"
-date: "2023-01-29 21:00:00 +09:00"
+date: "2023-01-29T21:00:00+09:00"
 desc: "「#コンパス履歴書ジェネレーター」の概要です。"
 thumbnail: "./images/cps_resume_introduction/ET3-ITLUMAAWZIu.jpg"
 alt: "nazo alt"

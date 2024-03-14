@@ -1,7 +1,7 @@
 ---
 title: "IFTTTでプロフィール画像が更新できなくなった"
 category: "Tech"
-date: "2023-05-21 12:00:00 +09:00"
+date: "2023-05-21T12:00:00+09:00"
 desc: "IFTTTで以前までプロフィール画像を自動更新できていたのですが、できなくなりました。解決していきます。"
 thumbnail: "./images/profile_pic_update/no_image_card.png"
 ---

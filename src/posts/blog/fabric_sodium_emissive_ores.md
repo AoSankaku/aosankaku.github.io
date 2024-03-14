@@ -1,7 +1,7 @@
 ---
 title: "【Minecraft】Fabric+Sodiumで鉱石を光らせる方法"
 category: "Minecraft"
-date: "2023-03-29 21:00:00 +09:00"
+date: "2023-03-29T21:00:00+09:00"
 desc: "マイクラでFabricとSodiumを使った状態で、鉱石が光るリソースパックを導入して動作させる方法について解説しています。"
 thumbnail: "./images/fabric_sodium_emissive_ores/thumbnail.png"
 alt: "nazo alt"

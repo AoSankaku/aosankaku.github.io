@@ -1,7 +1,7 @@
 ---
 title: "裏アカウント特定サービスに対する声明文"
 category: "Something"
-date: "2000-01-01 12:00:00 +09:00"
+date: "2000-01-01T12:00:00+09:00"
 desc: "裏アカウント特定サービスを使用してこのアカウントを発見した方に対する声明文です。"
 thumbnail: "./images/profile_pic_update/no_image_card.png"
 ---

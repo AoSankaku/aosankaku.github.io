@@ -1,7 +1,7 @@
 ---
 title: "ブログの改善点とか"
 category: "Tech"
-date: "2023-01-31 12:00:00 +09:00"
+date: "2023-01-31T12:00:00+09:00"
 desc: "このブログでテンプレートから変更したところを解説します。"
 thumbnail: "./images/default.png"
 alt: ""
