@@ -19,7 +19,7 @@ alt: ""
 
 ### メゾン（歩く人 feat. 初音ミク&可不）
 
-`youtube:https://youtube.com/watch?v=MvoufsXWA-A`
+`youtube:https://youtube.com/embed/v=MvoufsXWA-A`
 
 この人、ずっと推してるんですが全く知名度が上がりません。声のクセが強いのでしょうがないのかもしれないですが。
 
@@ -31,11 +31,11 @@ UTITがかなり苦手なので、歌い手からできた「可不」という�
 
 このCD限定の曲ですが、なぜかYoutube Musicでタダで聞けます。最近良くありますよね。おそらく無断転載じゃないやつです。
 
-`youtube:https://www.youtube.com/watch?v=bVIRHrAavZU`
+`youtube:https://www.youtube.com/embed/v=bVIRHrAavZU`
 
 ### ノクティルーカ (Ash ver.)
 
-`youtube:https://www.youtube.com/watch?v=m367nnJRs-M`
+`youtube:https://www.youtube.com/embed/v=m367nnJRs-M`
 
 この記事の中では多分二番目に有名です。
 
@@ -43,11 +43,11 @@ UTITがかなり苦手なので、歌い手からできた「可不」という�
 
 この曲はYouTubeにオリジナルがPVつきであがっており、Ash ver.はCD限定です。でもYouTubeで合法でタダで聴けます。理不尽。
 
-`youtube:https://www.youtube.com/watch?v=XsD13sK7OPc`
+`youtube:https://www.youtube.com/embed/v=XsD13sK7OPc`
 
 ### エンゼル92
 
-`youtube:https://www.youtube.com/watch?v=Yt5-aNnDvBE`
+`youtube:https://www.youtube.com/embed/v=Yt5-aNnDvBE`
 
 この記事の中では多分一番有名です。
 
@@ -65,7 +65,7 @@ J-POPは一切聞かないわけではないですが、「ポップス」とい
 
 ECHOがそろそろ1億再生いきそうです。
 
-`youtube:https://www.youtube.com/watch?v=cQKGUgOfD8U`
+`youtube:https://www.youtube.com/embed/v=cQKGUgOfD8U`
 
 モンスター楽曲ですよね。これでボカロ再生回数ランキング1位**じゃない**っていうんだから驚きです。ボーカロイドの未来は明るい、と勝手に思っています。
 
