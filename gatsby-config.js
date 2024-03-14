@@ -134,6 +134,14 @@ const markdownPlugins = [
           },
         },
         */
+        {
+          resolve: "gatsby-remark-embed-youtube",
+          options: {
+            width: 800,
+            height: 400
+          }
+        },
+        "gatsby-remark-responsive-iframe",
       ],
     },
   },
