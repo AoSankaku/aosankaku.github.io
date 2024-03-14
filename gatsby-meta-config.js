@@ -17,8 +17,8 @@
 
 /** @type {MetaConfig} */
 const metaConfig = {
-  title: "Blue Triangle's Homepage",
-  description: `Blue Triangleのホームページです。プロフィール、趣味、作品などを紹介しています。`,
+  title: "Blue Triangle's Website",
+  description: `Blue Triangleのサイトです。プロフィール、趣味、作品などを紹介しています。`,
   author: "Blue Triangle",
   siteUrl: "https://aosankaku.github.io",
   lang: "ja",
