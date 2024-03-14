@@ -82,9 +82,11 @@ alt: ""
 
 #### ＜吉田製作所＞
 
-情報が古いですが、言っていることは参考になります。
+情報が結構古いですが、言っていることはかなり参考になります。
 
 `youtube:https://www.youtube.com/embed/soZf4ebp3ww`
+
+---
 
 #### ＜みやっち＞
 
@@ -92,11 +94,23 @@ alt: ""
 
 `youtube:https://www.youtube.com/embed/l2wTIp3EolM`
 
+---
+
+#### ＜ウッドリィ＞
+
+普段はマイクラや別のゲームの動画を出している人です。
+
+`youtube:https://www.youtube.com/embed/gCZ40ALeOmE`
+
+---
+
 #### ＜さいちょう＞
 
 普段は怪しい商品を買い漁っている人です。普段は自作PCに関係ない動画を出しています。
 
 `youtube:https://www.youtube.com/embed/zY37yvIH6L0`
+
+---
 
 全く無名の投稿者や、普段は別の系統の動画を出している人の動画も多数あります。面白いかどうかは別にして、参考にすることはできます。
 
