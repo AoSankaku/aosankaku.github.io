@@ -54,6 +54,7 @@ const Markdown = styled.article<{ rhythm: typeof typography["rhythm"] }>`
   h2 {
     font-size: 1.75rem;
     line-height: 1.3;
+    border-bottom: solid 2px var(--color-text);
     margin-bottom: ${({ rhythm }) => rhythm(1)};
     margin-top: ${({ rhythm }) => rhythm(2.25)};
 
@@ -65,6 +66,7 @@ const Markdown = styled.article<{ rhythm: typeof typography["rhythm"] }>`
   h3 {
     font-size: 1.31951rem;
     line-height: 1.3;
+    border-bottom: solid 1px var(--color-gray-6);
     margin-bottom: ${({ rhythm }) => rhythm(1)};
     margin-top: ${({ rhythm }) => rhythm(1.5)};
 
