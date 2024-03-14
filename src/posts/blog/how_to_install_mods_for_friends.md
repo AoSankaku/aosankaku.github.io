@@ -169,7 +169,7 @@ MODを入れたデータと入れないデータを分けるためには、フ�
 
 画像を貼って説明するのが面倒なので、以下の動画を参考に進めてください。
 
-<div><div style="text-align:center;"><iframe width="100%" height="315" src="https://www.youtube.com/embed/UPxsCiMVaFE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div></div>
+`youtube https://www.youtube.com/embed/UPxsCiMVaFE`
 
 リンクと注意点、その他動画で触れていないところだけいくつか挙げておきます。
 
@@ -265,7 +265,7 @@ Prism Launcherは今のインスタンスをzipファイルに出力できます
 EssentialというMODがあります。これを導入すると、サーバーを立てなくてもマルチができます。  
 詳しくは以下の動画を見てください。
 
-<div><div style="text-align:center;"><iframe width="100%" height="315" src="https://www.youtube.com/embed/bEtqq_DiNQc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div></div>
+`youtube:https://www.youtube.com/embed/bEtqq_DiNQc`
 
 ちなみにこの動画ではForge版を入れていますが、Fabric版もあります。
 
