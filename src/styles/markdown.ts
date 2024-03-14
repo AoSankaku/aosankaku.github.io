@@ -11,6 +11,30 @@ const Markdown = styled.article<{ rhythm: typeof typography["rhythm"] }>`
     font-weight: var(--font-weight-bold);
   }
 
+  p,
+  a,
+  label,
+  th,
+  td,
+  li,
+  dt,
+  dd,
+  blockquote p,
+  figcaption,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    white-space: pre-wrap;
+    word-break: auto-phrase;
+  }
+
+  .gatsby-resp-image-wrapper{
+    white-space: normal;
+  }
+
   td,
   th {
     border-bottom: 1px solid var(--color-gray-3);
@@ -106,7 +130,7 @@ const Markdown = styled.article<{ rhythm: typeof typography["rhythm"] }>`
 
   li > ul,
   li > ol {
-    margin-top: 0;
+    margin-top: ${({ rhythm }) => rhythm(0.4)};
     margin-bottom: 0;
   }
 
@@ -120,7 +144,11 @@ const Markdown = styled.article<{ rhythm: typeof typography["rhythm"] }>`
   }
 
   li {
-    margin-bottom: ${({ rhythm }) => rhythm(0.3)};
+    margin-bottom: ${({ rhythm }) => rhythm(0.4)};
+  }
+
+  ul, ol, li{
+    white-space: normal;
   }
 
   p,
