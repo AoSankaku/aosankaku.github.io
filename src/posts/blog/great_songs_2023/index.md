@@ -1,6 +1,6 @@
 ---
 title: 【2023年】めちゃくちゃ良かった曲10（？）選
-category: Other
+category: Misc
 date: "2024-03-14T14:30:00+09:00"
 desc: 今年気に入った曲をつらつら書きます。
 thumbnail: ""

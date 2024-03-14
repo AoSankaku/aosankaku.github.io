@@ -1,6 +1,6 @@
 ---
 title: "【お知らせ+近況】Twitter（旧X）のプロフィール画像自動更新を停止します"
-category: "Other"
+category: "Misc"
 date: "2024-03-14T15:30:00+09:00"
 desc: "IFTTTおよびTwitter（旧X）の仕様変更により、プロフィール画像の自動更新を停止します。"
 thumbnail: ""

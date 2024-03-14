@@ -1,9 +1,9 @@
 ---
 title: "【回答してみた】ウディタリアンに100の質問"
-category: "Something"
+category: "Misc"
 date: "2019-03-09T12:00:00+09:00"
 desc: "「ウディタリアンに100の質問」に回答してみました。"
-thumbnail: "./images/woditorian100/thumbnail.png"
+thumbnail: "./thumbnail.png"
 ---
 
 ## ※この記事は旧ブログからの移植です。
