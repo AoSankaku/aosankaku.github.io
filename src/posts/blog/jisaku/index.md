@@ -82,15 +82,21 @@ alt: ""
 
 #### ＜吉田製作所＞
 
-<div><div style="text-align:center;"><iframe width="100%" height="315" src="https://www.youtube.com/embed/soZf4ebp3ww" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div></div>
+情報が古いですが、言っていることは参考になります。
+
+`youtube:https://www.youtube.com/embed/soZf4ebp3ww`
 
 #### ＜みやっち＞
 
-<div><div style="text-align:center;"><iframe width="100%" height="315" src="https://www.youtube.com/embed/l2wTIp3EolM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div></div>
+こちらは比較的新しいです。
+
+`youtube:https://www.youtube.com/embed/l2wTIp3EolM`
 
 #### ＜さいちょう＞
 
-<div><div style="text-align:center;"><iframe width="100%" height="315" src="https://www.youtube.com/embed/zY37yvIH6L0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div></div>
+普段は怪しい商品を買い漁っている人です。普段は自作PCに関係ない動画を出しています。
+
+`youtube:https://www.youtube.com/embed/zY37yvIH6L0`
 
 全く無名の投稿者や、普段は別の系統の動画を出している人の動画も多数あります。面白いかどうかは別にして、参考にすることはできます。
 
@@ -98,7 +104,7 @@ alt: ""
 
 また、番外編としてこの動画も面白いです。現代の自作パソコンパーツの耐久性がよくわかります。
 
-<div><div style="text-align:center;"><iframe width="100%" height="315" src="https://www.youtube.com/embed/UZXYsNrzg-4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div></div>
+`youtube:https://www.youtube.com/embed/UZXYsNrzg-4`
 
 ### そもそも私の知識は借り物
 
