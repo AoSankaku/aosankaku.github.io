@@ -4,6 +4,7 @@ TwitterのDMは通知がバグるので、直るまでそちらでのご連絡�
 
 ## メイン
 ### [Twitter（旧X）](https://twitter.com/Ao_Sankaku)
+### [[ActivityPub/Misskey] みすてむず いず みすきーしすてむず](https://misskey.systems/@ao_sankaku)
 ### [[ActivityPub/Misskey] あかつきー（友人インスタンス）](https://yumk.xyz/@ao_sankaku)
 ### [Bluesky](https://bsky.app/profile/aosankaku.bsky.social)
 ### [YouTube](https://youtube.com/@Ao_Sankaku)
