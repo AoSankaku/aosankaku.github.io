@@ -77,6 +77,10 @@ All my profiles below are written in Japanese, but feel free to ask questions, c
 
 ![マイタイピング8114点](../images/mytyping8114.png)
 
+![マイタイピング8740点](../images/mytyping8740.png)
+
+このときは、正直調子に乗っていました。今はこんなスコア出せません。あの頃に戻りたい。
+
 ### アークナイツ
 マゼラン、ヴァルカン、カーネリアン、ビーズワクスが好きです、かわいい、褐色は正義
 
