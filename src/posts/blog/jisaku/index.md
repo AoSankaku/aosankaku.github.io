@@ -3,7 +3,7 @@ title: 私に自作パソコンを依頼してくれる方へのお願い
 category: "Tech"
 date: "2024-03-14T18:00:00+09:00"
 desc: ありがたいことに、私に対して自作パソコンの知識で頼ってくれる方が存在します。その方たちに向けて、お願いしたいことをまとめた記事です。
-thumbnail: "../images/default.png"
+thumbnail: "thumbnail.png"
 alt: ""
 ---
 
