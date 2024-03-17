@@ -3,7 +3,7 @@ title: "【Minecraft】楽にMODを入れる方法【Prism Launcher】"
 category: "Minecraft"
 date: "2023-08-12T21:00:00+09:00"
 desc: "マイクラでMODを簡単に入れる方法を説明しています。"
-thumbnail: "./images/how_to_install_mods_for_friends/thumbnail.png"
+thumbnail: "thumbnail.png"
 alt: "nazo alt"
 ---
 
@@ -44,7 +44,7 @@ alt: "nazo alt"
 「Forge」と「Fabric」について知っている人は読み飛ばしてください。
 
 ### そもそも「MOD」とは
-![Alt text](images/how_to_install_mods_for_friends/hammer.jpg)
+![Alt text](hammer.jpg)
 
 もとは「Modification」という英単語から来ていて、広く「改造」を意味します。  
 つまり、MODは別に**マイクラの専売特許ではありません**。  
@@ -109,7 +109,7 @@ MODは同じ人が何度も同じ処理を書くことを忌み嫌って、ま�
 
 例えば、Sodiumという軽量化MODの拡張機能であるIndiumなどをSodiumなしで入れようとすると、以下の警告が出ます。
 
-![Incompatible Mod Set Error](images/how_to_install_mods_for_friends/incompatibility-error.png)
+![Incompatible Mod Set Error](incompatibility-error.png)
 
 上の「A potential solution...」が解決法です（言語設定を日本語にすれば、ちゃんと日本語になります）。下の「Unmet Dependency Listing:」が問題の起きたMODになります。  
 上にあるMODを導入するか、下にあるMODを消すかのどちらかでこのエラーは解消します。
@@ -260,7 +260,7 @@ Prism Launcherは今のインスタンスをzipファイルに出力できます
 - サーバーデータを取り除かないと、入っているサーバーごと配布される
 
 ### マルチができるようになるMOD
-![Essential Logo](https://images.essential.gg/general/social-960.jpg)
+![Essential Logo](social-960.jpg)
 
 EssentialというMODがあります。これを導入すると、サーバーを立てなくてもマルチができます。  
 詳しくは以下の動画を見てください。

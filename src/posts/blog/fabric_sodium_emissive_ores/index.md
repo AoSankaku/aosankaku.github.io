@@ -3,14 +3,14 @@ title: "【Minecraft】Fabric+Sodiumで鉱石を光らせる方法"
 category: "Minecraft"
 date: "2023-03-29T21:00:00+09:00"
 desc: "マイクラでFabricとSodiumを使った状態で、鉱石が光るリソースパックを導入して動作させる方法について解説しています。"
-thumbnail: "./images/fabric_sodium_emissive_ores/thumbnail.png"
+thumbnail: "thumbnail.png"
 alt: "nazo alt"
 ---
 
 ここは別にMinecraftのブログではないのですが、英語の情報すらほとんど出てこないので書いてみることにしました。
 
 # Sodiumとは？
-![Sodiumのロゴ](./images/fabric_sodium_emissive_ores/sodium.png)
+![Sodiumのロゴ](sodium.png)
 
 ## Sodiumの特徴
 Sodiumは、Optifineよりも高パフォーマンスな軽量化MODです。Forge版はなく、Fabricのみで動作します。
@@ -75,7 +75,7 @@ Sodiumのアドオン（拡張）です。Sodiumが直接サポートしてい�
 
 デフォルトでは「ガラス・本棚のつなぎ目」「光るテクスチャ」「カスタムブロックレイヤー（効果不明）」が全てオンになっています。
 
-![設定画面](./images/fabric_sodium_emissive_ores/settings.png)
+![設定画面](settings.png)
 
 ## 鉱石を光らせるリソースパック
 Optifineであれば導入直後に入れればいいのですが、Sodiumの場合modmenu以外上にあるMODをすべて導入して、ようやくリソースパックを入れる準備が整います。

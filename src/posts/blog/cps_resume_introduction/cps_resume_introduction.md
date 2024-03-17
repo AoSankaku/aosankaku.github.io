@@ -3,7 +3,7 @@ title: "「#コンパス履歴書ジェネレーター」のご紹介"
 category: "Works"
 date: "2023-01-29T21:00:00+09:00"
 desc: "「#コンパス履歴書ジェネレーター」の概要です。"
-thumbnail: "./images/cps_resume_introduction/ET3-ITLUMAAWZIu.jpg"
+thumbnail: "ET3-ITLUMAAWZIu.jpg"
 alt: "nazo alt"
 ---
 
@@ -20,13 +20,13 @@ alt: "nazo alt"
 
 ## リンク
 ### [コンパス履歴書ジェネレーター](https://aosankaku.github.io/cps_resume/)
-![コンパス履歴書ジェネレーターQRコード](/images/cps_resume_introduction/cps_rireki_qr_github.png)  
+![コンパス履歴書ジェネレーターQRコード](cps_rireki_qr_github.png)  
 こちらから作成できます。デザインにこだわらなければ3分ぐらいで完成します。  
 最新のキャラがいないのは更新サボってるからです。ごめんなさい。
 
 ## サンプル
 こんな画像ができます。右上のQRコードはちゃんと履歴書ジェネレーターに飛ぶようになっていますので、この画像を拡散するだけで履歴書ジェネレーターを布教できます。やったね！
-![sampleimage](/images/cps_resume_introduction/sample.jpg)
+![sampleimage](sample.jpg)
 
 ## 注意
 * パソコンからでも使えないことはないですが、キャラ選択が悲惨なことになっています。やめたほうが賢明です。  
