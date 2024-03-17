@@ -21,14 +21,20 @@ const CenteredImg: React.FC<CenteredImgProps> = ({ src, alt }) => {
             id
             gatsbyImageData(
               layout: CONSTRAINED
-              aspectRatio: 1.77
+              aspectRatio: 1.91
               placeholder: BLURRED
+              transformOptions: {
+                fit: COVER
+                cropFocus: ENTROPY
+              }
             )
           }
         }
       }
     }
   `)
+  //aspectRatioのデフォルト値は1.77、黄金比は1.68、OGPに最適なのは1.91
+  //cropFocusをATTENTIONやENTROPYにすると自動に、CENTERにすると中心になる
 
   const image = useMemo(() => {
     const imageSharp = data.allImageSharp.edges.find(
