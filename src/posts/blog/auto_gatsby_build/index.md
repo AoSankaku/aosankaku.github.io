@@ -2,7 +2,7 @@
 title: 【Gatsby】GitHub PagesでBuildを自動化したら、ビルド結果がおかしくなった
 category: Tech
 date: "2024-03-14T16:00:00+09:00"
-desc: GitHub Actionsを使ってGatsbyのビルドを自動化したら、帰って来る結果がおかしくなったので解決していきました。
+desc: GitHub Actionsを使ってGatsbyのビルドを自動化したら、返って来る結果がおかしくなったので解決していきました。
 thumbnail: ./images/default.png
 alt: ""
 ---
@@ -152,9 +152,54 @@ jobs:
 
 GitHub Actionsを使って、自動で実行！…したはずが、何かがおかしい。**Homeに`about.md`の内容がなぜだか載っている…**
 
-`index.tsx`は以下のようになっていて、そんなことになるのは絶対におかしい。一体どうして…
+`index.tsx`は以下のようになっていて、GraphQLの応答も正常です。そんなことになるのは絶対におかしい。一体どうして…
+
+```tsx
+  //index.tsxの一部
+  return (
+    <Layout>
+      <SEO title="Home" />
+      <Main>
+        <Content>
+          {!currentCategory ? <HomeDescription /> : null}
+          <CategoryFilter categoryList={data.allMarkdownRemark.group} />
+          <PostTitle>{postTitle}</PostTitle>
+          <PostGrid posts={posts} />
+        </Content>
+      </Main>
+    </Layout>
+  )
+```
+
+```tsx
+  //home.tsxの一部
+  const HomeDescription = () => {
+  const data = useStaticQuery<Queries.Query>(graphql`
+    query HomeDescription {
+      allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/home/" } }) {
+        edges {
+          node {
+            html
+          }
+        }
+      }
+    }
+  `)
+
+  const markdown = data.allMarkdownRemark.edges[0].node.html
+
+  return (
+    <Container
+      dangerouslySetInnerHTML={{ __html: markdown ?? "" }}
+      rhythm={rhythm}
+    ></Container>
+  )
+}
+```
 
 意を決してstackoverflowなどで質問をしてみるも、全く返ってきません（1日しか待ってないけど）。
+
+しばらく待ったらちょっとコメントが付きましたが、「forkして見たけど再現できなかった」という回答でした。
 
 #### 天啓
 
