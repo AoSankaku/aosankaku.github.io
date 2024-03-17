@@ -3,13 +3,27 @@ title: "IFTTTでプロフィール画像が更新できなくなった"
 category: "Tech"
 date: "2023-05-21T12:00:00+09:00"
 desc: "IFTTTで以前までプロフィール画像を自動更新できていたのですが、できなくなりました。解決していきます。"
-thumbnail: "./images/profile_pic_update/no_image_card.png"
+thumbnail: "no_image_card.png"
 ---
+
+## 注意（更新日：2024/03/18）
+
+IFTTTはTwitter（旧X）において、プロフィール画像及びbio（概要欄）の自動更新機能を停止しました。
+
+メールは来ているのですが、何故かサイトや公式Twitter（旧X）での告知はまだ無いようです。謎。
+
+これに関して私が投稿した記事がこちらにあります。
+
+[【お知らせ+近況】Twitter（旧X）のプロフィール画像自動更新を停止します](../abandoning_profile_pic_update/#いままで)
+
+自動更新については、代替手段なども特に思いあたりません。せっかくなので、Misskeyに行きましょう。楽しいですよ。Webhookなども簡単に使えます。
+
+## プロフィール画像がデフォになる
 
 ある日突然、IFTTTでプロフィール画像が全く更新できなくなりました。  
 更新自体はできるんですが、プロフィール画像がこれになってしまうんです。
 
-![File not found ifttt](https://help.ifttt.com/hc/article_attachments/360041394694/no_image_card.png)
+![File not found ifttt](no_image_card.png)
 
 画像引用元：https://help.ifttt.com/hc/en-us/articles/115010361748-Why-is-there-a-File-not-found-image-on-my-post-
 
@@ -17,7 +31,6 @@ Google Driveから画像を引っ張ってきているのですが、「File not
 
 今回はこれを直していきます。
 
-# 発端
 ## プロフィール画像を自動で更新したい！
 ありがたいことにプロフィール画像を複数の人に描いてもらうことができて、「どれか一つに決めるなんて私にはとても。。。。。。」という状態になっていました。
 
@@ -74,7 +87,7 @@ https://3z1k.hatenablog.com/entry/2021/01/19/210000
 
 このサイトに変換ツールなるものがあり、ありがたく使わせてもらいました。
 
-![変換ツール](./images/profile_pic_update/imgconvert.png)
+![変換ツール](imgconvert.png)
 
 ここにGoogle Driveの共有用URLを貼り付けると、
 ```html
@@ -84,7 +97,7 @@ https://3z1k.hatenablog.com/entry/2021/01/19/210000
 
 そしてこのURLをIFTTTに貼り付ければ…！
 
-![変換ツール](./images/profile_pic_update/twprofile.png)
+![変換ツール](twprofile.png)
 
 **大成功**。問題解決！
 
