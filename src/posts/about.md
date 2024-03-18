@@ -23,15 +23,24 @@ Cookieの使用を望まない場合、ブラウザからCookieを無効に設�
 
 なお、元になったソースコードは[こちら](https://github.com/sungik-choi/gatsby-starter-apple#readme)から確認することができます。こちらはMITライセンスのため、誰でも自由に利用することができます。
 
+### シェアボタンのロゴ
+
+ブログ記事下部のシェアボタンは、各社に著作権があります。
+
+https://misskey-hub.net/ja/brand-assets/
+
 ## 免責事項
+
 当サイトのコンテンツ・情報につきまして、可能な限り正確な情報を掲載するよう努めておりますが、誤情報が入り込んだり、情報が古くなっていることもございます。  
 当サイトからリンクやバナーなどによって他のサイトに移動された場合、移動先サイトで提供される情報、サービス等について一切の責任を負いません。
 
-## おことわり（Disclaimer）
+### 「いいね」「リツイート」の評価について
+
 Blue Triangleが発信する情報については細心の注意を払っておりますが、その正当性について一切保証せず、またその事によって被った損害について一切責任を負いません。  
 私がTwitter上で行う「いいね」「リツイート」などの行為は、必ずしも拡散することを目的とせず、同時に直後に明示的に意見を表明していない「いいね」とコメントのない「リツイート」については賛同、中立、反対のいずれの立場も表しません。  
+なお、他のSNSにおける「リアクション」及び「リノート」等リツイートと同等の行為も同様です。  
 （ホントはこんなしょーもないこと書きたくないんだけど[こんなこと](https://www.bengo4.com/c_23/n_13857/)があった以上書いておきます）
  
-
 I'm carefully paying attention to what I publish, however, I do NOT guarantee the validity of the information, and should there be any inconveniences, I do NOT take any responsibilities.  
-I do NOT necessarily mean to express being for, against, or neutral to what I just liked or retweeted.
+I do NOT necessarily mean to express being for, against, or neutral to what I just liked or retweeted.  
+Reactions like "Likes" and "Retweets" on any other platforms are under the same conditions.

@@ -1,9 +1,10 @@
-import React from "react"
+import React, { useState, useEffect } from "react"
 import { graphql, type PageProps } from "gatsby"
 import styled from "styled-components"
 
 import Layout from "Layouts/layout"
 import SEO from "Components/seo"
+import ShareButtons from "Components/ShareButtons"
 import Comment from "Components/comment"
 import { rhythm } from "Styles/typography"
 import Category from "Styles/category"
@@ -24,6 +25,12 @@ const BlogPost: React.FC<PageProps<Queries.Query>> = ({ data }) => {
   const { markdownRemark } = data
   const { frontmatter, html } = markdownRemark!
   const { title, desc, thumbnail, date, category } = frontmatter!
+
+  const [pathName, setPathName] = useState("")
+
+  useEffect(() => {
+    setPathName(window.location.href)
+  }, [])
 
   const ogImagePath =
     // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
@@ -54,6 +61,7 @@ const BlogPost: React.FC<PageProps<Queries.Query>> = ({ data }) => {
             </InnerWrapper>
           </OuterWrapper>
         </article>
+        <ShareButtons title={title as string} articleUrl={pathName} />
         <CommentWrap>
           <Comment />
         </CommentWrap>
