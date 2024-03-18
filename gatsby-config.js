@@ -103,6 +103,17 @@ const markdownPlugins = [
             className: 'code-title-prismjs',
           }
         },
+        {
+          resolve: `gatsby-remark-table-of-contents`,
+          options: {
+            exclude: "目次",
+            tight: true,
+            ordered: false,
+            fromHeading: 2,
+            toHeading: 6,
+            className: "table-of-contents"
+          },
+        },
         "gatsby-remark-prismjs-copy-button",
         {
           resolve: `gatsby-remark-prismjs`,
@@ -118,17 +129,6 @@ const markdownPlugins = [
           resolve: "gatsby-remark-images",
           options: {
             linkImagesToOriginal: false,
-          },
-        },
-        {
-          resolve: `gatsby-remark-table-of-contents`,
-          options: {
-            exclude: "目次",
-            tight: true,
-            ordered: false,
-            fromHeading: 2,
-            toHeading: 6,
-            className: "table-of-contents"
           },
         },
         /*
