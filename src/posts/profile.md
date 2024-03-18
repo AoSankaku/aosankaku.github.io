@@ -163,9 +163,4 @@ Twitter（旧X）のみならず、MisskeyおよびMastodonにもこの規定を
 
 ### 知り合いなのにフォロバが来ない場合
 
-知り合いの場合は普通にフォロバしています。来ない場合は忘れているので、急かしてください。ただし、Mastodonはほとんど使っていないためめんどくさくてフォロバしないかもしれません。
- 
-
-I'm carefully paying attention to what I publish, however, I do NOT guarantee the validity of the information, and should there be any inconveniences, I do NOT take any responsibilities.  
-I do NOT necessarily mean to express being for, against, or neutral to what I just liked or retweeted.
-
+知り合いの場合は、99％普通にフォロバしています。来ない場合は忘れているので、急かしてください。ただし、ほとんど使っていないところではめんどくさくてフォロバが1年以上遅れるかもしれません。
