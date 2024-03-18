@@ -99,7 +99,17 @@ const Markdown = styled.article<{ rhythm: typeof typography["rhythm"] }>`
     }
   }
 
-  h4,
+  h4 {
+    font-size: 1.2rem;
+    line-height: 1.3;
+    margin-bottom: ${({ rhythm }) => rhythm(0.6)};
+    margin-top: ${({ rhythm }) => rhythm(1.2)};
+    @media (max-width: ${({ theme }) => theme.device.sm}) {
+      font-size: 1.1rem;
+    }
+  }
+
+
   h5,
   h6 {
     margin-bottom: ${({ rhythm }) => rhythm(0.5)};
