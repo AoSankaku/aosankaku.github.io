@@ -1,5 +1,7 @@
 import { createGlobalStyle } from "styled-components"
 import reset from "styled-reset"
+import prismGhcolors from "./prismjs-themes/prismGhcolors"
+import prismAtomDark from "./prismjs-themes/prismAtomDark"
 
 const GlobalStyle = createGlobalStyle`
   ${reset}
@@ -91,6 +93,7 @@ const GlobalStyle = createGlobalStyle`
       --color-blue: #0066cc;
       --color-icon: #2c2c2c;
       --color-strong: #ff6a00;
+      ${prismGhcolors}
     }
 
     body.dark {
@@ -127,6 +130,7 @@ const GlobalStyle = createGlobalStyle`
       --color-blue: #70b7ff;
       --color-icon: #d1d1d1;
       --color-strong: #ffc41f;
+      ${prismAtomDark}
     }
   }
 

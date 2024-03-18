@@ -34,14 +34,14 @@ Terrariaサーバーがデフォルトで使用するポート番号は**7777**�
 
 使うポート番号を決めたら、ufwを使っている場合はそのポートを開けます。ufwの基本がわからない人は、[諦めてください](https://gihyo.jp/admin/serial/01/ubuntu-recipe/0076)。
 
-```shell
+```sh
 sudo ufw allow 7777/tcp
 sudo ufw reload
 ```
 
 できたら、ufw statusで確認しましょう。
 
-```shell
+```sh
 sudo ufw status
 ```
 
@@ -57,13 +57,13 @@ Ubuntuをいじるような変態の皆様ならご存知のことだとは思�
 
 まだ入っていない方は、インストールを行っておきます。Ubuntuの例です。他のOSを使っている方は、自分で調べてください。
 
-```shell
+```sh
 sudo apt install -y wget
 ```
 
 入っているかどうかは以下のコマンドで確認できます。最初からUbuntuにはwgetが入っていたような気がしなくもありません。
 
-```shell
+```sh
 wget
 ```
 
@@ -79,7 +79,7 @@ https://terraria.fandom.com/wiki/Server#Downloads
 
 そうしたら、以下のようなコマンドを打ってください。URLの部分はもちろん、コピーしてきたものです。
 
-```shell
+```sh
 wget https://terraria.org/api/download/pc-dedicated-server/terraria-server-1449.zip
 ```
 
@@ -87,19 +87,19 @@ wget https://terraria.org/api/download/pc-dedicated-server/terraria-server-1449.
 
 私はUbuntuでも（なんとなく）7zipを使っています。まだ入っていない方は、以下のコマンドで導入しておきましょう。ちなみに、wgetの他にもcurlでもいけるっぽいですが、wgetのほうが楽にかけます。
 
-```shell
+```sh
 sudo apt install p7zip-full
 ```
 
 そうしたら、取ってきたZipファイルの中身を解凍します。
 
-```shell
+```sh
 7z x ダウンロードしてきたファイル名.zip
 ```
 
 場所を指定する場合、-dオプションで指定します。
 
-```shell
+```sh
 7z x ダウンロードしてきたファイル名.zip -d /dokodemo/iiyo
 ```
 
@@ -109,7 +109,7 @@ Ubuntuの場合、解凍したフォルダの中にある`Linux`フォルダを�
 
 Linuxのままだと邪魔なので、mvしておきましょう（任意）。
 
-```shell
+```sh
 mv ./できたフォルダの名前/Linux ./好きなフォルダ名/.
 ```
 
@@ -123,7 +123,7 @@ Terrariaサーバーを起動するに当たり、configファイルを作って
 
 そうしたら、
 
-```shell
+```sh
 vim sc.txt
 ```
 
@@ -149,7 +149,7 @@ https://k0ta0uchi.hatenablog.com/entry/2016/10/20/160622
 
 これを忘れると「Permission Denied」と出て何もできません。
 
-```shell
+```sh
 chmod 744 TerrariaServer.bin.x86_64
 ```
 
@@ -161,7 +161,7 @@ chmod 744 TerrariaServer.bin.x86_64
 
 ここまで来たらいよいよテスト起動です。以下のコマンドを入れます。
 
-```shell
+```sh
 ./TerrariaServer.bin.x86_64 -config ./cf.txt
 ```
 
@@ -174,7 +174,7 @@ chmod 744 TerrariaServer.bin.x86_64
 screenが入っていない人は、あらかじめ入れておいてください。本番環境でサーバーをうんちゃらかんちゃらするのには向いていないらしいですが、ゲームをするだけであれば全く問題ありません。
 
 
-```shell
+```sh
 sudo apt install screen
 ```
 
@@ -205,7 +205,7 @@ screenの基本操作や動作は各自ググってください。ただ、以�
 
 パスワードは毎回入力する手間があります。「パスワード」とかしこまらずに、「合言葉」ぐらいで捉えると良いと思います。
 
-ちなみに、パスワードは変に複雑にするよりも、とにかく長いほうが攻撃に強いです。参考にしてみてください。
+ちなみに、パスワードは変に複雑にするよりも、とにかく長いほうが攻撃に強いです。
 
 ポート番号についても、基本的には変えておくことを推奨します。サーバー単位を狙った攻撃やポートスキャンは防げませんが、それでも幾分かはマシになるはずです。
 

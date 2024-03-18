@@ -70,7 +70,7 @@ const devPlugins = [
         Types: "src/types",
         Utils: "src/utils",
       },
-      extensions: ["js", "ts", "tsx"],
+      extensions: [".js", ".ts", ".tsx"],
     },
   },
   {
@@ -97,16 +97,15 @@ const markdownPlugins = [
       plugins: [
         "gatsby-remark-copy-linked-files",
         "gatsby-remark-autolink-headers",
+        "gatsby-remark-prismjs-copy-button",
         {
-          resolve: "gatsby-remark-vscode",
+          resolve: `gatsby-remark-prismjs`,
           options: {
-            theme: {
-              default: "Github Light Theme",
-              parentSelector: {
-                "body[data-theme=dark]": "Dark Github",
-              },
-            },
-            extensions: ["vscode-theme-github-light", "dark-theme-github"],
+            classPrefix: "language-",
+            inlineCodeMarker: null,
+            aliases: {},
+            showLineNumbers: true,
+            noInlineHighlight: false,
           },
         },
         {
