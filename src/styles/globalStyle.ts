@@ -91,6 +91,7 @@ const GlobalStyle = createGlobalStyle`
       --color-floating-button-shadow: rgba(0, 0, 0, 0.2);
       --color-floating-button-shadow-hover: rgba(0, 0, 0, 0.4);
       --color-blue: #0066cc;
+      --color-deepblue: #1e90ff;
       --color-icon: #2c2c2c;
       --color-strong: #ff6a00;
       ${prismGhcolors}
@@ -128,6 +129,7 @@ const GlobalStyle = createGlobalStyle`
       --color-floating-button-shadow: rgba(0, 0, 0, 0.4);
       --color-floating-button-shadow-hover: rgba(0, 0, 0, 0.4);
       --color-blue: #70b7ff;
+      --color-deepblue: #0000ff;
       --color-icon: #d1d1d1;
       --color-strong: #ffc41f;
       ${prismAtomDark}
@@ -190,6 +192,39 @@ const GlobalStyle = createGlobalStyle`
   .anchor.before {
     fill: var(--color-text);
     stroke: var(--color-text);
+  }
+
+  .code-title-prismjs {
+    background-color: var(--color-gray-2);
+    padding: 0.3em 0.4em 0.9em 0.4em;
+    border-radius: 0.2em;
+    border: solid 1px var(--color-code-highlight-border);
+    display: inline-block;
+    position: relative;
+    top: 10px;
+    z-index: 1;
+  }
+
+  .gatsby-highlight {
+    position: relative;
+    z-index: 2;
+  }
+
+  .gatsby-remark-prismjs-copy-button-container {
+    position: relative;
+    z-index: 3;
+  }
+
+  .gatsby-remark-prismjs-copy-button {
+    position: relative;
+    right: 20px;
+    bottom: 15px;
+    padding: 5px;
+    background-color: var(--color-deepblue);
+    font-color: var(--color-text);
+    :hover {
+      background-color: var(--color-blue);
+    }
   }
 `
 

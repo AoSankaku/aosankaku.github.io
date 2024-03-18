@@ -97,6 +97,12 @@ const markdownPlugins = [
       plugins: [
         "gatsby-remark-copy-linked-files",
         "gatsby-remark-autolink-headers",
+        {
+          resolve: 'gatsby-remark-prismjs-title',
+          options: {
+            className: 'code-title-prismjs',
+          }
+        },
         "gatsby-remark-prismjs-copy-button",
         {
           resolve: `gatsby-remark-prismjs`,
