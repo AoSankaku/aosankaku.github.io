@@ -17,7 +17,6 @@
     "semantic-release": "semantic-release"
   },
   "dependencies": {
-    "dark-theme-github": "github:remorses/dark-github-theme",
     "gatsby": "^5.13.3",
     "gatsby-plugin-feed": "^5.0.0-next.4",
     "gatsby-plugin-image": "^3.0.0-next.5",
@@ -32,13 +31,11 @@
     "gatsby-remark-copy-linked-files": "^6.0.0-next.2",
     "gatsby-remark-embed-youtube": "^0.0.7",
     "gatsby-remark-images": "^7.0.0-next.4",
-    "gatsby-remark-link-beautify": "^2.2.3",
     "gatsby-remark-prismjs": "^7.13.1",
     "gatsby-remark-prismjs-copy-button": "^0.4.0",
     "gatsby-remark-prismjs-title": "^1.0.0",
     "gatsby-remark-responsive-iframe": "^6.13.1",
     "gatsby-remark-table-of-contents": "^2.0.0",
-    "gatsby-remark-vscode": "^3.3.1",
     "gatsby-source-filesystem": "^5.0.0-next.3",
     "gatsby-transformer-remark": "^6.0.0-next.6",
     "gatsby-transformer-sharp": "^5.0.0-next.5",
@@ -50,8 +47,7 @@
     "scroll-hint": "^1.2.5",
     "styled-components": "^5.3.6",
     "styled-reset": "^4.4.2",
-    "typography": "^0.16.21",
-    "vscode-theme-github-light": "github:yunlingz/vscode-theme-github-light"
+    "typography": "^0.16.21"
   },
   "devDependencies": {
     "@graphql-eslint/eslint-plugin": "^3.13.1",
