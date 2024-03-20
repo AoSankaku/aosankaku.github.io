@@ -210,6 +210,15 @@ const searchPlugins = [
       ],
     },
   },
+  {
+    resolve: `gatsby-plugin-google-gtag`,
+    options: {
+      trackingIds: ["G-Z49MSPZWTY"],
+      pluginConfig: {
+        head: true
+      }
+    }
+  },
 ]
 
 const pwaPlugins = [
