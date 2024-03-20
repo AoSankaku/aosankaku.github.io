@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react"
+import React, { useState } from "react"
 import styled from "styled-components"
 import {
   LineShareButton,
@@ -55,8 +55,7 @@ const ShareButtons: React.FC<Props> = ({ title, articleUrl }) => {
           setIsCopied(true);
         }} onMouseLeave={() => {
           setIsCopied(false);
-        }
-        } href={`javascript:void(0);`}>
+        }} href={`javascript:void(0);`}>
           {isCopied ? <FaCheck aria-label="Copy Link" color="var(--color-text)" style={copyIconStyle} /> : <FaLink aria-label="Copy Link" color="var(--color-text)" style={copyIconStyle} />}
         </a>
       </SharebuttonsWrapper >
