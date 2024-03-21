@@ -226,6 +226,10 @@ const GlobalStyle = createGlobalStyle`
       background-color: var(--color-blue);
     }
   }
+
+  p > code.language-text{
+    white-space: normal !important;
+  }
 `
 
 export default GlobalStyle
