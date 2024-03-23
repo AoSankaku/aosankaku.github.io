@@ -98,12 +98,6 @@ const markdownPlugins = [
         "gatsby-remark-copy-linked-files",
         "gatsby-remark-autolink-headers",
         {
-          resolve: 'gatsby-remark-prismjs-title',
-          options: {
-            className: 'code-title-prismjs',
-          }
-        },
-        {
           resolve: `gatsby-remark-table-of-contents`,
           options: {
             exclude: "目次",
@@ -113,6 +107,19 @@ const markdownPlugins = [
             toHeading: 6,
             className: "table-of-contents"
           },
+        },
+        {
+          resolve: "gatsby-remark-embed-youtube",
+          options: {
+            width: 800,
+            height: 400
+          }
+        },
+        {
+          resolve: 'gatsby-remark-prismjs-title',
+          options: {
+            className: 'code-title-prismjs',
+          }
         },
         "gatsby-remark-prismjs-copy-button",
         {
@@ -139,13 +146,6 @@ const markdownPlugins = [
           },
         },
         */
-        {
-          resolve: "gatsby-remark-embed-youtube",
-          options: {
-            width: 800,
-            height: 400
-          }
-        },
         "gatsby-remark-responsive-iframe",
       ],
     },
