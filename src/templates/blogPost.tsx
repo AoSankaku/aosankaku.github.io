@@ -291,6 +291,7 @@ const ArticlesNavigationArrow = styled.div`
   margin-bottom: var(--color-card);
   grid-area: arrow;
   font-weight: var(--font-weight-semi-bold);
+  margin-bottom: var(--sizing-md);
 `
 
 const ArticlesNavigationImage = styled.div`
