@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react"
-import { graphql, type PageProps } from "gatsby"
+import { graphql, Link, type PageProps } from "gatsby"
+import { GatsbyImage, IGatsbyImageData } from "gatsby-plugin-image"
 import styled from "styled-components"
 
 import Layout from "Layouts/layout"
@@ -11,6 +12,8 @@ import Category from "Styles/category"
 import DateTime from "Styles/dateTime"
 import Markdown from "Styles/markdown"
 
+import { FaArrowRight, FaArrowLeft } from "react-icons/fa6"
+
 /*
 import ScrollHint from "scroll-hint"
 
@@ -21,12 +24,53 @@ new ScrollHint('.js-scrollable', {
 });
 */
 
-const BlogPost: React.FC<PageProps<Queries.Query>> = ({ data }) => {
+type BlogPostQuery = Queries.Query & {
+  next: {
+    fields: {
+      slug: string;
+    };
+    frontmatter: {
+      title: string;
+      thumbnail: {
+        childImageSharp: {
+          gatsbyImageData: IGatsbyImageData;
+        }
+      }
+    };
+  } | null;
+  previous: {
+    fields: {
+      slug: string;
+    };
+    frontmatter: {
+      title: string;
+      thumbnail: {
+        childImageSharp: {
+          gatsbyImageData: IGatsbyImageData;
+        }
+      }
+    };
+  } | null;
+  defaultImage: {
+    childImageSharp: {
+      gatsbyImageData: IGatsbyImageData;
+    }
+  }
+};
+
+const BlogPost: React.FC<PageProps<BlogPostQuery>> = ({ data }) => {
   const { markdownRemark } = data
   const { frontmatter, html } = markdownRemark!
   const { title, desc, thumbnail, date, category } = frontmatter!
 
   const [pathName, setPathName] = useState("")
+
+  console.log("thum:")
+  console.dir(thumbnail)
+
+  const { next, previous } = data
+
+  const { defaultImage } = data
 
   useEffect(() => {
     setPathName(window.location.href)
@@ -62,11 +106,63 @@ const BlogPost: React.FC<PageProps<Queries.Query>> = ({ data }) => {
           </OuterWrapper>
         </article>
         <ShareButtons title={title as string} articleUrl={pathName} />
+
+        <ArticlesNavigationContainer>
+          {(next !== null) &&
+            <ArticlesPreContainer>
+              <Link to={next?.fields.slug as string}>
+                <NextArticle>
+                  <ArticlesNavigationArrow>
+                    <FaArrowLeft /><span>次の記事</span>
+                  </ArticlesNavigationArrow>
+                  <ArticlesNavigationImage>
+                    <GatsbyImage
+                      image={
+                        next.frontmatter.thumbnail?.childImageSharp
+                          ? next.frontmatter.thumbnail?.childImageSharp?.gatsbyImageData
+                          : defaultImage.childImageSharp.gatsbyImageData
+                      }
+                      alt="Thumbnail of the next article"
+                    />
+                  </ArticlesNavigationImage>
+                  <ArticlesNavigationParagraph>
+                    {next?.frontmatter.title}
+                  </ArticlesNavigationParagraph>
+                </NextArticle>
+              </Link>
+            </ArticlesPreContainer>
+          }
+
+          {(previous !== null) &&
+            <ArticlesPreContainer>
+              <Link to={previous?.fields.slug as string}>
+                <PreviousArticle>
+                  <ArticlesNavigationArrow>
+                    <span>前の記事</span><FaArrowRight />
+                  </ArticlesNavigationArrow>
+                  <ArticlesNavigationImage>
+                    <GatsbyImage
+                      image={
+                        previous.frontmatter.thumbnail?.childImageSharp
+                          ? previous.frontmatter.thumbnail?.childImageSharp?.gatsbyImageData
+                          : defaultImage.childImageSharp.gatsbyImageData
+                      }
+                      alt="Thumbnail of the next article"
+                    />
+                  </ArticlesNavigationImage>
+                  <ArticlesNavigationParagraph>
+                    {previous?.frontmatter.title}
+                  </ArticlesNavigationParagraph>
+                </PreviousArticle>
+              </Link>
+            </ArticlesPreContainer>
+          }
+        </ArticlesNavigationContainer>
         <CommentWrap>
           <Comment />
         </CommentWrap>
       </main>
-    </Layout>
+    </Layout >
   )
 }
 
@@ -148,8 +244,78 @@ const Title = styled.h1`
   }
 `
 
+const ArticlesNavigationContainer = styled.div`
+  display: flex;
+  width: 100%;
+  padding: 40px;
+  justify-content: center;
+  flex-wrap: nowrap;
+  @media (max-width: ${({ theme }) => theme.device.sm}) {
+    flex-direction: column;
+  }
+`
+
+const ArticlesPreContainer = styled.div`
+  flex: 1 1 0;
+  padding: var(--sizing-md);
+  min-width: 0;
+`
+
+const ArticleNavigationCommons = styled.div`
+  display: grid;
+  place-items: center;
+  grid-template-areas:
+    "arrow arrow"
+    "img name";
+  grid-template-columns: 100px auto;
+  grid-gap: 0.25rem;
+  margin: var(--sizing-xs);
+  border-radius: 1em;
+  padding: 20px;
+  width: 100%;
+`
+
+const NextArticle = styled(ArticleNavigationCommons)`
+  background-color: var(--color-card);
+`
+
+const PreviousArticle = styled(ArticleNavigationCommons)`
+  background-color: var(--color-card);
+`
+
+const ArticlesNavigationArrow = styled.div`
+  display: flex;
+  gap: 0 10px;
+  align-items: center;
+  font-size: 1.25rem;
+  margin-bottom: var(--color-card);
+  grid-area: arrow;
+  font-weight: var(--font-weight-semi-bold);
+`
+
+const ArticlesNavigationImage = styled.div`
+  width: 100px;
+  height: 100px;
+  grid-area: img;
+`
+
+const ArticlesNavigationParagraph = styled.p`
+  grid-area: name;
+  line-height: 1.5em;
+  font-size: 1em;
+  padding: 0px 10px;
+  align-self: center;
+  justify-self: start;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  word-break: break-word;
+  overflow: hidden;
+  text-overflow: ellipsis;
+`
+
 export const query = graphql`
-  query BlogPostPage ($slug: String!) {
+  query BlogPostPage ($slug: String!, $previous: String!, $next: String!) {
     markdownRemark(fields: { slug: { eq: $slug } }) {
       html
       frontmatter {
@@ -162,6 +328,64 @@ export const query = graphql`
         }
         date(formatString: "YYYY-MM-DD")
         category
+      }
+    }
+    previous: markdownRemark(fields: { slug: { eq: $previous } }){
+      fields {
+        slug
+      }
+      frontmatter {
+        title
+        thumbnail {
+          childImageSharp {
+            gatsbyImageData(
+              layout: CONSTRAINED
+              width: 100
+              aspectRatio: 1
+              placeholder: BLURRED
+              transformOptions: {
+                fit: COVER
+                cropFocus: CENTER
+              }
+            )
+          }
+        }
+      }
+    }
+    next: markdownRemark(fields: { slug: { eq: $next } }){
+      fields {
+        slug
+      }
+      frontmatter {
+        title
+        thumbnail {
+          childImageSharp {
+            gatsbyImageData(
+              layout: CONSTRAINED
+              width: 100
+              aspectRatio: 1
+              placeholder: BLURRED
+              transformOptions: {
+                fit: COVER
+                cropFocus: CENTER
+              }
+            )
+          }
+        }
+      }
+    }
+    defaultImage: file(absolutePath: {regex: "/og-default.png/"}) {
+      childImageSharp {
+        gatsbyImageData(
+          layout: CONSTRAINED
+          width: 100
+          aspectRatio: 1
+          placeholder: BLURRED
+          transformOptions: {
+            fit: COVER
+            cropFocus: CENTER
+          }
+        )
       }
     }
   }

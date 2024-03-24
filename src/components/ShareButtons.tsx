@@ -75,7 +75,7 @@ const SharebuttonsWrapper = styled.div`
   width: 100%;
   padding: 20px var(--padding-lg);
   margin: 0 auto;
-  margin-bottom: var(--sizing-xl);
+  margin-bottom: var(--sizing-md);
   display: flex;
   justify-content: center;
   flex-wrap: wrap;

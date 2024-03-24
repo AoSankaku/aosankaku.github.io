@@ -46,12 +46,20 @@ exports.createPages = async ({ graphql, actions }) => {
 
   const posts = result.data.postsRemark.edges
 
-  posts.forEach(({ node }) => {
+  posts.forEach(({ node }, index) => {
+    console.log(index)
+    //古い記事のほうが番号が多いらしい、ふざけるな
+    const next = index == posts.length - 1 ? null : posts[index + 1].node;
+    const prev = index == 0 ? null : posts[index - 1].node;
+
     createPage({
       path: node.fields.slug,
       component: blogPostTemplate,
       context: {
         slug: node.fields.slug,
+        //ひっくり返しておく
+        previous: index == posts.length - 1 ? "" : next.fields.slug,
+        next: index == 0 ? "" : prev.fields.slug,
       },
     })
   })
