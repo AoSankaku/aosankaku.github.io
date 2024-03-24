@@ -1,20 +1,29 @@
 # このサイトについて
+
 ## プライバシーポリシー
 
+### アクセス解析
+
+当サイトでは、Google Analyticsを使用しています。
+
 ### 個人情報の利用目的について
+
 当ブログでは、お問い合わせやコメント投稿の際に氏名・メールアドレス等の個人情報を入力いただく場合があります。  
 取得した個人情報は、必要な連絡のみに利用させていただくもので、これらの目的以外では利用いたしません。
 
 ### Cookieの使用について
+
 当ブログでは、ページ読み込みの高速化、広告配信、アクセス解析のためにCookieを使用しています。  
 Cookieによりブラウザを識別していますが、特定の個人の識別はできない状態で匿名性が保たれています。  
 Cookieの使用を望まない場合、ブラウザからCookieを無効に設定できます。
 
 ### プライバシーポリシーの変更について
+
 当サイトは、個人情報に関して適用される日本の法令を遵守するとともに、本ポリシーの内容を適宜見直しその改善に努めます。  
 修正された最新のプライバシーポリシーは常に当ページにて開示いたします。
 
-## 著作権
+## 著作権に関する表記
+
 このウェブサイトのソースコードは、Sungik Choi氏がMITライセンスに基づき利用を許可したソフトウェアを、Blue Triangleが改造したものです。
 
 ウェブサイト上にある私が作成したコンテンツ及び私が改変したソースコードは、個別に断りがない限り、すべての著作権がBlue Triangleに属します。
@@ -25,9 +34,19 @@ Cookieの使用を望まない場合、ブラウザからCookieを無効に設�
 
 ### シェアボタンのロゴ
 
-ブログ記事下部のシェアボタンは、各社に著作権があります。
+ブログ記事下部のシェアボタンは、各社・各団体に著作権があります。
+
+#### Misskeyロゴの著作権表示
 
 https://misskey-hub.net/ja/brand-assets/
+
+CC BY-SAライセンスのもとで使用しています。
+
+#### Mastodonロゴの著作権表示
+
+https://joinmastodon.org/ja/branding
+
+こちらの規定（独自ライセンス）に基づき使用しています。
 
 ## 免責事項
 
@@ -37,10 +56,10 @@ https://misskey-hub.net/ja/brand-assets/
 ### 「いいね」「リツイート」の評価について
 
 Blue Triangleが発信する情報については細心の注意を払っておりますが、その正当性について一切保証せず、またその事によって被った損害について一切責任を負いません。  
-私がTwitter上で行う「いいね」「リツイート」などの行為は、必ずしも拡散することを目的とせず、同時に直後に明示的に意見を表明していない「いいね」とコメントのない「リツイート」については賛同、中立、反対のいずれの立場も表しません。  
+私がTwitter上で行う「いいね」「リツイート」などの行為は、必ずしも拡散することを目的とせず、同時に直後に明示的に意見を表明していない「いいね」とコメントのない「リツイート」については、その回数の多寡や該当の投稿の内容にかかわらず賛同、中立、反対のいずれの立場も表しません。  
 なお、他のSNSにおける「リアクション」及び「リノート」等リツイートと同等の行為も同様です。  
 （ホントはこんなしょーもないこと書きたくないんだけど[こんなこと](https://www.bengo4.com/c_23/n_13857/)があった以上書いておきます）
  
 I'm carefully paying attention to what I publish, however, I do NOT guarantee the validity of the information, and should there be any inconveniences, I do NOT take any responsibilities.  
-I do NOT necessarily mean to express being for, against, or neutral to what I just liked or retweeted.  
-Reactions like "Likes" and "Retweets" on any other platforms are under the same conditions.
+I do NOT necessarily mean to express being for, against, or neutral to what I just liked or retweeted regardless of the amount that I did or contents of the posts.  
+The above statement will apply on any reactions like "Likes" and "Retweets" on any other platforms.
