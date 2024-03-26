@@ -37,11 +37,13 @@ const useXorShift: UseXorShift = (seed, count, min, max, canDuplicate) => {
     )
   }
 
-  if (count !== undefined && min !== undefined && max !== undefined && count > max - min) {
+  //countで実現可能な個数がmax-min+1（整数範囲）より大きいなら、無限ループに入るので強制的に数値減少
+  if (count !== undefined && min !== undefined && max !== undefined && count > Math.abs(max - min) + 1) {
+    const size = Math.abs(max - min) + 1
     console.warn(
-      `useXorShift will run infinitely because count is out of range (${count}). Reducing 'count' to ${max - min} automatically.`
+      `useXorShift will run infinitely because ${count} (count) is larger than ${size} (the number of integers in the specified range ${min} to ${max}). Reducing 'count' to ${size} automatically.`
     )
-    count = max - min
+    count = max - min + 1
   }
 
   const gen = () => {
