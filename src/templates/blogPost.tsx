@@ -102,12 +102,10 @@ const BlogPost: React.FC<PageProps<BlogPostQuery>> = ({ data }) => {
                   dangerouslySetInnerHTML={{ __html: html ?? "" }}
                   rhythm={rhythm}
                 />
-                <RelatedArticles>
-                  <Markdown rhythm={rhythm}>
-                    <h2>関連記事</h2>
-                    <RelatedArticlesList articleId={id} relatedPosts={relatedPosts} />
-                  </Markdown>
-                </RelatedArticles>
+                <Markdown rhythm={rhythm}>
+                  <h2>関連記事</h2>
+                  <RelatedArticlesList articleId={id} relatedPosts={relatedPosts} />
+                </Markdown>
               </div>
             </InnerWrapper>
           </OuterWrapper>
@@ -253,15 +251,13 @@ const Title = styled.h1`
 const ArticlesNavigationContainer = styled.div`
   display: flex;
   width: 100%;
-  padding: 40px;
+  padding: 0 30px;
   justify-content: center;
   flex-wrap: nowrap;
   @media (max-width: ${({ theme }) => theme.device.sm}) {
     flex-direction: column;
+    padding: 0;
   }
-`
-
-const RelatedArticles = styled.div`
 `
 
 const ArticlesPreContainer = styled.div`
