@@ -57,6 +57,7 @@ exports.createPages = async ({ graphql, actions }) => {
       component: blogPostTemplate,
       context: {
         slug: node.fields.slug,
+        index: index,
         //ひっくり返しておく
         previous: index == posts.length - 1 ? "" : next.fields.slug,
         next: index == 0 ? "" : prev.fields.slug,
@@ -75,4 +76,36 @@ exports.createPages = async ({ graphql, actions }) => {
       },
     })
   })
+}
+
+exports.createResolvers = ({ createResolvers }) => {
+  const resolvers = {
+    MarkdownRemark: {
+      relatedPosts: {
+        type: ['MarkdownRemark'],
+        resolve: async (source, args, context, info) => {
+          console.log("context.nodeModel:")
+          console.dir(context.nodeModel)
+          const { entries } = await context.nodeModel.findAll({
+            query: {
+              filter: {
+                id: {
+                  ne: source.id,
+                },
+                frontmatter: {
+                  category: {
+                    eq: source.frontmatter.category,
+                  },
+                },
+              },
+            },
+            type: 'MarkdownRemark',
+          })
+          return entries
+        },
+      },
+    },
+  }
+
+  createResolvers(resolvers)
 }
