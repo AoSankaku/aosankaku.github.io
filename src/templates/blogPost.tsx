@@ -13,6 +13,7 @@ import DateTime from "Styles/dateTime"
 import Markdown from "Styles/markdown"
 
 import { FaArrowRight, FaArrowLeft } from "react-icons/fa6"
+import RelatedArticlesList from "Components/RelatedArticlesList"
 
 /*
 import ScrollHint from "scroll-hint"
@@ -24,33 +25,36 @@ new ScrollHint('.js-scrollable', {
 });
 */
 
+type Post = {
+  id: string;
+  fields: {
+    slug: string;
+  };
+  frontmatter: {
+    title: string;
+    thumbnail: {
+      childImageSharp: {
+        gatsbyImageData: IGatsbyImageData;
+      }
+    }
+  };
+}
+
 type BlogPostQuery = Queries.Query & {
-  next: {
-    fields: {
-      slug: string;
-    };
-    frontmatter: {
-      title: string;
-      thumbnail: {
-        childImageSharp: {
-          gatsbyImageData: IGatsbyImageData;
-        }
+  markdownRemark: {
+    relatedPosts: {
+      id: string;
+      frontmatter: {
+        date: string;
+        title: string;
       }
-    };
-  } | null;
-  previous: {
-    fields: {
-      slug: string;
-    };
-    frontmatter: {
-      title: string;
-      thumbnail: {
-        childImageSharp: {
-          gatsbyImageData: IGatsbyImageData;
-        }
+      fields: {
+        slug: string;
       }
-    };
-  } | null;
+    }[]
+  }
+  next: Post | null;
+  previous: Post | null;
   defaultImage: {
     childImageSharp: {
       gatsbyImageData: IGatsbyImageData;
@@ -60,13 +64,10 @@ type BlogPostQuery = Queries.Query & {
 
 const BlogPost: React.FC<PageProps<BlogPostQuery>> = ({ data }) => {
   const { markdownRemark } = data
-  const { frontmatter, html } = markdownRemark!
+  const { frontmatter, html, relatedPosts, id } = markdownRemark!
   const { title, desc, thumbnail, date, category } = frontmatter!
 
   const [pathName, setPathName] = useState("")
-
-  console.log("thum:")
-  console.dir(thumbnail)
 
   const { next, previous } = data
 
@@ -101,12 +102,17 @@ const BlogPost: React.FC<PageProps<BlogPostQuery>> = ({ data }) => {
                   dangerouslySetInnerHTML={{ __html: html ?? "" }}
                   rhythm={rhythm}
                 />
+                <RelatedArticles>
+                  <Markdown rhythm={rhythm}>
+                    <h2>関連記事</h2>
+                    <RelatedArticlesList articleId={id} relatedPosts={relatedPosts} />
+                  </Markdown>
+                </RelatedArticles>
               </div>
             </InnerWrapper>
           </OuterWrapper>
         </article>
         <ShareButtons title={title as string} articleUrl={pathName} />
-
         <ArticlesNavigationContainer>
           {(next !== null) &&
             <ArticlesPreContainer>
@@ -255,6 +261,9 @@ const ArticlesNavigationContainer = styled.div`
   }
 `
 
+const RelatedArticles = styled.div`
+`
+
 const ArticlesPreContainer = styled.div`
   flex: 1 1 0;
   padding: var(--sizing-md);
@@ -319,6 +328,7 @@ export const query = graphql`
   query BlogPostPage ($slug: String!, $previous: String!, $next: String!) {
     markdownRemark(fields: { slug: { eq: $slug } }) {
       html
+      id
       frontmatter {
         title
         desc
@@ -329,6 +339,15 @@ export const query = graphql`
         }
         date(formatString: "YYYY-MM-DD")
         category
+      }
+      relatedPosts {
+        frontmatter {
+          title
+          date
+        }
+        fields {
+          slug
+        }
       }
     }
     previous: markdownRemark(fields: { slug: { eq: $previous } }){

@@ -84,8 +84,6 @@ exports.createResolvers = ({ createResolvers }) => {
       relatedPosts: {
         type: ['MarkdownRemark'],
         resolve: async (source, args, context, info) => {
-          console.log("context.nodeModel:")
-          console.dir(context.nodeModel)
           const { entries } = await context.nodeModel.findAll({
             query: {
               filter: {
