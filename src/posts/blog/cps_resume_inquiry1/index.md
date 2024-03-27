@@ -3,7 +3,7 @@ title: "#コンパス履歴書ジェネレーター お問い合わせの回答�
 category: "Works"
 date: "2020-05-26T12:00:00+09:00"
 desc: "#コンパス履歴書ジェネレーターのお問い合わせフォームに届いたお問い合わせに回答しました。"
-thumbnail: "thumbnail.jpg"
+thumbnail: "./thumbnail.jpg"
 alt: ""
 ---
 ※この記事は旧ブログからの移植です。
