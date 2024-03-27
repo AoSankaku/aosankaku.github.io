@@ -102,6 +102,16 @@ exports.createResolvers = ({ createResolvers }) => {
           return entries
         },
       },
+      thumbnail: {
+        type: ['String'],
+        resolve(source, args, context, info) {
+          if (SourceCode.frontmatter.thumbnail) {
+            return source.frontmatter.thumbnail;
+          } else {
+            return 'src/images/og-default.png'
+          }
+        }
+      }
     },
   }
 

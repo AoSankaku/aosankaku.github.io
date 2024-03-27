@@ -4,7 +4,7 @@ category: "Works"
 date: "2023-01-29T21:00:00+09:00"
 desc: "「#コンパス履歴書ジェネレーター」の概要です。"
 thumbnail: "ET3-ITLUMAAWZIu.jpg"
-alt: "nazo alt"
+alt: ""
 ---
 
 ブログをリニューアルしてから初の記事になります。  
