@@ -54,7 +54,7 @@ const xorShiftArray: XorShiftArray = (seed, count, min, max, canDuplicate) => {
     console.warn(`Only min is defined and max is undefined. Ignoring min value...`)
   }
 
-  if (min !== undefined && max !== undefined && min < max) {
+  if (min !== undefined && max !== undefined && min > max) {
     console.warn(`Argument min (${min}) is larger than max (${max}). Swapping the two...`);
     [min, max] = [max, min]
   }
