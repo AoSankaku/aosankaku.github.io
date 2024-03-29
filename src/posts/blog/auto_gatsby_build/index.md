@@ -3,8 +3,6 @@ title: 【Gatsby】GitHub PagesでBuildを自動化したら、ビルド結果�
 category: Tech
 date: "2024-03-14T16:00:00+09:00"
 desc: GitHub Actionsを使ってGatsbyのビルドを自動化したら、返って来る結果がおかしくなったので解決していきました。
-thumbnail: ""
-alt: ""
 ---
 
 タイトルの通り、GitHub Actionsを使ったら最初うまくいきませんでした。

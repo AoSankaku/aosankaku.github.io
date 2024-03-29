@@ -3,8 +3,6 @@ title: "【Gatsby】remark系プラグインが効かないときの対処法"
 category: "Tech"
 date: "2024-03-23T15:30:00+09:00"
 desc: "Gatsbyでremark系プラグインの順番を適当にしていたら、gatsby-remark-embed-youtubeが機能しなくなりました。解決方法を見つけるのは簡単だったので、以下で紹介します。"
-thumbnail: ""
-alt: ""
 ---
 
 

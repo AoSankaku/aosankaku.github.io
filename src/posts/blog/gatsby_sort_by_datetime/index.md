@@ -3,8 +3,6 @@ title: "【Gatsby】時間を指定したのにsortに反映されないとき�
 category: "Tech"
 date: "2024-03-18T03:10:00+09:00"
 desc: "Gatsbyでは、GraphiQLクエリのsortの中に「frontmatter: { date: DESC }」と入れても、時刻を考慮してくれず動かないことがあります。その解決策です。"
-thumbnail: ""
-alt: ""
 ---
 
 [この記事](../blog_changelog_2/)でも触れましたが、Gatsbyはどうやらfrontmatterにおいて日付の書き方を間違えると、時間ソートがうまく働いてくれないようです。

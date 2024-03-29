@@ -3,8 +3,6 @@ title: "【Ubuntu(Linux)】Terrariaのサーバー開くのちょろすぎて草
 category: "Tech"
 date: "2024-03-18T12:00:00+09:00"
 desc: "テラリアのサーバーを自前のVPSで開くのがあまりにもチョロかったので、やり方を備忘録がてら公開しておきます。"
-thumbnail: ""
-alt: ""
 ---
 
 ## UbuntuでTerrariaのサーバーを開きたい

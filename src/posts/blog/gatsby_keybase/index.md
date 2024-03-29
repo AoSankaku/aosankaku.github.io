@@ -3,8 +3,6 @@ title: "【Gatsby】Keybase認証をする方法（keybase.textをアップロ�
 category: "Tech"
 date: "2024-03-18T03:54:00+09:00"
 desc: "Keybase認証で少しだけ（大嘘）手間取ったので、解決策を載せておきます。"
-thumbnail: ""
-alt: ""
 ---
 
 Keybase、使ってますか？日本では（多分日本以外でも）極めてマイナーなSNSですが、個人的には結構気に入っています。
