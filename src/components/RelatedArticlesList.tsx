@@ -1,5 +1,5 @@
 import React from "react"
-import useXorShift from "Hooks/useXorShift"
+import xorShiftArray from "Functions/xorShiftArray"
 import { Link } from "gatsby"
 
 type Props = {
@@ -35,7 +35,7 @@ const RelatedArticlesList: React.FC<Props> = ({ articleId, relatedPosts }) => {
   const slicedArticleIdHex = articleIdHex.slice(0, 8)
   const slicedArticleIdDec = parseInt(slicedArticleIdHex, 16)
 
-  const relatedArticleIds = useXorShift(slicedArticleIdDec, relatedArticlesCount, 0, relatedPosts.length - 1, false)
+  const relatedArticleIds = xorShiftArray(slicedArticleIdDec, relatedArticlesCount, 0, relatedPosts.length - 1, false)
     .sort((a, b) => b - a)
 
   console.log(relatedArticleIds)

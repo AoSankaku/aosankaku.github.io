@@ -69,6 +69,7 @@ const devPlugins = [
         Templates: "src/templates",
         Types: "src/types",
         Utils: "src/utils",
+        Functions: "src/functions",
       },
       extensions: [".js", ".ts", ".tsx"],
     },
