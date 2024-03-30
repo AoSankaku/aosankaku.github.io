@@ -102,16 +102,82 @@ exports.createResolvers = ({ createResolvers }) => {
           return entries
         },
       },
-      thumbnail: {
-        type: ['String'],
-        resolve(source, args, context, info) {
-          if (SourceCode.frontmatter.thumbnail) {
-            return source.frontmatter.thumbnail;
-          } else {
-            return 'src/images/og-default.png'
+      //以下、graphqlの結果を上書きしようとしたときの残骸
+      /*
+      timeToRead: {
+        resolve: async (source, args, context, info) => {
+          //sourceには親データのすべてが入る
+          console.dir(source)
+          //この場合、何も入っていない
+          console.dir(args)
+          console.log("context")
+          console.dir(context)
+          console.log("info")
+          console.dir(info)
+          if (source.frontmatter.thumbnail == "") {
+            console.log("NO THUMBNAIL!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!")
+          }
+          return 114514
+        }
+      },
+      */
+
+      /*
+      frontmatter: {
+        resolve: async (source, args, context, info) => {
+          console.log("unchi")
+          const defaultImage = await context.nodeModel.findOne({
+            type: "GatsbyImageData",
+            query: {
+              filter: {
+                fileAbsolutePath: {
+                  regex: "/og-default.png/"
+                }
+              }
+            },
+            firstOnly: true
+          })
+          console.log(defaultImage)
+          return {
+            ...source.frontmatter,
+            title: "fuckyou",
+            thumbnail: defaultImage,
+          }
+        },
+
+        thumbnail: {
+          type: 'thumbnail',
+          resolve: async (source, args, context, info) => {
+            console.log(source.frontmatter.thumbnail)
+          },
+          childImageSharp: {
+            gatsbyImageData: {
+              type: 'gatsbyImageData',
+              resolve: async (source, args, context, info) => {
+                console.log("hej:", source.frontmatter.thumbnail)
+                if (source.frontmatter.thumbnail) {
+                  return source.frontmatter.thumbnail;
+                } else {
+                  const defaultImage = await context.nodeModel.findOne({
+                    type: 'gatsbyImageData',
+                    query: {
+                      filter: {
+                        fileAbsolutePath: {
+                          regex: "/og-default.png/"
+                        }
+                      }
+                    },
+                    firstOnly: true
+                  })
+                  console.log("running if else")
+                  console.log(defaultImage)
+                  return defaultImage
+                }
+              }
+            }
           }
         }
-      }
+      }*/
     },
   }
 
