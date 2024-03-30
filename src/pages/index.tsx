@@ -6,7 +6,7 @@ import styled from "styled-components"
 import type Post from "Types/Post"
 import useSiteMetadata from "Hooks/useSiteMetadata"
 import Layout from "Layouts/layout"
-import SEO from "Components/Head"
+import Seo from "Components/Seo"
 import PostGrid from "Components/postGrid"
 import CategoryFilter from "Components/catetgoryFilter"
 
@@ -55,7 +55,6 @@ const Home = ({
 
   return (
     <Layout>
-      <SEO title="Home" />
       <Main>
         <Content>
           {!currentCategory ? <HomeDescription /> : null}
@@ -137,3 +136,7 @@ export const query = graphql`
 `
 
 export default Home
+
+export const Head = () => {
+  return <Seo title="Home" />
+}

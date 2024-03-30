@@ -4,7 +4,7 @@ import { GatsbyImage, IGatsbyImageData } from "gatsby-plugin-image"
 import styled from "styled-components"
 
 import Layout from "Layouts/layout"
-import SEO from "Components/Head"
+import Seo from "Components/Seo"
 import ShareButtons from "Components/ShareButtons"
 import Comment from "Components/comment"
 import { rhythm } from "Styles/typography"
@@ -77,13 +77,8 @@ const BlogPost: React.FC<PageProps<BlogPostQuery>> = ({ data }) => {
     setPathName(window.location.href)
   }, [])
 
-  const ogImagePath =
-    // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
-    thumbnail && thumbnail?.childImageSharp?.gatsbyImageData!.images!.fallback!.src
-
   return (
     <Layout>
-      <SEO title={title} desc={desc} image={ogImagePath} />
       <main>
         <article>
           <OuterWrapper>
@@ -408,3 +403,15 @@ export const query = graphql`
 `
 
 export default BlogPost
+
+export const Head = ({ data }: PageProps<BlogPostQuery>) => {
+  const thumbnail = data.markdownRemark?.frontmatter?.thumbnail
+  const ogImagePath =
+    // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
+    thumbnail && thumbnail?.childImageSharp?.gatsbyImageData!.images!.fallback!.src
+  return <Seo
+    title={data.markdownRemark?.frontmatter?.title ?? ""}
+    desc={data.markdownRemark?.frontmatter?.desc}
+    image={ogImagePath}
+  />
+}

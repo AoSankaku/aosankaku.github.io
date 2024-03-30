@@ -17,7 +17,7 @@ interface SEOProps extends Pick<Queries.MarkdownRemarkFrontmatter, "title"> {
   meta?: Meta
 }
 
-const Head: React.FC<SEOProps> = ({ title, desc = null, image }) => {
+const Seo: React.FC<SEOProps> = ({ title, desc = null, image }) => {
   const site = useSiteMetadata()
   const ogTitle = title ? `${title} | ${site.title}` : ""
   const description = desc ?? site.description as string
@@ -56,4 +56,4 @@ const Head: React.FC<SEOProps> = ({ title, desc = null, image }) => {
   )
 }
 
-export default Head
+export default Seo

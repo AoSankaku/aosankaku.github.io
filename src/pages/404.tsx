@@ -2,7 +2,7 @@ import React, { useState, useLayoutEffect, useRef } from "react"
 import styled from "styled-components"
 
 import Layout from "Layouts/layout"
-import SEO from "Components/Head"
+import Seo from "Components/Seo"
 import GlowParticle from "Utils/glowParticle"
 import type { RGB } from "Utils/glowParticle"
 
@@ -91,7 +91,6 @@ const NotFound = () => {
 
   return (
     <Layout>
-      <SEO title="Not found" />
       <Container>
         <TitleWrap>
           <Title>404</Title>
@@ -146,3 +145,7 @@ const Canvas = styled.canvas`
 `
 
 export default NotFound
+
+export const Head = () => {
+  return <Seo title="Not Found" />
+}

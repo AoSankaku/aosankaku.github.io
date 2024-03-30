@@ -3,7 +3,7 @@ import { graphql, useStaticQuery } from "gatsby"
 import styled from "styled-components"
 
 import Layout from "Layouts/layout"
-import SEO from "Components/Head"
+import Seo from "Components/Seo"
 import Markdown from "Styles/markdown"
 import { rhythm } from "Styles/typography"
 
@@ -24,7 +24,6 @@ const Links = () => {
 
   return (
     <Layout>
-      <SEO title="Links" />
       <Container
         dangerouslySetInnerHTML={{ __html: markdown ?? "" }}
         rhythm={rhythm}
@@ -66,3 +65,7 @@ const Container = styled(Markdown).attrs({
 `
 
 export default Links
+
+export const Head = () => {
+  return <Seo title="Links" />
+}
