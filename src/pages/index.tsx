@@ -30,7 +30,7 @@ const Home = ({
     filteredPostData.forEach(({ node }) => {
       const { id } = node
       const { slug } = node.fields!
-      const { title, desc, date, category, thumbnail, alt } = node.frontmatter!
+      const { title, desc, date, category, thumbnail, alt, tags } = node.frontmatter!
       const { childImageSharp } = thumbnail ? thumbnail! : { childImageSharp: undefined }
 
       setPosts(prevPost => [
@@ -44,6 +44,7 @@ const Home = ({
           category,
           thumbnail: childImageSharp?.id,
           alt,
+          tags,
         },
       ])
     })
