@@ -5,5 +5,11 @@ ReactとGatsbyで動かしてるのでサックサクです
 
 ## https://aosankaku.github.io
 
+## 技術スタック
+
+- React
+- TypeScript
+- Gatsby
+
 # どんな事が書いてある？
 マイクラとかGithubでの活動などを雑多に書いています。
