@@ -41,10 +41,18 @@ const ShareButtons: React.FC<Props> = ({ title, articleUrl }) => {
         <TwitterShareButton title={shareText} url={articleUrl}>
           <XIcon size={50} round />
         </TwitterShareButton>
-        <a href={`https://misskey-hub.net/share/?text=${encodedShareText}&url=${articleUrl}&visibility=public&localOnly=0`} target="_blank" rel="noopener">
+        <a
+          href={`https://misskey-hub.net/share/?text=${encodedShareText}&url=${articleUrl}&visibility=public&localOnly=0`}
+          target="_blank"
+          rel="noopener"
+        >
           <img src={MisskeyLogo} alt="Misskey Logo" style={{ width: "50px", backgroundColor: "white", borderRadius: "25px" }} />
         </a>
-        <a href={`https://donshare.net/share.html?text=${encodedShareText}&url=${articleUrl}`} target="_blank" rel="noopener">
+        <a
+          href={`https://donshare.net/share.html?text=${encodedShareText}&url=${articleUrl}`}
+          target="_blank"
+          rel="noopener"
+        >
           <img src={MastodonLogo} alt="Mastodon Logo" style={{ width: "50px", backgroundColor: "#858AFA", borderRadius: "25px", objectFit: "fill" }} />
         </a>
         <LineShareButton title={shareText} url={articleUrl}>
@@ -56,7 +64,10 @@ const ShareButtons: React.FC<Props> = ({ title, articleUrl }) => {
         }} onMouseLeave={() => {
           setIsCopied(false);
         }} href={`javascript:void(0);`}>
-          {isCopied ? <FaCheck aria-label="Copy Link" color="var(--color-text)" style={copyIconStyle} /> : <FaLink aria-label="Copy Link" color="var(--color-text)" style={copyIconStyle} />}
+          {isCopied
+            ? <FaCheck aria-label="Copy Link" color="var(--color-text)" style={copyIconStyle} />
+            : <FaLink aria-label="Copy Link" color="var(--color-text)" style={copyIconStyle} />
+          }
         </a>
       </SharebuttonsWrapper >
     </>
