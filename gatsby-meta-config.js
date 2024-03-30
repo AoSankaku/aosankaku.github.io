@@ -4,6 +4,11 @@
  */
 
 /**
+ * @typedef {Object} Social
+ * @prop {string} social
+ */
+
+/**
  * @typedef {Object} MetaConfig
  * @prop {string} title Your website title
  * @prop {string} description Your website description
@@ -12,6 +17,7 @@
  * @prop {string} lang Your website Language
  * @prop {string} utterances Github repository to store comments
  * @prop {Links} links
+ * @prop {Social} social
  * @prop {string} favicon Favicon Path
  */
 
@@ -25,6 +31,10 @@ const metaConfig = {
   utterances: "AoSankaku/gatsby-starter-apple-comment",
   links: {
     github: "https://github.com/AoSankaku/aosankaku.github.io",
+  },
+  social: {
+    misskeySystems: "ao_sankaku@misskey.systems",
+    twitter: "@ao_sankaku"
   },
   favicon: "src/images/icon.png",
 }

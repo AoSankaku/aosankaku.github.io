@@ -4,7 +4,7 @@ import { GatsbyImage, IGatsbyImageData } from "gatsby-plugin-image"
 import styled from "styled-components"
 
 import Layout from "Layouts/layout"
-import SEO from "Components/seo"
+import SEO from "Components/Head"
 import ShareButtons from "Components/ShareButtons"
 import Comment from "Components/comment"
 import { rhythm } from "Styles/typography"

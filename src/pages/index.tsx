@@ -6,7 +6,7 @@ import styled from "styled-components"
 import type Post from "Types/Post"
 import useSiteMetadata from "Hooks/useSiteMetadata"
 import Layout from "Layouts/layout"
-import SEO from "Components/seo"
+import SEO from "Components/Head"
 import PostGrid from "Components/postGrid"
 import CategoryFilter from "Components/catetgoryFilter"
 

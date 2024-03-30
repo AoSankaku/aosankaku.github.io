@@ -3,7 +3,7 @@ import { graphql, useStaticQuery } from "gatsby"
 import styled from "styled-components"
 
 import Layout from "Layouts/layout"
-import SEO from "Components/seo"
+import SEO from "Components/Head"
 import Markdown from "Styles/markdown"
 import { rhythm } from "Styles/typography"
 

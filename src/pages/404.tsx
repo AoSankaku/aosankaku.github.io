@@ -2,7 +2,7 @@ import React, { useState, useLayoutEffect, useRef } from "react"
 import styled from "styled-components"
 
 import Layout from "Layouts/layout"
-import SEO from "Components/seo"
+import SEO from "Components/Head"
 import GlowParticle from "Utils/glowParticle"
 import type { RGB } from "Utils/glowParticle"
 
