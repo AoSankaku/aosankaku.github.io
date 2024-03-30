@@ -41,6 +41,7 @@ const Head: React.FC<SEOProps> = ({ title, desc = null, image }) => {
       <title>{ogTitle}</title>
       <meta name="description" content={description} />
       <meta name="image" content={`${ogImageUrl}`} />
+      <meta property="og:url" content={`${site.siteUrl}`} />
       <meta property="og:title" content={ogTitle} />
       <meta property="og:description" content={description} />
       <meta property="og:type" content={"website"} />
