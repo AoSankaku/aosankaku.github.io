@@ -151,7 +151,7 @@ const BlogPost: React.FC<PageProps<BlogPostQuery>> = ({ data }) => {
                           ? previous.frontmatter.thumbnail?.childImageSharp?.gatsbyImageData
                           : defaultImage.childImageSharp.gatsbyImageData
                       }
-                      alt="Thumbnail of the next article"
+                      alt="Thumbnail of the previous article"
                     />
                   </ArticlesNavigationImage>
                   <ArticlesNavigationParagraph>
