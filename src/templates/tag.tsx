@@ -73,9 +73,9 @@ const Container = styled.main`
 
 const TagName = styled.h1`
   font-weight: var(--font-weight-bold);
-  font-size: 2.5rem;
-  line-height: 1.8;
-  margin: 20px 0px 10px;
+  font-size: 2rem;
+  line-height: 1.4;
+  margin: 20px 0px 40px;
   white-space: pre-wrap;
   word-break: auto-phrase;
 
