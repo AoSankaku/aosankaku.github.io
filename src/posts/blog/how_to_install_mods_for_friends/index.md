@@ -5,6 +5,10 @@ date: "2023-08-12T21:00:00+09:00"
 desc: "マイクラでMODを簡単に入れる方法を説明しています。"
 thumbnail: "thumbnail.png"
 alt: "nazo alt"
+tags: 
+  - Minecraft
+  - Mod
+  - Prism Launcher
 ---
 
 この記事ではMODを入れたことがない人向けに、MODを楽に入れる方法について説明しています。

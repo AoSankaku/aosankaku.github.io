@@ -5,6 +5,8 @@ date: "2024-03-18T03:31:00+09:00"
 desc: "Githubには、リポジトリにサムネイルのような画像をつけることができます。厳密にはSNS共有時に表示するOGP画像です。これの作り方を紹介します。Twitter（旧X）などのSNSに載せるときにも目立つようになります。"
 thumbnail: "thumbnail.png"
 alt: "AoSankaku/aosankaku.github.io"
+tags: 
+  - GitHub
 ---
 
 ## 何故か日本語で情報が出ない

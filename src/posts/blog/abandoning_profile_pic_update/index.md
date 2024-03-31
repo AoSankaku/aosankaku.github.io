@@ -8,6 +8,7 @@ alt: "baka blue bird"
 tags: 
 - Ifttt
 - Twitter
+- お気持ち表明
 ---
 
 ## 蛇足―近況

@@ -15,6 +15,34 @@ const tagAliases = {
     {
       original: "GitHub Actions",
       normalized: "github-actions"
+    },
+    {
+      original: "ウディタ",
+      normalized: "woditor"
+    },
+    {
+      original: "サーバー",
+      normalized: "server"
+    },
+    {
+      original: "お気持ち表明",
+      normalized: "expressions"
+    },
+    {
+      original: "自動化",
+      normalized: "automations"
+    },
+    {
+      original: "パソコン",
+      normalized: "pc"
+    },
+    {
+      original: "自作パソコン",
+      normalized: "jisaku"
+    },
+    {
+      original: "コンパス（ソシャゲ）",
+      normalized: "compass"
     }
   ]
 }
