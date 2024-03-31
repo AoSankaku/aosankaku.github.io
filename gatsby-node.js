@@ -1,5 +1,6 @@
 const path = require(`path`)
 const _ = require("lodash")
+const normalizeTagName = require("./src/functions/normalizeTagName")
 const { createFilePath } = require(`gatsby-source-filesystem`)
 
 exports.onCreateNode = ({ node, getNode, actions }) => {
@@ -19,6 +20,7 @@ exports.createPages = async ({ graphql, actions }) => {
 
   const mainTemplate = path.resolve(`./src/pages/index.tsx`)
   const blogPostTemplate = path.resolve(`./src/templates/blogPost.tsx`)
+  const tagPageTemplate = path.resolve(`./src/templates/tag.tsx`)
 
   const result = await graphql(`
     {
@@ -37,6 +39,12 @@ exports.createPages = async ({ graphql, actions }) => {
       }
       categoriesGroup: allMarkdownRemark(limit: 2000) {
         group(field: { frontmatter: { category: SELECT } }) {
+          fieldValue
+          totalCount
+        }
+      }
+      tags: allMarkdownRemark {
+        group(field: { frontmatter: { tags: SELECT } }) {
           fieldValue
           totalCount
         }
@@ -76,6 +84,18 @@ exports.createPages = async ({ graphql, actions }) => {
       },
     })
   })
+
+  const tags = result.data.tags.group
+  tags.forEach(e => {
+    createPage({
+      path: `/tags/${normalizeTagName(e.fieldValue)}`,
+      component: tagPageTemplate,
+      context: {
+        tag: normalizeTagName(e.fieldValue),
+        rawTag: e.fieldValue
+      },
+    })
+  })
 }
 
 exports.createResolvers = ({ createResolvers }) => {
@@ -102,7 +122,26 @@ exports.createResolvers = ({ createResolvers }) => {
           return entries
         },
       },
+
+      //以下、rawTags（ケバブケースになった奴を返す）の残骸
+
+      /*
+      frontmatter: {
+        rawTags: {
+          type: ['FrontMatter'],
+          resolve: async (source, args, context, info) => {
+            const { queries } = await context.nodeModel.findAll({
+              query: {
+                filter
+              }
+            })
+          }
+        }
+      }
+      */
+
       //以下、graphqlの結果を上書きしようとしたときの残骸
+
       /*
       timeToRead: {
         resolve: async (source, args, context, info) => {

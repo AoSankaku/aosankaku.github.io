@@ -15,6 +15,8 @@ import Markdown from "Styles/markdown"
 import { FaArrowRight, FaArrowLeft } from "react-icons/fa6"
 import RelatedArticlesList from "Components/RelatedArticlesList"
 
+import TagButton from "Components/tag/tagButton"
+
 /*
 import ScrollHint from "scroll-hint"
 
@@ -32,6 +34,7 @@ type Post = {
   };
   frontmatter: {
     title: string;
+    tags: string[];
     thumbnail: {
       childImageSharp: {
         gatsbyImageData: IGatsbyImageData;
@@ -65,7 +68,7 @@ type BlogPostQuery = Queries.Query & {
 const BlogPost: React.FC<PageProps<BlogPostQuery>> = ({ data }) => {
   const { markdownRemark } = data
   const { frontmatter, html, relatedPosts, id } = markdownRemark!
-  const { title, desc, thumbnail, date, category } = frontmatter!
+  const { title, desc, thumbnail, date, category, tags } = frontmatter!
 
   const [pathName, setPathName] = useState("")
 
@@ -91,6 +94,13 @@ const BlogPost: React.FC<PageProps<BlogPostQuery>> = ({ data }) => {
                   </Info>
                   <Title>{title}</Title>
                   <Desc>{desc}</Desc>
+                  {tags ?
+                    <TagsContainer>{tags.map(e => (
+                      <TagButton tagName={e as string} />
+                    ))}</TagsContainer>
+                    :
+                    <NoTags>{"この記事にはタグがありません"}</NoTags>
+                  }
                 </header>
                 <Divider />
                 <Markdown
@@ -219,6 +229,18 @@ const Desc = styled.p`
   }
 `
 
+const TagsContainer = styled.div`
+  display: flex;
+  margin: var(--sizing-md) 0;
+  gap: 10px;
+  flex-wrap: wrap;
+`
+
+const NoTags = styled.p`
+  margin: var(--sizing-md) 0;
+  color: var(--color-gray-6);
+`
+
 const Divider = styled.div`
   width: 100%;
   height: 1px;
@@ -330,6 +352,7 @@ export const query = graphql`
         }
         date(formatString: "YYYY-MM-DD")
         category
+        tags
       }
       relatedPosts {
         frontmatter {
