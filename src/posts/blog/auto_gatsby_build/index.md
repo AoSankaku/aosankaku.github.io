@@ -3,6 +3,11 @@ title: 【Gatsby】GitHub PagesでBuildを自動化したら、ビルド結果�
 category: Tech
 date: "2024-03-14T16:00:00+09:00"
 desc: GitHub Actionsを使ってGatsbyのビルドを自動化したら、返って来る結果がおかしくなったので解決していきました。
+tags: 
+  - Gatsby
+  - フロントエンド
+  - GitHub
+  - GitHub Actions
 ---
 
 タイトルの通り、GitHub Actionsを使ったら最初うまくいきませんでした。
@@ -156,7 +161,7 @@ GitHub Actionsを使って、自動で実行！…したはずが、何かがお
   //index.tsxの一部
   return (
     <Layout>
-      <SEO title="Home" />
+      <Seo title="Home" />
       <Main>
         <Content>
           {!currentCategory ? <HomeDescription /> : null}

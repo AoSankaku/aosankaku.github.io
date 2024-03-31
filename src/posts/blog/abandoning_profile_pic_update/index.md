@@ -5,6 +5,9 @@ date: "2024-03-14T15:30:00+09:00"
 desc: "IFTTTおよびTwitter（旧X）の仕様変更により、プロフィール画像の自動更新を停止します。"
 thumbnail: "thumbnail.png"
 alt: "baka blue bird"
+tags: 
+- Ifttt
+- Twitter
 ---
 
 ## 蛇足―近況
