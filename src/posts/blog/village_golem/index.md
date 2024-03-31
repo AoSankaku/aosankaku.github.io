@@ -3,8 +3,7 @@ title: "【Minecraft ～1.12】アイアンゴーレムがsummonで召喚でき�
 category: "Minecraft"
 date: "2024-03-30T17:30:00+09:00"
 desc: "マイクラのsummonコマンドでアイアンゴーレムが見当たらないときの簡単な対処法です。"
-tags: 
-  - Minecraft
+tags:
   - コマンド
   - お気持ち表明
 ---

@@ -3,7 +3,7 @@ title: "【Terraria/Ubuntu(Linux)】サーバーにローカルのワールド�
 category: "Tech"
 date: "2024-03-20T16:00:00+09:00"
 desc: "テラリアのサーバーで、ローカルでこれまで遊んでいたワールドをアップロードして、使用する方法について説明します。"
-tags: 
+tags:
   - Terraria
   - Ubuntu
   - Linux

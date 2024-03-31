@@ -5,7 +5,7 @@ date: "2023-01-31T12:00:00+09:00"
 desc: "このブログでテンプレートから変更したところを解説します。"
 thumbnail: "thumbnail.png"
 alt: ""
-tags: 
+tags:
   - フロントエンド
   - Gatsby
 ---

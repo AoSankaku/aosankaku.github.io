@@ -5,7 +5,7 @@ date: "2023-05-21T12:00:00+09:00"
 desc: "IFTTTで以前までプロフィール画像を自動更新できていたのですが、できなくなりました。解決していきます。"
 thumbnail: "no_image_card.png"
 alt: ""
-tags: 
+tags:
   - Ifttt
   - 自動化
 ---

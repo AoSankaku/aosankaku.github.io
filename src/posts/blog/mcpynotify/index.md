@@ -5,10 +5,9 @@ date: "2024-03-14T14:40:00+09:00"
 desc: "PythonとWebhookを利用した、マイクラ通知用スクリプトを作成（改造）しました。その使い方について説明しています。"
 thumbnail: "thumbnail.png"
 alt: "AoSankaku/Send-Minecraft-notifications"
-tags: 
+tags:
   - Python
   - 自動化
-  - Minecraft
   - Discord
   - Webhook
   - サーバー

@@ -5,7 +5,7 @@ date: "2024-03-14T22:00:00+09:00"
 desc: "前回からも色々改造したので、そのご紹介です。"
 thumbnail: "../blog_changelog/thumbnail.png"
 alt: ""
-tags: 
+tags:
   - フロントエンド
   - Gatsby
 ---
