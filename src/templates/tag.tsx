@@ -2,9 +2,12 @@ import React, { useState } from "react"
 import Layout from "Layouts/layout"
 import styled from "styled-components"
 import { graphql } from "gatsby"
+import type { PageProps } from "gatsby"
 import PostGrid from "Components/postGrid"
 import type Post from "Types/Post"
 
+
+/*
 type Props = {
   data: {
     allMarkdownRemark: {
@@ -17,13 +20,17 @@ type Props = {
   }
 }
 
-const Tag: React.FC<Props> = ({ data, pageContext }) => {
+*/
+
+interface PageContext {
+  rawTag: string;
+}
+
+const Tag = ({ pageContext, data }: PageProps<Queries.Query, PageContext>) => {
   const { allMarkdownRemark } = data
   const { nodes, totalCount } = allMarkdownRemark
 
-  console.dir(nodes)
-
-  const posts = []
+  const posts: Post[] = []
   nodes.forEach((node) => {
     const { id } = node
     const { slug } = node.fields!
