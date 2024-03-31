@@ -29,13 +29,19 @@ const Tags = () => {
   `)
 
   const group = data.allMarkdownRemark.group
+  //groupを使うとGraphQLでsortできないらしい、だるい
+  const sortedGroup = group.sort((a, b) =>
+    b.totalCount - a.totalCount
+  )
+
+  console.dir(sortedGroup)
 
   return (
     <Layout>
       <Container>
         <h1>ブログのタグ一覧</h1>
         <TagsContainer>
-          {data && group.map(e => <TagButton tagName={e.fieldValue} count={e.totalCount} />)}
+          {data && sortedGroup.map(e => <TagButton tagName={e.fieldValue} count={e.totalCount} />)}
         </TagsContainer>
       </Container>
     </Layout>
