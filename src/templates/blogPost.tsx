@@ -94,7 +94,8 @@ const BlogPost: React.FC<PageProps<BlogPostQuery>> = ({ data }) => {
     new Map(
       allRelatedPosts.map(
         (e) => [e.fields.slug, e]
-      )).values()
+      )
+    ).values()
   )
   console.dir(relatedPosts)
 
