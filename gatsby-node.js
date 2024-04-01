@@ -101,7 +101,7 @@ exports.createPages = async ({ graphql, actions }) => {
 exports.createResolvers = ({ createResolvers }) => {
   const resolvers = {
     MarkdownRemark: {
-      relatedPosts: {
+      relatedPostsByCategory: {
         type: ['MarkdownRemark'],
         resolve: async (source, args, context, info) => {
           const { entries } = await context.nodeModel.findAll({
@@ -113,6 +113,30 @@ exports.createResolvers = ({ createResolvers }) => {
                 frontmatter: {
                   category: {
                     eq: source.frontmatter.category,
+                  },
+                },
+              },
+            },
+            type: 'MarkdownRemark',
+          })
+          return entries
+        },
+      },
+      relatedPostsByTag: {
+        type: ['MarkdownRemark'],
+        resolve: async (source, args, context, info) => {
+          if (typeof source.frontmatter.tags === undefined) return null;
+          if (!Array.isArray(source.frontmatter.tags)) return null;
+          console.log(source.frontmatter.tags)
+          const { entries } = await context.nodeModel.findAll({
+            query: {
+              filter: {
+                id: {
+                  ne: source.id,
+                },
+                frontmatter: {
+                  tags: {
+                    in: source.frontmatter.tags,
                   },
                 },
               },

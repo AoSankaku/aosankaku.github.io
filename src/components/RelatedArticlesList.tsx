@@ -4,23 +4,27 @@ import { Link } from "gatsby"
 
 type Props = {
   articleId: string;
+  //そのうち直す（）
   relatedPosts: {
-    fields: {
-      slug: string;
-    }
     frontmatter: {
       date: string;
       title: string;
+    }
+    fields: {
+      slug: string
     }
   }[];
 }
 
 //同じタグ（実装予定）から2、同じカテゴリから1、他にランダムに2を取り出す
+//…とかそんな複雑な処理作れるわけ無いやん！ｗ
 
 const RelatedArticlesList: React.FC<Props> = ({ articleId, relatedPosts }) => {
 
   //定数定義
-  const relatedArticlesCount = 4
+  const relatedArticlesCount = 5
+
+  console.dir(typeof (relatedPosts))
 
   //どうやらcreateResolversで作ったやつはsortできないらしい…ポンコツかよ…
   //しょうがないので、dateを取得することを前提としてsortを進める
@@ -31,7 +35,7 @@ const RelatedArticlesList: React.FC<Props> = ({ articleId, relatedPosts }) => {
 
   //sort完了後、articleId（UUID）を基に関連記事の番号を（ランダムだけど一意に）決定する
   //アルゴリズムはXorShift
-  const articleIdHex = (articleId as string).replace(/-/g, "")
+  const articleIdHex = (articleId).replace(/-/g, "")
   const slicedArticleIdHex = articleIdHex.slice(0, 8)
   const slicedArticleIdDec = parseInt(slicedArticleIdHex, 16)
 

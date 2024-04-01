@@ -45,7 +45,7 @@ type Post = {
 
 type BlogPostQuery = Queries.Query & {
   markdownRemark: {
-    relatedPosts: {
+    relatedPostsByCategory: {
       id: string;
       frontmatter: {
         date: string;
@@ -54,7 +54,17 @@ type BlogPostQuery = Queries.Query & {
       fields: {
         slug: string;
       }
-    }[]
+    }[];
+    relatedPostsByTag: {
+      id: string;
+      frontmatter: {
+        date: string;
+        title: string;
+      }
+      fields: {
+        slug: string;
+      }
+    }[];
   }
   next: Post | null;
   previous: Post | null;
@@ -67,7 +77,7 @@ type BlogPostQuery = Queries.Query & {
 
 const BlogPost: React.FC<PageProps<BlogPostQuery>> = ({ data }) => {
   const { markdownRemark } = data
-  const { frontmatter, html, relatedPosts, id } = markdownRemark!
+  const { frontmatter, html, relatedPostsByTag, relatedPostsByCategory, id } = markdownRemark!
   const { title, desc, thumbnail, date, category, tags } = frontmatter!
 
   const [pathName, setPathName] = useState("")
@@ -75,6 +85,18 @@ const BlogPost: React.FC<PageProps<BlogPostQuery>> = ({ data }) => {
   const { next, previous } = data
 
   const { defaultImage } = data
+
+  console.dir(relatedPostsByTag)
+  console.dir(relatedPostsByCategory)
+  const allRelatedPosts = [...relatedPostsByTag, ...relatedPostsByCategory]
+  //配列結合・重複消去をカッコつけて表現しただけ
+  const relatedPosts = Array.from(
+    new Map(
+      allRelatedPosts.map(
+        (e) => [e.fields.slug, e]
+      )).values()
+  )
+  console.dir(relatedPosts)
 
   useEffect(() => {
     setPathName(window.location.href)
@@ -354,7 +376,16 @@ export const query = graphql`
         category
         tags
       }
-      relatedPosts {
+      relatedPostsByCategory {
+        frontmatter {
+          title
+          date
+        }
+        fields {
+          slug
+        }
+      }
+      relatedPostsByTag {
         frontmatter {
           title
           date
