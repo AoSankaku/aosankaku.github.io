@@ -13,7 +13,9 @@ tags:
 
 ここは別にMinecraftのブログではないのですが、英語の情報すらほとんど出てこないので書いてみることにしました。
 
-## Sodiumとは？
+タイトル通り、Fabricで、Sodiumを使用して鉱石を光らせることを目的とした記事です。
+
+## 前提：Sodiumとは？
 ![Sodiumのロゴ](sodium.png)
 
 ### Sodiumの特徴
@@ -39,7 +41,6 @@ Optifineでは、それ単体を導入すると以下の機能が使用できま
 Sodiumは軽量化の機能**のみ**を保持しており、Sodiumを導入するだけでは上記のいずれも使用できません。
 
 ## 鉱石を光らせる方法
-さて、本題に入ります。鉱石を光らせる方法です。
 
 結論から言うと、以下のMODが全て必要になります。
 
@@ -53,7 +54,7 @@ Sodiumは軽量化の機能**のみ**を保持しており、Sodiumを導入す�
 
 順に見ていきます。
 
-### Fabric API、Sodiumの導入
+### Fabric、Fabric API、Sodiumの導入
 ググってください。この記事を見ている人でFabric APIとSodium入らない人いないと思います。
 
 ### Indiumの導入
@@ -66,7 +67,7 @@ Sodiumのアドオン（拡張）です。Sodiumが直接サポートしてい�
 ### Continuityの導入
 先程、Sodiumは「ガラスなどの見た目をつなげる機能」を持っていないと書きました。Continuityはその機能を持っているMODです。
 
-そしてここが重要なのですが、このMODはガラスをつなげる機能だけで出なく、**鉱石を光らせる機能もサポートしています**。
+そしてここが重要なのですが、このMODはガラスをつなげる機能だけでなく、**鉱石を光らせる機能もサポートしています**。
 
 [SodiumのGithubのIssue](https://github.com/CaffeineMC/sodium-fabric/issues/1370)を読んでいて気が付きました。
 
@@ -87,6 +88,8 @@ Optifineであれば導入直後に入れればいいのですが、Sodiumの場
 「Optifine Required」と書いてあるものでもOptifineを入れなくて大丈夫ですので、そのまま入れましょう。私はこれを使っています。
 
 [New Emissive Ores](https://www.curseforge.com/minecraft/texture-packs/emissive-ores-1-17)
+
+他のテクスチャでも、問題なく動作します。いろいろ試してみてください。適用を忘れずに。
 
 #### 注意
 [OptifineとSodiumはおそらく互換性がありません](https://www.reddit.com/r/Optifine/comments/hzk9yd/is_sodium_a_performance_enhancing_mod_compatible/)。同時に入れないように気をつけてください。
