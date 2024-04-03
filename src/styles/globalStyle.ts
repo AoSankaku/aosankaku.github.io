@@ -2,7 +2,6 @@ import { createGlobalStyle } from "styled-components"
 import reset from "styled-reset"
 import prismGhcolors from "./prismjs-themes/prismGhcolors"
 import prismAtomDark from "./prismjs-themes/prismAtomDark"
-import notion from "./link-themes/notion"
 import card from "./link-themes/card"
 
 const GlobalStyle = createGlobalStyle`
@@ -233,8 +232,6 @@ const GlobalStyle = createGlobalStyle`
     white-space: normal !important;
   }
 
-  ${notion}
-  
   ${card}
 `
 

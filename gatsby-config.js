@@ -97,12 +97,6 @@ const markdownPlugins = [
       plugins: [
         "gatsby-remark-copy-linked-files",
         "@okaryo/gatsby-remark-link-card",
-        {
-          resolve: `gatsby-remark-link-beautify`,
-          options: {
-            enableLinkPreview: false,
-          }
-        },
         "gatsby-remark-autolink-headers",
         {
           resolve: `gatsby-remark-table-of-contents`,
