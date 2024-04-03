@@ -2,6 +2,7 @@ import { createGlobalStyle } from "styled-components"
 import reset from "styled-reset"
 import prismGhcolors from "./prismjs-themes/prismGhcolors"
 import prismAtomDark from "./prismjs-themes/prismAtomDark"
+import notion from "./beautify-themes/notion"
 
 const GlobalStyle = createGlobalStyle`
   ${reset}
@@ -230,6 +231,8 @@ const GlobalStyle = createGlobalStyle`
   p > code.language-text{
     white-space: normal !important;
   }
+
+  ${notion}
 `
 
 export default GlobalStyle

@@ -96,6 +96,12 @@ const markdownPlugins = [
     options: {
       plugins: [
         "gatsby-remark-copy-linked-files",
+        {
+          resolve: `gatsby-remark-link-beautify`,
+          options: {
+            enableLinkPreview: false,
+          }
+        },
         "gatsby-remark-autolink-headers",
         {
           resolve: `gatsby-remark-table-of-contents`,
@@ -138,14 +144,6 @@ const markdownPlugins = [
             linkImagesToOriginal: false,
           },
         },
-        /*
-        {
-          resolve: `gatsby-remark-link-unfurl`,
-          options: {
-            processedUrlsFile: `${__dirname}/link-cache/cache.json`,
-          },
-        },
-        */
         "gatsby-remark-responsive-iframe",
       ],
     },
