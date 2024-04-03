@@ -2,7 +2,8 @@ import { createGlobalStyle } from "styled-components"
 import reset from "styled-reset"
 import prismGhcolors from "./prismjs-themes/prismGhcolors"
 import prismAtomDark from "./prismjs-themes/prismAtomDark"
-import notion from "./beautify-themes/notion"
+import notion from "./link-themes/notion"
+import card from "./link-themes/card"
 
 const GlobalStyle = createGlobalStyle`
   ${reset}
@@ -233,6 +234,8 @@ const GlobalStyle = createGlobalStyle`
   }
 
   ${notion}
+  
+  ${card}
 `
 
 export default GlobalStyle

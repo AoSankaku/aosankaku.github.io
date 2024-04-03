@@ -96,6 +96,7 @@ const markdownPlugins = [
     options: {
       plugins: [
         "gatsby-remark-copy-linked-files",
+        "@okaryo/gatsby-remark-link-card",
         {
           resolve: `gatsby-remark-link-beautify`,
           options: {
