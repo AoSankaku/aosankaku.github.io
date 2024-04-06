@@ -106,4 +106,4 @@ GatsbyはどうやらUTCで時間帯を固定しており、これを修正す�
 
 ## 参考文献
 
-- https://ja.m.wikipedia.org/wiki/ISO_8601
+https://ja.m.wikipedia.org/wiki/ISO_8601

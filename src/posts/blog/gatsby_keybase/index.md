@@ -51,4 +51,4 @@ https://docs.github.com/ja/repositories/working-with-files/managing-large-files/
 
 ## 参考文献
 
-- https://www.gatsbyjs.com/docs/how-to/images-and-media/static-folder/
+https://www.gatsbyjs.com/docs/how-to/images-and-media/static-folder/

@@ -220,7 +220,10 @@ screenの基本操作や動作は各自ググってください。ただ、以�
 
 ## 参考文献
 
-- https://nllllll.com/ubuntu/ubuntu-wget-install/
-- https://vpslife.server-memo.net/ubuntu_terraria_install/
-- https://ararabo.jp/2019-07-21/?p=9713
-- https://qiita.com/nasuB7373/items/f46fe8dc7ffc7a26b249
+https://nllllll.com/ubuntu/ubuntu-wget-install/
+
+https://vpslife.server-memo.net/ubuntu_terraria_install/
+
+https://ararabo.jp/2019-07-21/?p=9713
+
+https://qiita.com/nasuB7373/items/f46fe8dc7ffc7a26b249

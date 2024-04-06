@@ -81,5 +81,6 @@ world=./worlds/main.wld
 
 ## 参考文献
 
-- https://takaichifactory.com/1649
-- https://steamcommunity.com/app/105600/discussions/0/541907867760001774?l=japanese
+https://takaichifactory.com/1649
+
+https://steamcommunity.com/app/105600/discussions/0/541907867760001774?l=japanese
