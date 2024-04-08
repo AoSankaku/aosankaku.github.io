@@ -92,7 +92,7 @@ const Markdown = styled.article<{ rhythm: typeof typography["rhythm"] }>`
     line-height: 1.3;
     border-bottom: solid 1px var(--color-gray-6);
     margin-bottom: ${({ rhythm }) => rhythm(1)};
-    margin-top: ${({ rhythm }) => rhythm(1.5)};
+    margin-top: ${({ rhythm }) => rhythm(2.0)};
 
     @media (max-width: ${({ theme }) => theme.device.sm}) {
       font-size: 1.1875rem;
@@ -103,7 +103,7 @@ const Markdown = styled.article<{ rhythm: typeof typography["rhythm"] }>`
     font-size: 1.2rem;
     line-height: 1.3;
     margin-bottom: ${({ rhythm }) => rhythm(0.6)};
-    margin-top: ${({ rhythm }) => rhythm(1.2)};
+    margin-top: ${({ rhythm }) => rhythm(1.8)};
     @media (max-width: ${({ theme }) => theme.device.sm}) {
       font-size: 1.1rem;
     }
@@ -113,7 +113,7 @@ const Markdown = styled.article<{ rhythm: typeof typography["rhythm"] }>`
   h5,
   h6 {
     margin-bottom: ${({ rhythm }) => rhythm(0.5)};
-    margin-top: ${({ rhythm }) => rhythm(1)};
+    margin-top: ${({ rhythm }) => rhythm(1.6)};
   }
 
   ul,
