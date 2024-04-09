@@ -95,7 +95,7 @@ const GlobalStyle = createGlobalStyle`
       --color-deepblue: #1e90ff;
       --color-icon: #2c2c2c;
       --color-strong: #ff6a00;
-      --color-blue-button: #4444ff;
+      --color-blue-button: #0085f1;
       ${prismGhcolors}
     }
 
@@ -134,7 +134,7 @@ const GlobalStyle = createGlobalStyle`
       --color-deepblue: #0000ff;
       --color-icon: #d1d1d1;
       --color-strong: #ffc41f;
-      --color-blue-button: #0000ee;
+      --color-blue-button: #1162a5;
       ${prismAtomDark}
     }
   }
