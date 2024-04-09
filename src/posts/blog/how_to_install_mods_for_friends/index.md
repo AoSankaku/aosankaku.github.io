@@ -125,6 +125,7 @@ MODは基本的に配布サイトから保存することで入手します。
 以下の2つが有名です。
 
 ### CurseForge
+
 ![CurseForge Logo](https://gist.githubusercontent.com/thecodewarrior/110057b210551c4ecf2c9be6d58ff824/raw/38748511ca1eb5677f009092fb3fcd71cc76cdf0/logo.png)
 
 元祖配布サイトです。
@@ -135,7 +136,8 @@ Fabric用のMODも普通にあります。
 このサイトにMODを消されるなどして、運営方針に嫌気が差した人はModrinthに引っ越しています。
 
 ### Modrinth
-![Modrinth Logo](https://media.beehiiv.com/cdn-cgi/image/format=auto,width=800,height=421,fit=scale-down,onerror=redirect/uploads/publication/thumbnail/a49f8e1b-3835-4ea1-a85b-118c6425ebc3/landscape_1667087426098458.png)
+
+https://modrinth.com
 
 ここ2、3年で人気が出てきた配布サイトです。  
 このサイトにもForge用MODとFabric用MODの両方があります。
@@ -172,7 +174,7 @@ MODを入れたデータと入れないデータを分けるためには、フ�
 
 画像を貼って説明するのが面倒なので、以下の動画を参考に進めてください。
 
-`youtube https://www.youtube.com/embed/UPxsCiMVaFE`
+`youtube:https://www.youtube.com/embed/UPxsCiMVaFE`
 
 リンクと注意点、その他動画で触れていないところだけいくつか挙げておきます。
 
@@ -193,7 +195,9 @@ Prism Launcher自体は超軽いです。ただし、MODを入れまくったマ
 全部じゃないけど9割方対応してるっぽいです🗾
 
 #### Prism Launcherのダウンロードサイトはどこ？
+
 https://prismlauncher.org/
+
 です。
 
 #### Javaはどこから入れるの？
@@ -202,10 +206,13 @@ https://prismlauncher.org/
 なお、両方入れても支障はありません。
 
 ##### Java 8（1.12.2など古いバージョンを遊ぶ可能性がある人）
+
 https://www.java.com/en/download/
+
 なぜこのURLからJava 8が入手できるのかは私もわかりません。
 
 ##### Java 17（最新版に近いバージョンを遊ぶ可能性がある人）
+
 https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html
 
 #### Javaのデフォルトは8と17のどっちがいいの？
@@ -263,7 +270,8 @@ Prism Launcherは今のインスタンスをzipファイルに出力できます
 - サーバーデータを取り除かないと、入っているサーバーごと配布される
 
 ### マルチができるようになるMOD
-![Essential Logo](social-960.jpg)
+
+https://essential.gg
 
 EssentialというMODがあります。これを導入すると、サーバーを立てなくてもマルチができます。  
 詳しくは以下の動画を見てください。
