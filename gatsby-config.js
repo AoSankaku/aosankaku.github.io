@@ -27,9 +27,15 @@ const siteMetadata = {
       link: "/links/",
       name: "Links",
     },
+    /*
     {
       link: meta.links.github,
       name: "Github",
+    },
+    */
+    {
+      link: "/tags/",
+      name: "Tags",
     },
   ],
 }
