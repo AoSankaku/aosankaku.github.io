@@ -6,6 +6,9 @@ desc: "自分のSNS歴を振り返りながら、MisskeyやMastodonなども含�
 tags:
   - お気持ち表明
   - Misskey
+  - Google+
+  - SNS
+  - Fediverse
 ---
 
 たまには気分を変えて「だ・である」で書いてみようと思います。

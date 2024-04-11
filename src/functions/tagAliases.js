@@ -43,6 +43,10 @@ const tagAliases = {
     {
       original: "コンパス（ソシャゲ）",
       normalized: "compass"
+    },
+    {
+      original: "Google+",
+      normalized: "google-plus",
     }
   ]
 }
