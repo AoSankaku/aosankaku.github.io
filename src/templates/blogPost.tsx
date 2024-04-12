@@ -131,7 +131,7 @@ const BlogPost: React.FC<PageProps<BlogPostQuery>> = ({ data }) => {
                   rhythm={rhythm}
                 />
                 <Markdown rhythm={rhythm}>
-                  <h2>関連記事</h2>
+                  <h2 style={{ marginTop: "3.2625rem" }}>関連記事</h2>
                   <RelatedArticlesList articleId={id} relatedPosts={relatedPosts} />
                 </Markdown>
               </div>
