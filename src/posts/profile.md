@@ -102,11 +102,26 @@ MODも少し改造したことあります
 Eddy、ピノキオピー、niki、ダイナミック自演ズ、ジグ、P-MODEL
 
 ## 尊敬している人（敬称略）
-他己紹介が苦手なので名前だけ列挙します。順番に意味はありません。
-* 西成 活裕　http://park.itc.u-tokyo.ac.jp/tknishi/nishinari.html
-* 堀元 見　https://ken-horimoto.com/profile/
-* やしろあずき　https://twitter.com/yashi09
-* 山﨑 圭一（ムンディ先生）　https://mundisensei.com/profile/
+
+他己紹介が苦手なので、肩書と名前だけ列挙します。順番に意味はありません。
+* 西成 活裕
+  * 東京大学先端科学技術研究センター教授
+  * http://park.itc.u-tokyo.ac.jp/tknishi/nishinari.html
+* 堀元 見
+  * 衒学者
+  * https://ken-horimoto.com/profile/
+* やしろあずき
+  * 漫画家
+  * https://twitter.com/yashi09
+* 山﨑 圭一（ムンディ先生）
+  * 公立高校教員、YouTuber
+  * https://mundisensei.com/profile/
+* 我らが敬愛するみりんくゃん御大
+  * 逸般人（専門知識量が異常）
+  * https://twitter.com/aotea_cha
+* これんじ
+  * 一般人（中学生エンジニア）
+  * https://misskey.systems/@korange
 * 上で上げたアーティスト全員
 
 ## 地雷
