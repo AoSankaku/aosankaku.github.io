@@ -3,6 +3,8 @@ title: "【意見】私にとって理想のSNSを、Misskeyでの経験を踏�
 category: "Misc"
 date: "2024-04-10T00:30:00+09:00"
 desc: "自分のSNS歴を振り返りながら、MisskeyやMastodonなども含めて「理想のSNS」について再考しようと思います。"
+thumbnail: thumbnail.png
+alt: "fukidashi"
 tags:
   - お気持ち表明
   - Misskey

@@ -3,6 +3,8 @@ title: "【Gatsby】URLからリンクカードを作る、最高の方法"
 category: "Tech"
 date: "2024-04-04T14:50:00+09:00"
 desc: "Gatsbyでリンクカードを作る方法はいくつかありますが、その中で「これが最高である」というものを見つけたので、使い方も含めてご紹介します。"
+thumbnail: thumbnail.png
+alt: "Gatsbyでいい感じのリンクカード"
 tags:
   - Gatsby
   - フロントエンド

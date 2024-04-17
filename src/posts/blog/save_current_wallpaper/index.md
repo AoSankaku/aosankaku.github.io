@@ -3,6 +3,8 @@ title: "【Windows 10/11】今のパソコンの背景になっている画像�
 category: "Tech"
 date: "2024-04-12T22:30:00+09:00"
 desc: "今、まさにWindowsの背景になっているものの、その写真をなくしてしまったということ、あると思います。この記事では、そんなときの対処法について説明します。"
+thumbnail: thumbnail.png
+alt: "Windowsで今の背景を画像として取り出す"
 tags:
   - Windows
 ---

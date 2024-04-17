@@ -3,6 +3,8 @@ title: "【Gatsby】Keybase認証をする方法（keybase.textをアップロ�
 category: "Tech"
 date: "2024-03-18T03:54:00+09:00"
 desc: "Keybase認証で少しだけ（大嘘）手間取ったので、解決策を載せておきます。"
+thumbnail: thumbnail.png
+alt: "Gatsby + Keybase"
 tags:
   - Keybase
   - Gatsby
