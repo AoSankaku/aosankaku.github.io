@@ -20,7 +20,7 @@ const CenteredImg: React.FC<CenteredImgProps> = ({ src, alt }) => {
           node {
             id
             gatsbyImageData(
-              layout: CONSTRAINED
+              layout: FULL_WIDTH
               aspectRatio: 1.91
               placeholder: BLURRED
               transformOptions: {
@@ -55,6 +55,7 @@ const CenteredImg: React.FC<CenteredImgProps> = ({ src, alt }) => {
 export const ThumbnailWrapper = styled.div`
   position: relative;
   width: 100%;
+  background-color: red;
   &::after {
     content: "";
     display: block;
