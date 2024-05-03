@@ -47,6 +47,10 @@ const tagAliases = {
     {
       original: "Google+",
       normalized: "google-plus",
+    },
+    {
+      original: "生活",
+      normalized: "living",
     }
   ]
 }
