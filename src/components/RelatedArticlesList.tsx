@@ -48,7 +48,7 @@ const RelatedArticlesList: React.FC<Props> = ({ articleId, relatedPosts }) => {
     const list = relatedArticleIds.map(id => {
       console.log(relatedPosts[id].frontmatter.title)
       return (
-        <li><Link to={relatedPosts[id].fields.slug}>{relatedPosts[id].frontmatter.title}</Link></li>
+        <li key={relatedPosts[id].fields.slug}><Link to={relatedPosts[id].fields.slug}>{relatedPosts[id].frontmatter.title}</Link></li>
       )
     })
     return list
