@@ -55,7 +55,6 @@ const CenteredImg: React.FC<CenteredImgProps> = ({ src, alt }) => {
 export const ThumbnailWrapper = styled.div`
   position: relative;
   width: 100%;
-  background-color: red;
   &::after {
     content: "";
     display: block;
