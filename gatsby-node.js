@@ -125,8 +125,8 @@ exports.createResolvers = ({ createResolvers }) => {
       relatedPostsByTag: {
         type: ['MarkdownRemark'],
         resolve: async (source, args, context, info) => {
-          if (typeof source.frontmatter.tags === undefined) return null;
-          if (!Array.isArray(source.frontmatter.tags)) return null;
+          if (typeof source.frontmatter.tags === undefined) return [];
+          if (!Array.isArray(source.frontmatter.tags)) return [];
           console.log(source.frontmatter.tags)
           const { entries } = await context.nodeModel.findAll({
             query: {
