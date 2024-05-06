@@ -8869,6 +8869,11 @@ klona@^2.0.4:
   resolved "https://registry.yarnpkg.com/klona/-/klona-2.0.6.tgz#85bffbf819c03b2f53270412420a4555ef882e22"
   integrity sha512-dhG34DXATL5hSxJbIexCft8FChFXtmskoZYnoPWjXQuebWYCNkVeV3KkGegCK9CP1oswI/vQibS2GY7Em/sJJA==
 
+kofi-button@^1.1.1:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/kofi-button/-/kofi-button-1.1.1.tgz#79d34e65697ee8bb93467529b7d905e715c07bc1"
+  integrity sha512-6LjKH46C5L0WXgd7lcCCZ6sZyrtjv7tLA5XLBnuayyzrSDRP6yQKt00zL7IH2QxixqQtyxAqpefwUglmmtD9IA==
+
 language-subtag-registry@^0.3.20:
   version "0.3.22"
   resolved "https://registry.yarnpkg.com/language-subtag-registry/-/language-subtag-registry-0.3.22.tgz#2e1500861b2e457eba7e7ae86877cbd08fa1fd1d"

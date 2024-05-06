@@ -6,6 +6,7 @@ import styled from "styled-components"
 import Layout from "Layouts/layout"
 import Seo from "Components/Seo"
 import ShareButtons from "Components/ShareButtons"
+import TipArea from "Components/TipArea"
 import Comment from "Components/comment"
 import { rhythm } from "Styles/typography"
 import Category from "Styles/category"
@@ -14,6 +15,7 @@ import Markdown from "Styles/markdown"
 
 import { FaArrowRight, FaArrowLeft } from "react-icons/fa6"
 import RelatedArticlesList from "Components/RelatedArticlesList"
+
 
 import TagButton from "Components/tag/tagButton"
 
@@ -139,6 +141,7 @@ const BlogPost: React.FC<PageProps<BlogPostQuery>> = ({ data }) => {
           </OuterWrapper>
         </article>
         <ShareButtons title={title as string} articleUrl={pathName} />
+        <TipArea />
         <ArticlesNavigationContainer>
           {(next !== null) &&
             <ArticlesPreContainer>
