@@ -42,6 +42,13 @@ const Desc = styled.p`
   white-space: auto;
   word-break: auto-phrase;
   line-height: 1.8;
+  a {
+    text-decoration: none;
+    color: var(--color-blue) !important;
+    :hover {
+      text-decoration: underline;
+    }
+  }
 `
 
 const InnerWrapper = styled.div`
