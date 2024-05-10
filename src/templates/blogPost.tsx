@@ -248,6 +248,7 @@ const Desc = styled.p`
   margin-top: var(--sizing-lg);
   line-height: 1.5;
   font-size: var(--text-lg);
+  word-break: auto-phrase;
 
   @media (max-width: ${({ theme }) => theme.device.sm}) {
     line-height: 1.31579;
@@ -279,6 +280,7 @@ const Title = styled.h1`
   font-weight: var(--font-weight-bold);
   line-height: 1.1875;
   font-size: var(--text-xl);
+  word-break: auto-phrase;
 
   @media (max-width: ${({ theme }) => theme.device.md}) {
     line-height: 1.21875;
