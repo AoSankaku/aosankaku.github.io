@@ -70,11 +70,17 @@ Prism Launcherには、Javaの場所を自動検出する機能があります�
 
 最初に、環境変数設定ウィンドウを開きます。Windows11の方は「Windowsキー」を押したあとに「環境」と入れると「環境変数の設定」という物が出てくるので、それを選択します。未だにWindows10の方は知りません。[自分でググってください](https://qiita.com/ryo-sato/items/e24c81eca6ffe9db3fb0)。
 
-![環境変数を編集](image-5.png)」
+![環境変数を編集](image-5.png)
 
 ![環境変数](image-2.png)
 
 こんなのが開けば成功です。「ユーザー環境変数」でも多分動きますが、「システム環境変数」に追加したほうがユーザーをまたげて楽だと思います。
+
+**【追記】**
+
+もしも「追加が押せないんだけど！？！？！」ということがあれば、以下の記事を参考にやってみてください。
+
+https://nj-clucker.com/edit-system-environment-variables/
 
 ![追加画面](image-3.png)
 
