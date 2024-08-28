@@ -1,11 +1,10 @@
 ---
 title: "YouTube活動復活と、動画内でのメッセージに代えて"
-category: "Misc"
+category: "YouTube"
 date: "2024-06-14T23:00:00+09:00"
 desc: "YouTubeの投稿を再開しました。これまでに言いたかったことなどがたくさんありますので、動画の中での言及に代えてこちらでコメントを発表します。"
 tags:
 - ウディタ
-- YouTube
 ---
 
 YouTubeの活動を復活させました。
