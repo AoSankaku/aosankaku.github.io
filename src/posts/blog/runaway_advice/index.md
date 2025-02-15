@@ -386,7 +386,7 @@ https://www.youtube.com/@oi_ken
 
 それではどうすればよいか。簡単です。**1枚クレジットカードを作り、すべての決済を可能な限り集約**してください。これをするだけで、全自動家計簿（ポイント、公的料金自動支払い機能付き）の爆誕です。
 
-https://aosankaku.github.io/blog/cashless_todo_nottodo/
+https://aosankaku.net/blog/cashless_todo_nottodo/
 
 #### 署名はちゃんとしよう
 

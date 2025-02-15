@@ -3,7 +3,13 @@
 ReactとGatsbyで動かしてるのでサックサクです  
 よかったら見てね
 
+## https://aosankaku.net
+
+現在のURLです。
+
 ## https://aosankaku.github.io
+
+旧URLです。普通、`github-username.github.io`で作成するとそのURLにそのままデプロイできるのですが、独自ドメインを取ったので上のに変えました。
 
 ## 技術スタック
 

@@ -26,7 +26,7 @@ const metaConfig = {
   title: "Blue Triangle's Website",
   description: `Blue Triangleのサイトです。プロフィール、趣味、作品などを紹介しています。MinecraftやGatsbyのことを主に扱っています。`,
   author: "Blue Triangle",
-  siteUrl: "https://aosankaku.github.io",
+  siteUrl: "https://aosankaku.net",
   lang: "ja",
   utterances: "AoSankaku/gatsby-starter-apple-comment",
   links: {
