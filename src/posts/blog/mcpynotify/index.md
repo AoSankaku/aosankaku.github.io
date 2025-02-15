@@ -2,7 +2,7 @@
 title: "【Minecraft】マイクラサーバーでDiscordに通知を送るスクリプトを作りました"
 category: "Minecraft"
 date: "2024-03-14T14:40:00+09:00"
-desc: "PythonとWebhookを利用した、マイクラ通知用スクリプトを作成（改造）しました。その使い方について説明しています。"
+desc: "PythonとWebhookを利用した、マイクラ入室時・退室時に通知できるスクリプトを作成（改造）しました。その導入方法と使い方について説明しています。"
 thumbnail: "thumbnail.png"
 alt: "AoSankaku/Send-Minecraft-notifications"
 tags:
@@ -15,7 +15,6 @@ tags:
 
 嘘つきました。正確には作っていません。超大幅な改良を加えました。
 
-# 簡単に使えるサーバー通知BOTがほしい！
 ## サーバー参加者のモチベの問題
 最近、訳あってマイクラサーバーを開いたり閉じたりしています。
 
