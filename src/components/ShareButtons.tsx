@@ -7,7 +7,7 @@ import {
   TwitterIcon,
   XIcon,
 } from 'react-share'
-import { FaLink, FaCheck, FaC } from "react-icons/fa6"
+import { FaLink, FaCheck } from "react-icons/fa6"
 import MisskeyLogo from '../images/misskey_logo.png'
 import MastodonLogo from '../images/mastodon-icon-spacing.png'
 
@@ -29,6 +29,14 @@ const ShareButtons: React.FC<Props> = ({ title, articleUrl }) => {
     backgroundColor: "var(--color-gray-1)",
     borderRadius: "25px",
     objectFit: "fill"
+  }
+
+  const handleClick = () => {
+    global.navigator.clipboard.writeText(`${shareText}\n${articleUrl}`);
+    setIsCopied(true);
+    setTimeout(() => {
+      setIsCopied(false);
+    }, 1500);
   }
 
   return (
@@ -58,17 +66,12 @@ const ShareButtons: React.FC<Props> = ({ title, articleUrl }) => {
         <LineShareButton title={shareText} url={articleUrl}>
           <LineIcon size={50} round />
         </LineShareButton>
-        <a onClick={() => {
-          global.navigator.clipboard.writeText(`${shareText}\n${articleUrl}`);
-          setIsCopied(true);
-        }} onMouseLeave={() => {
-          setIsCopied(false);
-        }} href={`javascript:void(0);`}>
+        <CopyLinkButton onClick={handleClick}>
           {isCopied
             ? <FaCheck aria-label="Copy Link" color="var(--color-text)" style={copyIconStyle} />
             : <FaLink aria-label="Copy Link" color="var(--color-text)" style={copyIconStyle} />
           }
-        </a>
+        </CopyLinkButton>
       </SharebuttonsWrapper >
     </>
   )
@@ -98,6 +101,12 @@ const SharebuttonsWrapper = styled.div`
     margin-bottom: 20px;
     text-align: center;
   }
+`
+
+const CopyLinkButton = styled.button`
+  background: none;
+  border: none;
+  cursor: pointer;
 `
 
 export default ShareButtons
