@@ -42,6 +42,7 @@ const ShareButtons: React.FC<Props> = ({ title, articleUrl }) => {
   return (
     <>
       <ShareText>シェアする？<wbr />（Misskey/Mastodon対応）</ShareText>
+      <WarnText render={articleUrl.startsWith("http://localhost")}>【警告】<br /><br />開発環境（localhost）で共有しようとしているぞ！</WarnText>
       <SharebuttonsWrapper>
         <TwitterShareButton title={shareText} url={articleUrl}>
           <TwitterIcon size={50} round />
@@ -101,6 +102,16 @@ const SharebuttonsWrapper = styled.div`
     margin-bottom: 20px;
     text-align: center;
   }
+`
+
+const WarnText = styled.p<{ render: boolean }>`
+  display: ${props => props.render ? "block" : "none"};
+  font-size: 0.9em;
+  background-color: var(--color-gray-3);
+  text-align: center;
+  padding: 20px 0px 5px 0px;
+  color: var(--color-strong);
+  font-weight: bold;
 `
 
 const CopyLinkButton = styled.button`
