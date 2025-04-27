@@ -224,10 +224,18 @@ const GlobalStyle = createGlobalStyle`
     bottom: 15px;
     padding: 5px;
     background-color: var(--color-deepblue);
-    font-color: var(--color-text);
+    color: var(--color-text);
     :hover {
       background-color: var(--color-blue);
     }
+  }
+
+  .token.inserted {
+    background-color: var(--color-code-highlight);
+  }
+
+  .token.deleted {
+    background-color: var(--color-code-highlight);
   }
 
   p > code.language-text{
