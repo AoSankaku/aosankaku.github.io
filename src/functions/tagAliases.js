@@ -51,7 +51,11 @@ const tagAliases = {
     {
       original: "生活",
       normalized: "living",
-    }
+    },
+    {
+      original: "Next.js",
+      normalized: "nextjs",
+    },
   ]
 }
 
