@@ -32,7 +32,11 @@ https://github.com/arkmanager/ark-server-tools
 
 ### 1. 鯖にログイン
 
-Linuxの前提で進めますが、Windowsでも多分いけます。
+Windowsは不可です。Linuxを使ってください。
+
+Windowsの方はこの記事とか読むと良いと思います。
+
+https://mohumohu-tech.com/2022/07/10/ark%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC%E3%82%92windowspc%E3%81%AB%E6%A7%8B%E7%AF%89%E3%81%99%E3%82%8B/
 
 ### 2. 依存関係のインストール
 
