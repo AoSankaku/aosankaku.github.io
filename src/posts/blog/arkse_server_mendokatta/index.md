@@ -235,6 +235,8 @@ arkflag_NoBattlEye="true"
 
 という方は、これ1行いれるだけでOKなので入れておきましょう。
 
+ちなみに、Battl**eE**ye（バトルアイ）ではなくBattl**E**ye（バトライ）です。マジで紛らわしい。
+
 ## 番外2：ホワイトリスト
 
 ホワイトリストが欲しい人は、また`/etc/arkmanager/instances/main.cfg`（main以外を弄りたい場合はmainを書き換えてください）に1行加えます。
