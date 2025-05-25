@@ -46,6 +46,7 @@ const PostGrid: React.FC<PostGridProps> = ({ posts }) => {
                 title={title}
                 desc={desc}
                 date={date}
+                tags={[]}
               />
             </Link>
           </List>
@@ -59,7 +60,7 @@ const PostGrid: React.FC<PostGridProps> = ({ posts }) => {
 const Grid = styled.ul`
   display: grid;
   grid-gap: var(--grid-gap-xl);
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
   list-style: none;
 
   & > li {
@@ -68,6 +69,7 @@ const Grid = styled.ul`
 
   @media (max-width: ${({ theme }) => theme.device.sm}) {
     grid-gap: var(--grid-gap-lg);
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   }
 `
 

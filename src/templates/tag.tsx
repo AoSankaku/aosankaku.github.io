@@ -60,7 +60,7 @@ const Tag = ({ pageContext, data }: PageProps<Queries.Query, PageContext>) => {
 }
 
 const Container = styled.main`
-  width: var(--post-width);
+  width: 87.5%;
   margin: 0 auto;
   margin-top: 80px;
   margin-bottom: 6rem;
