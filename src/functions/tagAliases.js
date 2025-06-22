@@ -56,6 +56,10 @@ const tagAliases = {
       original: "Next.js",
       normalized: "nextjs",
     },
+    {
+      original: "Node.js",
+      normalized: "nodejs",
+    }
   ]
 }
 
