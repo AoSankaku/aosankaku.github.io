@@ -257,6 +257,24 @@ arkflag_exclusivejoin="true"
 
 プライベートなものじゃないと思いますが、念の為隠しています。結構長いのでコピペが賢明です。
 
+## 番外3：（バックアップ復旧時など）なんか起動できないとき
+
+`Server has double-forked and cannot be effectively monitored`や`kill: (-5497) - No such process`が出るときは、OSの権限設定がおかしくなっている可能性があります。`chmod`で解決できます。
+
+ARKのフォルダ内の`ShooterGame/Binaries/Linux`に移動したうえで、
+
+```bash
+chmod +x ShooterGameServer
+```
+
+を実行すれば動くはずです。
+
+## 番外4：なんかインストールに失敗しまくるとき
+
+容量が十分あるか確認してください。具体的には200GBぐらい必要です。専用サーバーなのに。
+
+容量が足りない場合でも「容量が足りない」とは教えてくれません。
+
 ## 参考文献
 
 https://github.com/arkmanager/ark-server-tools/blob/master/README.asciidoc
