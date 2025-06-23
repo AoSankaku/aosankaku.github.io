@@ -59,6 +59,10 @@ const tagAliases = {
     {
       original: "Node.js",
       normalized: "nodejs",
+    },
+    {
+      original: "セキュリティ",
+      normalized: "security",
     }
   ]
 }
