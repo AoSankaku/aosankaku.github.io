@@ -63,6 +63,10 @@ const tagAliases = {
     {
       original: "セキュリティ",
       normalized: "security",
+    },
+    {
+      original: "ネットワーク",
+      normalized: "network",
     }
   ]
 }
