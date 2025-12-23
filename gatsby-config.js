@@ -101,6 +101,12 @@ const markdownPlugins = [
     resolve: "gatsby-transformer-remark",
     options: {
       plugins: [
+        {
+          resolve: "gatsby-plugin-canonical-urls",
+          options: {
+            siteUrl: 'https://aosankaku.net'
+          }
+        },
         "gatsby-remark-copy-linked-files",
         "@okaryo/gatsby-remark-link-card",
         "gatsby-remark-autolink-headers",
