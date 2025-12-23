@@ -1,4 +1,11 @@
-# aosankaku.github.io
+# [⚠️DEPRECATED⚠️] aosankaku.github.io
+
+https://aosankaku.github.io は、 https://aosankaku.net およびリポジトリ https://github.com/AoSankaku/aosankaku-website-2025/ に完全移行しました。今後は301リダイレクトがかかります。
+
+以下の説明は昔に書いたものです。
+
+---
+
 オリジナルのホームページが前から欲しかったのと「jimdofree.com」があまりにダサかったので[テンプレート](https://github.com/sungik-choi/gatsby-starter-apple#readme)を拝借して作成しました  
 ReactとGatsbyで動かしてるのでサックサクです  
 よかったら見てね
