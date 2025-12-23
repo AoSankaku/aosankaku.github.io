@@ -107,6 +107,30 @@ const markdownPlugins = [
             siteUrl: 'https://aosankaku.net'
           }
         },
+        {
+          resolve: 'gatsby-plugin-htaccess',
+          options: {
+            RewriteBase: '/',
+            https: true,
+            www: false,
+            SymLinksIfOwnerMatch: true,
+            host: 'aosankaku.net',
+            ErrorDocument: `
+          ErrorDocument 404 /404/
+        `,
+            redirect: [
+              {
+                from: 'aosankaku.github.io',
+                to: 'aosankaku.net',
+              },
+            ],
+            custom: `
+              # Redirect github.io to custom domain (Only works if both point to this server)
+              RewriteCond %{HTTP_HOST} ^aosankaku\.github\.io$ [NC]
+              RewriteRule ^(.*)$ https://aosankaku.net/$1 [R=301,L]
+            `,
+          },
+        },
         "gatsby-remark-copy-linked-files",
         "@okaryo/gatsby-remark-link-card",
         "gatsby-remark-autolink-headers",
